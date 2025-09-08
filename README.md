@@ -42,4 +42,4 @@ If you have suggestions for new questions or improvements, feel free to submit a
 
 This project is open-source and can be used freely for educational purposes.
 
-## link : https://html-css-quiz-rho.vercel.app/
+## link : https://javascript-quiz-kappa.vercel.app/
