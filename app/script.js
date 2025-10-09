@@ -188,197 +188,226 @@ function startCountDown() {
 const quizQuestions = [
   {
     id: 1,
-    question: "Which keyword is used to declare a variable in JavaScript?",
-    options: ["var", "let", "const", "All of the above"],
-    correct: "All of the above",
+    question: "What is the data type of 42 in JavaScript?",
+    options: [
+      "It is a number data type.",
+      "It is a string data type.",
+      "It is a boolean data type.",
+      "It is an undefined data type."
+    ],
+    correct: "It is a number data type.",
   },
   {
     id: 2,
-    question: "Which symbol is used for single-line comments in JavaScript?",
-    options: ["//", "/*", "#", "<!--"],
-    correct: "//",
+    question: "What type of value is returned by typeof 'Hello'?",
+    options: [
+      "It returns a string data type.",
+      "It returns a number data type.",
+      "It returns an object data type.",
+      "It returns an undefined data type."
+    ],
+    correct: "It returns a string data type.",
   },
   {
     id: 3,
-    question: "What will `typeof null` return?",
-    options: ["null", "undefined", "object", "boolean"],
-    correct: "object",
+    question: "What does typeof true return in JavaScript?",
+    options: [
+      "It returns a boolean data type.",
+      "It returns a string data type.",
+      "It returns a number data type.",
+      "It returns an object data type."
+    ],
+    correct: "It returns a boolean data type.",
   },
   {
     id: 4,
-    question:
-      "Which method is used to convert JSON data to a JavaScript object?",
+    question: "Which of the following represents an undefined value in JavaScript?",
     options: [
-      "JSON.stringify()",
-      "JSON.parse()",
-      "JSON.object()",
-      "JSON.convert()",
+      "It represents a variable declared but not assigned a value.",
+      "It represents a string with no characters.",
+      "It represents zero in a numeric context.",
+      "It represents false in a condition."
     ],
-    correct: "JSON.parse()",
+    correct: "It represents a variable declared but not assigned a value.",
   },
   {
     id: 5,
-    question: "Which operator is used to compare both value and type?",
-    options: ["==", "===", "!=", "!=="],
-    correct: "===",
+    question: "What is the result of typeof null in JavaScript?",
+    options: [
+      "It returns object due to a historical bug in JavaScript.",
+      "It returns null because that’s its type.",
+      "It returns undefined because it’s empty.",
+      "It returns boolean because it’s false-like."
+    ],
+    correct: "It returns object due to a historical bug in JavaScript.",
   },
   {
     id: 6,
-    question:
-      "What is the default value of uninitialized variables in JavaScript?",
-    options: ["null", "undefined", "0", "false"],
-    correct: "undefined",
+    question: "Which of the following is a primitive data type in JavaScript?",
+    options: [
+      "It is a string data type.",
+      "It is an array data type.",
+      "It is an object data type.",
+      "It is a function data type."
+    ],
+    correct: "It is a string data type.",
   },
   {
     id: 7,
-    question: "Which method adds an element to the end of an array?",
-    options: ["push()", "pop()", "shift()", "unshift()"],
-    correct: "push()",
+    question: "What is the output of typeof undefined?",
+    options: [
+      "It returns undefined as its data type.",
+      "It returns null as its data type.",
+      "It returns object as its data type.",
+      "It returns boolean as its data type."
+    ],
+    correct: "It returns undefined as its data type.",
   },
   {
     id: 8,
-    question: "Which method removes the last element of an array?",
-    options: ["shift()", "pop()", "slice()", "splice()"],
-    correct: "pop()",
+    question: "Which statement best describes a Boolean in JavaScript?",
+    options: [
+      "It represents a logical value of true or false.",
+      "It represents a number that can be positive or negative.",
+      "It represents a sequence of characters.",
+      "It represents an empty object."
+    ],
+    correct: "It represents a logical value of true or false.",
   },
   {
     id: 9,
-    question: "Which function is used to print messages to the console?",
-    options: ["console.log()", "print()", "echo()", "write()"],
-    correct: "console.log()",
+    question: "What happens when you use typeof on a variable that has not been declared?",
+    options: [
+      "It returns undefined as a string.",
+      "It throws an error immediately.",
+      "It returns null as a string.",
+      "It returns number as a string."
+    ],
+    correct: "It returns undefined as a string.",
   },
   {
     id: 10,
-    question: "Which keyword is used to create a constant variable?",
-    options: ["const", "let", "var", "constant"],
-    correct: "const",
+    question: "How does JavaScript treat numbers like 3.14 and 42?",
+    options: [
+      "They are both treated as number data type.",
+      "They are treated as float and integer respectively.",
+      "They are treated as string values.",
+      "They are treated as boolean values."
+    ],
+    correct: "They are both treated as number data type.",
   },
   {
     id: 11,
-    question: "Which loop is guaranteed to run at least once?",
-    options: ["for", "while", "do...while", "for...of"],
-    correct: "do...while",
+    question: "What is a string in JavaScript?",
+    options: [
+      "It is a sequence of characters enclosed in quotes.",
+      "It is a numerical value used in calculations.",
+      "It is a boolean value representing true or false.",
+      "It is an undefined variable."
+    ],
+    correct: "It is a sequence of characters enclosed in quotes.",
   },
   {
     id: 12,
-    question: "Which built-in method converts a string to uppercase?",
-    options: ["toUpper()", "upperCase()", "toUpperCase()", "makeUpper()"],
-    correct: "toUpperCase()",
+    question: "What is the default value of a variable that is declared but not assigned in JavaScript?",
+    options: [
+      "It is undefined by default.",
+      "It is null by default.",
+      "It is zero by default.",
+      "It is false by default."
+    ],
+    correct: "It is undefined by default.",
   },
   {
     id: 13,
-    question: "Which object is used to work with dates in JavaScript?",
-    options: ["Date", "Time", "Calendar", "Moment"],
-    correct: "Date",
+    question: "Which statement is true about null in JavaScript?",
+    options: [
+      "It is a special value that represents intentional absence of any object value.",
+      "It is a string value representing emptiness.",
+      "It is a number equal to zero.",
+      "It is a boolean representing false."
+    ],
+    correct: "It is a special value that represents intentional absence of any object value.",
   },
   {
     id: 14,
-    question: "Which keyword is used to exit a loop prematurely?",
-    options: ["return", "exit", "stop", "break"],
-    correct: "break",
+    question: "What happens when you concatenate a string with a number in JavaScript?",
+    options: [
+      "The number is converted to a string and concatenated.",
+      "The operation throws an error.",
+      "The number is ignored in the result.",
+      "The result becomes NaN."
+    ],
+    correct: "The number is converted to a string and concatenated.",
   },
   {
     id: 15,
-    question: "Which keyword is used to skip to the next iteration in a loop?",
-    options: ["break", "continue", "skip", "pass"],
-    correct: "continue",
+    question: "Which of the following is NOT a primitive data type in JavaScript?",
+    options: [
+      "It is an object, which is non-primitive.",
+      "It is a string, which is primitive.",
+      "It is a number, which is primitive.",
+      "It is a boolean, which is primitive."
+    ],
+    correct: "It is an object, which is non-primitive.",
   },
   {
     id: 16,
-    question: "Which function converts a number to a string?",
-    options: ["String()", "toString()", "Both", "Number()"],
-    correct: "Both",
+    question: "What is the result of Boolean('') in JavaScript?",
+    options: [
+      "It returns false because an empty string is falsy.",
+      "It returns true because strings are truthy.",
+      "It returns undefined because it is empty.",
+      "It returns null because there is no value."
+    ],
+    correct: "It returns false because an empty string is falsy.",
   },
   {
     id: 17,
-    question: "What is the result of `2 + '2'` in JavaScript?",
-    options: ["22", "4", "NaN", "Error"],
-    correct: "22",
+    question: "What does Number('123') return in JavaScript?",
+    options: [
+      "It returns 123 as a number data type.",
+      "It returns '123' as a string.",
+      "It returns NaN because it is not a valid number.",
+      "It returns undefined because it is converted incorrectly."
+    ],
+    correct: "It returns 123 as a number data type.",
   },
   {
     id: 18,
-    question:
-      "Which array method creates a new array with elements that pass a test?",
-    options: ["map()", "filter()", "reduce()", "forEach()"],
-    correct: "filter()",
+    question: "What will Boolean(0) return in JavaScript?",
+    options: [
+      "It returns false because 0 is a falsy value.",
+      "It returns true because 0 is a number.",
+      "It returns undefined because 0 is empty.",
+      "It returns null because it represents nothing."
+    ],
+    correct: "It returns false because 0 is a falsy value.",
   },
   {
     id: 19,
-    question:
-      "Which array method executes a function on each element without returning a new array?",
-    options: ["map()", "forEach()", "filter()", "reduce()"],
-    correct: "forEach()",
+    question: "What does String(true) return in JavaScript?",
+    options: [
+      "It returns 'true' as a string.",
+      "It returns 1 as a number.",
+      "It returns undefined as a string.",
+      "It returns null as a string."
+    ],
+    correct: "It returns 'true' as a string.",
   },
   {
     id: 20,
-    question: "Which array method reduces an array to a single value?",
-    options: ["reduce()", "map()", "filter()", "slice()"],
-    correct: "reduce()",
-  },
-  {
-    id: 21,
-    question: "Which keyword defines a class in JavaScript?",
-    options: ["function", "object", "class", "prototype"],
-    correct: "class",
-  },
-  {
-    id: 22,
-    question:
-      "Which keyword is used inside a class to refer to the current object?",
-    options: ["this", "self", "object", "current"],
-    correct: "this",
-  },
-  {
-    id: 23,
-    question: "Which method is used to combine two or more arrays?",
-    options: ["concat()", "combine()", "merge()", "append()"],
-    correct: "concat()",
-  },
-  {
-    id: 24,
-    question: "Which keyword is used to handle exceptions in JavaScript?",
-    options: ["error", "try...catch", "throw...catch", "catch"],
-    correct: "try...catch",
-  },
-  {
-    id: 25,
-    question: "Which keyword is used to throw a custom error?",
-    options: ["throw", "error", "raise", "exception"],
-    correct: "throw",
-  },
-  {
-    id: 26,
-    question: "Which type of scope is created inside a function?",
-    options: ["Global", "Local", "Block", "Lexical"],
-    correct: "Local",
-  },
-  {
-    id: 27,
-    question:
-      "Which type of scope is created inside curly braces with 'let' or 'const'?",
-    options: ["Global", "Local", "Block", "Lexical"],
-    correct: "Block",
-  },
-  {
-    id: 28,
-    question: "Which keyword is used to declare asynchronous functions?",
-    options: ["async", "await", "promise", "defer"],
-    correct: "async",
-  },
-  {
-    id: 29,
-    question: "Which keyword is used to wait for a Promise to resolve?",
-    options: ["async", "wait", "await", "resolve"],
-    correct: "await",
-  },
-  {
-    id: 30,
-    question:
-      "Which method is used to fetch data from an API in modern JavaScript?",
-    options: ["XMLHttpRequest", "fetch()", "get()", "request()"],
-    correct: "fetch()",
+    question: "What is the difference between null and undefined in JavaScript?",
+    options: [
+      "Undefined means a variable has been declared but not assigned, while null means a variable is assigned no value intentionally.",
+      "Null and undefined mean the same thing in JavaScript.",
+      "Undefined is a number and null is a string.",
+      "Both represent boolean false values."
+    ],
+    correct: "Undefined means a variable has been declared but not assigned, while null means a variable is assigned no value intentionally.",
   },
 ];
+
 
 let remainingQuestion = [...quizQuestions];
 // console.log(remainingQuestion);
