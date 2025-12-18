@@ -186,227 +186,566 @@ function startCountDown() {
 
 // JavaScript
 const quizQuestions = [
+  // HTML QUESTIONS (1–15)
   {
     id: 1,
-    question: "What is the data type of 42 in JavaScript?",
+    question: "What does HTML stand for?",
     options: [
-      "It is a number data type.",
-      "It is a string data type.",
-      "It is a boolean data type.",
-      "It is an undefined data type."
+      "HTML stands for HyperText Markup Language.",
+      "HTML stands for HighText Machine Language.",
+      "HTML stands for Hyperlink Text Management Language.",
+      "HTML stands for Home Tool Markup Language."
     ],
-    correct: "It is a number data type.",
+    correct: "HTML stands for HyperText Markup Language."
   },
   {
     id: 2,
-    question: "What type of value is returned by typeof 'Hello'?",
+    question: "What is the purpose of the <head> tag in HTML?",
     options: [
-      "It returns a string data type.",
-      "It returns a number data type.",
-      "It returns an object data type.",
-      "It returns an undefined data type."
+      "The <head> tag contains metadata about the document.",
+      "The <head> tag displays visible content on the page.",
+      "The <head> tag creates navigation menus.",
+      "The <head> tag holds images and videos."
     ],
-    correct: "It returns a string data type.",
+    correct: "The <head> tag contains metadata about the document."
   },
   {
     id: 3,
-    question: "What does typeof true return in JavaScript?",
+    question: "What does the <title> tag do?",
     options: [
-      "It returns a boolean data type.",
-      "It returns a string data type.",
-      "It returns a number data type.",
-      "It returns an object data type."
+      "The <title> tag defines the title shown in the browser tab.",
+      "The <title> tag displays large headings on the page.",
+      "The <title> tag creates tooltips.",
+      "The <title> tag styles text content."
     ],
-    correct: "It returns a boolean data type.",
+    correct: "The <title> tag defines the title shown in the browser tab."
   },
   {
     id: 4,
-    question: "Which of the following represents an undefined value in JavaScript?",
+    question: "Which HTML tag is used to create a hyperlink?",
     options: [
-      "It represents a variable declared but not assigned a value.",
-      "It represents a string with no characters.",
-      "It represents zero in a numeric context.",
-      "It represents false in a condition."
+      "The <a> tag is used to create hyperlinks.",
+      "The <link> tag is used to create hyperlinks.",
+      "The <href> tag is used to create hyperlinks.",
+      "The <nav> tag is used to create hyperlinks."
     ],
-    correct: "It represents a variable declared but not assigned a value.",
+    correct: "The <a> tag is used to create hyperlinks."
   },
   {
     id: 5,
-    question: "What is the result of typeof null in JavaScript?",
+    question: "What is the purpose of the alt attribute in images?",
     options: [
-      "It returns object due to a historical bug in JavaScript.",
-      "It returns null because that’s its type.",
-      "It returns undefined because it’s empty.",
-      "It returns boolean because it’s false-like."
+      "The alt attribute provides alternative text for an image.",
+      "The alt attribute changes image size.",
+      "The alt attribute applies image animation.",
+      "The alt attribute loads images faster."
     ],
-    correct: "It returns object due to a historical bug in JavaScript.",
+    correct: "The alt attribute provides alternative text for an image."
   },
   {
     id: 6,
-    question: "Which of the following is a primitive data type in JavaScript?",
+    question: "Which tag is used to create an ordered list?",
     options: [
-      "It is a string data type.",
-      "It is an array data type.",
-      "It is an object data type.",
-      "It is a function data type."
+      "The <ol> tag is used to create an ordered list.",
+      "The <ul> tag is used to create an ordered list.",
+      "The <li> tag is used to create an ordered list.",
+      "The <list> tag is used to create an ordered list."
     ],
-    correct: "It is a string data type.",
+    correct: "The <ol> tag is used to create an ordered list."
   },
   {
     id: 7,
-    question: "What is the output of typeof undefined?",
+    question: "What does the <meta charset='UTF-8'> tag do?",
     options: [
-      "It returns undefined as its data type.",
-      "It returns null as its data type.",
-      "It returns object as its data type.",
-      "It returns boolean as its data type."
+      "It defines the character encoding for the document.",
+      "It sets the page background color.",
+      "It enables responsive layout.",
+      "It loads external scripts."
     ],
-    correct: "It returns undefined as its data type.",
+    correct: "It defines the character encoding for the document."
   },
   {
     id: 8,
-    question: "Which statement best describes a Boolean in JavaScript?",
+    question: "Which tag is used to create a form in HTML?",
     options: [
-      "It represents a logical value of true or false.",
-      "It represents a number that can be positive or negative.",
-      "It represents a sequence of characters.",
-      "It represents an empty object."
+      "The <form> tag is used to create a form.",
+      "The <input> tag is used to create a form.",
+      "The <fieldset> tag is used to create a form.",
+      "The <data> tag is used to create a form."
     ],
-    correct: "It represents a logical value of true or false.",
+    correct: "The <form> tag is used to create a form."
   },
   {
     id: 9,
-    question: "What happens when you use typeof on a variable that has not been declared?",
+    question: "What is semantic HTML?",
     options: [
-      "It returns undefined as a string.",
-      "It throws an error immediately.",
-      "It returns null as a string.",
-      "It returns number as a string."
+      "Semantic HTML uses meaningful tags that describe content.",
+      "Semantic HTML uses only div tags.",
+      "Semantic HTML removes all styling.",
+      "Semantic HTML is used only for JavaScript."
     ],
-    correct: "It returns undefined as a string.",
+    correct: "Semantic HTML uses meaningful tags that describe content."
   },
   {
     id: 10,
-    question: "How does JavaScript treat numbers like 3.14 and 42?",
+    question: "Which tag represents the main content of a page?",
     options: [
-      "They are both treated as number data type.",
-      "They are treated as float and integer respectively.",
-      "They are treated as string values.",
-      "They are treated as boolean values."
+      "The <main> tag represents the main content of a page.",
+      "The <section> tag represents the main content.",
+      "The <body> tag represents the main content.",
+      "The <article> tag represents the main content."
     ],
-    correct: "They are both treated as number data type.",
+    correct: "The <main> tag represents the main content of a page."
   },
+
+  // CSS QUESTIONS (11–25)
   {
     id: 11,
-    question: "What is a string in JavaScript?",
+    question: "What does CSS stand for?",
     options: [
-      "It is a sequence of characters enclosed in quotes.",
-      "It is a numerical value used in calculations.",
-      "It is a boolean value representing true or false.",
-      "It is an undefined variable."
+      "CSS stands for Cascading Style Sheets.",
+      "CSS stands for Computer Style Sheets.",
+      "CSS stands for Colorful Style System.",
+      "CSS stands for Creative Styling Syntax."
     ],
-    correct: "It is a sequence of characters enclosed in quotes.",
+    correct: "CSS stands for Cascading Style Sheets."
   },
   {
     id: 12,
-    question: "What is the default value of a variable that is declared but not assigned in JavaScript?",
+    question: "What is the purpose of CSS?",
     options: [
-      "It is undefined by default.",
-      "It is null by default.",
-      "It is zero by default.",
-      "It is false by default."
+      "CSS is used to style and layout web pages.",
+      "CSS is used to create database connections.",
+      "CSS is used to structure web content.",
+      "CSS is used to handle server logic."
     ],
-    correct: "It is undefined by default.",
+    correct: "CSS is used to style and layout web pages."
   },
   {
     id: 13,
-    question: "Which statement is true about null in JavaScript?",
+    question: "Which property is used to change text color?",
     options: [
-      "It is a special value that represents intentional absence of any object value.",
-      "It is a string value representing emptiness.",
-      "It is a number equal to zero.",
-      "It is a boolean representing false."
+      "The color property is used to change text color.",
+      "The font property is used to change text color.",
+      "The text-style property is used to change text color.",
+      "The background property is used to change text color."
     ],
-    correct: "It is a special value that represents intentional absence of any object value.",
+    correct: "The color property is used to change text color."
   },
   {
     id: 14,
-    question: "What happens when you concatenate a string with a number in JavaScript?",
+    question: "What does display: flex do?",
     options: [
-      "The number is converted to a string and concatenated.",
-      "The operation throws an error.",
-      "The number is ignored in the result.",
-      "The result becomes NaN."
+      "It enables a flexible layout system.",
+      "It hides the element.",
+      "It fixes an element to the screen.",
+      "It centers text automatically."
     ],
-    correct: "The number is converted to a string and concatenated.",
+    correct: "It enables a flexible layout system."
   },
   {
     id: 15,
-    question: "Which of the following is NOT a primitive data type in JavaScript?",
+    question: "What is the CSS box model?",
     options: [
-      "It is an object, which is non-primitive.",
-      "It is a string, which is primitive.",
-      "It is a number, which is primitive.",
-      "It is a boolean, which is primitive."
+      "The box model includes margin, border, padding, and content.",
+      "The box model includes width and height only.",
+      "The box model controls animations.",
+      "The box model manages JavaScript behavior."
     ],
-    correct: "It is an object, which is non-primitive.",
+    correct: "The box model includes margin, border, padding, and content."
   },
   {
     id: 16,
-    question: "What is the result of Boolean('') in JavaScript?",
+    question: "Which unit is relative to the viewport width?",
     options: [
-      "It returns false because an empty string is falsy.",
-      "It returns true because strings are truthy.",
-      "It returns undefined because it is empty.",
-      "It returns null because there is no value."
+      "The vw unit is relative to the viewport width.",
+      "The px unit is relative to the viewport width.",
+      "The em unit is relative to the viewport width.",
+      "The rem unit is relative to the viewport width."
     ],
-    correct: "It returns false because an empty string is falsy.",
+    correct: "The vw unit is relative to the viewport width."
   },
   {
     id: 17,
-    question: "What does Number('123') return in JavaScript?",
+    question: "What does position: absolute do?",
     options: [
-      "It returns 123 as a number data type.",
-      "It returns '123' as a string.",
-      "It returns NaN because it is not a valid number.",
-      "It returns undefined because it is converted incorrectly."
+      "It positions an element relative to its nearest positioned ancestor.",
+      "It positions an element relative to the viewport.",
+      "It fixes an element permanently.",
+      "It aligns text automatically."
     ],
-    correct: "It returns 123 as a number data type.",
+    correct: "It positions an element relative to its nearest positioned ancestor."
   },
   {
     id: 18,
-    question: "What will Boolean(0) return in JavaScript?",
+    question: "What is the purpose of media queries?",
     options: [
-      "It returns false because 0 is a falsy value.",
-      "It returns true because 0 is a number.",
-      "It returns undefined because 0 is empty.",
-      "It returns null because it represents nothing."
+      "Media queries make layouts responsive.",
+      "Media queries connect to databases.",
+      "Media queries improve SEO.",
+      "Media queries load JavaScript files."
     ],
-    correct: "It returns false because 0 is a falsy value.",
+    correct: "Media queries make layouts responsive."
   },
   {
     id: 19,
-    question: "What does String(true) return in JavaScript?",
+    question: "Which property controls element transparency?",
     options: [
-      "It returns 'true' as a string.",
-      "It returns 1 as a number.",
-      "It returns undefined as a string.",
-      "It returns null as a string."
+      "The opacity property controls transparency.",
+      "The visibility property controls transparency.",
+      "The display property controls transparency.",
+      "The filter property controls transparency."
     ],
-    correct: "It returns 'true' as a string.",
+    correct: "The opacity property controls transparency."
   },
   {
     id: 20,
-    question: "What is the difference between null and undefined in JavaScript?",
+    question: "What does z-index control?",
     options: [
-      "Undefined means a variable has been declared but not assigned, while null means a variable is assigned no value intentionally.",
-      "Null and undefined mean the same thing in JavaScript.",
-      "Undefined is a number and null is a string.",
-      "Both represent boolean false values."
+      "z-index controls the vertical stacking order of elements.",
+      "z-index controls font size.",
+      "z-index controls animation speed.",
+      "z-index controls element width."
     ],
-    correct: "Undefined means a variable has been declared but not assigned, while null means a variable is assigned no value intentionally.",
+    correct: "z-index controls the vertical stacking order of elements."
   },
+
+  // JAVASCRIPT QUESTIONS (21–40)
+  {
+    id: 21,
+    question: "What is JavaScript mainly used for?",
+    options: [
+      "JavaScript is used to add interactivity to web pages.",
+      "JavaScript is used only for styling.",
+      "JavaScript is used for database storage.",
+      "JavaScript is used for HTML structure."
+    ],
+    correct: "JavaScript is used to add interactivity to web pages."
+  },
+  {
+    id: 22,
+    question: "What is a variable in JavaScript?",
+    options: [
+      "A variable is a container for storing data values.",
+      "A variable is a function parameter.",
+      "A variable is a loop condition.",
+      "A variable is a style rule."
+    ],
+    correct: "A variable is a container for storing data values."
+  },
+  {
+    id: 23,
+    question: "Which keyword is used to declare a constant?",
+    options: [
+      "The const keyword is used to declare a constant.",
+      "The let keyword is used to declare a constant.",
+      "The var keyword is used to declare a constant.",
+      "The static keyword is used to declare a constant."
+    ],
+    correct: "The const keyword is used to declare a constant."
+  },
+  {
+    id: 24,
+    question: "What does typeof return?",
+    options: [
+      "typeof returns the data type of a value.",
+      "typeof returns the value itself.",
+      "typeof returns a boolean only.",
+      "typeof returns an array."
+    ],
+    correct: "typeof returns the data type of a value."
+  },
+  {
+    id: 25,
+    question: "What is an array?",
+    options: [
+      "An array stores multiple values in a single variable.",
+      "An array stores only strings.",
+      "An array stores key-value pairs.",
+      "An array stores HTML elements only."
+    ],
+    correct: "An array stores multiple values in a single variable."
+  },
+  {
+    id: 26,
+    question: "What is a function?",
+    options: [
+      "A function is a reusable block of code.",
+      "A function is a data type.",
+      "A function is a loop statement.",
+      "A function is a CSS rule."
+    ],
+    correct: "A function is a reusable block of code."
+  },
+  {
+    id: 27,
+    question: "What does addEventListener do?",
+    options: [
+      "It listens for events and runs code when they occur.",
+      "It adds HTML elements dynamically.",
+      "It styles interactive elements.",
+      "It connects JavaScript to a server."
+    ],
+    correct: "It listens for events and runs code when they occur."
+  },
+  {
+    id: 28,
+    question: "What is a promise?",
+    options: [
+      "A promise represents a value that will be available later.",
+      "A promise runs code instantly.",
+      "A promise is a loop structure.",
+      "A promise is a CSS feature."
+    ],
+    correct: "A promise represents a value that will be available later."
+  },
+  {
+    id: 29,
+    question: "What does JSON stand for?",
+    options: [
+      "JSON stands for JavaScript Object Notation.",
+      "JSON stands for Java Source Object Network.",
+      "JSON stands for JavaScript Online Node.",
+      "JSON stands for Java Standard Object Name."
+    ],
+    correct: "JSON stands for JavaScript Object Notation."
+  },
+  {
+    id: 30,
+    question: "What is localStorage used for?",
+    options: [
+      "localStorage is used to store data in the browser.",
+      "localStorage is used to store server data.",
+      "localStorage is used to style components.",
+      "localStorage is used to create APIs."
+    ],
+    correct: "localStorage is used to store data in the browser."
+  },
+
+  // VUE QUESTIONS (31–50)
+  {
+    id: 31,
+    question: "What is Vue.js?",
+    options: [
+      "Vue.js is a JavaScript framework for building user interfaces.",
+      "Vue.js is a database management system.",
+      "Vue.js is a CSS library.",
+      "Vue.js is a backend programming language."
+    ],
+    correct: "Vue.js is a JavaScript framework for building user interfaces."
+  },
+  {
+    id: 32,
+    question: "What is a Vue component?",
+    options: [
+      "A Vue component is a reusable piece of UI.",
+      "A Vue component is a database table.",
+      "A Vue component is a CSS class.",
+      "A Vue component is a server route."
+    ],
+    correct: "A Vue component is a reusable piece of UI."
+  },
+  {
+    id: 33,
+    question: "What does v-bind do?",
+    options: [
+      "v-bind dynamically binds attributes to data.",
+      "v-bind creates loops.",
+      "v-bind handles events.",
+      "v-bind styles elements."
+    ],
+    correct: "v-bind dynamically binds attributes to data."
+  },
+  {
+    id: 34,
+    question: "What does v-model do?",
+    options: [
+      "v-model creates two-way data binding.",
+      "v-model handles routing.",
+      "v-model fetches API data.",
+      "v-model controls animations."
+    ],
+    correct: "v-model creates two-way data binding."
+  },
+  {
+    id: 35,
+    question: "What is computed property used for?",
+    options: [
+      "Computed properties calculate values based on data.",
+      "Computed properties store static values.",
+      "Computed properties handle API requests.",
+      "Computed properties replace methods completely."
+    ],
+    correct: "Computed properties calculate values based on data."
+  },
+  {
+    id: 36,
+    question: "What does v-if do?",
+    options: [
+      "v-if conditionally renders elements.",
+      "v-if styles elements.",
+      "v-if binds input values.",
+      "v-if listens for events."
+    ],
+    correct: "v-if conditionally renders elements."
+  },
+  {
+    id: 37,
+    question: "What does v-for do?",
+    options: [
+      "v-for loops through data and renders elements.",
+      "v-for handles events.",
+      "v-for styles elements.",
+      "v-for binds attributes."
+    ],
+    correct: "v-for loops through data and renders elements."
+  },
+  {
+    id: 38,
+    question: "What is props used for?",
+    options: [
+      "Props pass data from parent to child components.",
+      "Props store local state.",
+      "Props handle API calls.",
+      "Props replace Vuex."
+    ],
+    correct: "Props pass data from parent to child components."
+  },
+  {
+    id: 39,
+    question: "What is Vue Router used for?",
+    options: [
+      "Vue Router handles page navigation in Vue apps.",
+      "Vue Router manages state.",
+      "Vue Router styles components.",
+      "Vue Router connects databases."
+    ],
+    correct: "Vue Router handles page navigation in Vue apps."
+  },
+  {
+    id: 40,
+    question: "What is reactive data in Vue?",
+    options: [
+      "Reactive data automatically updates the UI when it changes.",
+      "Reactive data never changes.",
+      "Reactive data is static HTML.",
+      "Reactive data runs only once."
+    ],
+    correct: "Reactive data automatically updates the UI when it changes."
+  },
+    {
+    id: 41,
+    question: "What is the purpose of the mounted lifecycle hook in Vue?",
+    options: [
+      "The mounted hook runs after the component is added to the DOM.",
+      "The mounted hook runs before data is created.",
+      "The mounted hook styles the component.",
+      "The mounted hook replaces computed properties."
+    ],
+    correct: "The mounted hook runs after the component is added to the DOM."
+  },
+  {
+    id: 42,
+    question: "What is Vuex mainly used for?",
+    options: [
+      "Vuex is used for centralized state management.",
+      "Vuex is used for routing pages.",
+      "Vuex is used for styling components.",
+      "Vuex is used for form validation."
+    ],
+    correct: "Vuex is used for centralized state management."
+  },
+  {
+    id: 43,
+    question: "What does emit do in Vue?",
+    options: [
+      "Emit sends custom events from child to parent components.",
+      "Emit updates the DOM directly.",
+      "Emit fetches API data.",
+      "Emit creates reactive variables."
+    ],
+    correct: "Emit sends custom events from child to parent components."
+  },
+  {
+    id: 44,
+    question: "What is the purpose of scoped styles in Vue?",
+    options: [
+      "Scoped styles apply CSS only to a specific component.",
+      "Scoped styles apply globally to all components.",
+      "Scoped styles improve JavaScript performance.",
+      "Scoped styles control routing behavior."
+    ],
+    correct: "Scoped styles apply CSS only to a specific component."
+  },
+  {
+    id: 45,
+    question: "What does ref do in Vue?",
+    options: [
+      "Ref provides direct access to DOM elements or component instances.",
+      "Ref stores global state.",
+      "Ref replaces props.",
+      "Ref handles API requests."
+    ],
+    correct: "Ref provides direct access to DOM elements or component instances."
+  },
+  {
+    id: 46,
+    question: "What is the purpose of slots in Vue?",
+    options: [
+      "Slots allow components to receive and display custom content.",
+      "Slots manage application routing.",
+      "Slots store component data.",
+      "Slots replace event listeners."
+    ],
+    correct: "Slots allow components to receive and display custom content."
+  },
+  {
+    id: 47,
+    question: "What is the difference between methods and computed properties?",
+    options: [
+      "Computed properties are cached while methods run every time they are called.",
+      "Methods are cached while computed properties are not.",
+      "Methods are reactive while computed properties are not.",
+      "There is no difference between them."
+    ],
+    correct: "Computed properties are cached while methods run every time they are called."
+  },
+  {
+    id: 48,
+    question: "What does watch do in Vue?",
+    options: [
+      "Watch observes data changes and reacts to them.",
+      "Watch styles components dynamically.",
+      "Watch replaces lifecycle hooks.",
+      "Watch handles user authentication."
+    ],
+    correct: "Watch observes data changes and reacts to them."
+  },
+  {
+    id: 49,
+    question: "What is the purpose of key in v-for?",
+    options: [
+      "The key helps Vue efficiently track and update list items.",
+      "The key styles list elements.",
+      "The key binds input values.",
+      "The key prevents loops from running."
+    ],
+    correct: "The key helps Vue efficiently track and update list items."
+  },
+  {
+    id: 50,
+    question: "Why is Vue suitable for frontend development?",
+    options: [
+      "Vue is lightweight, reactive, and easy to integrate into projects.",
+      "Vue replaces HTML and CSS completely.",
+      "Vue works only on backend servers.",
+      "Vue does not support components."
+    ],
+    correct: "Vue is lightweight, reactive, and easy to integrate into projects."
+  }
 ];
+
+
 
 
 let remainingQuestion = [...quizQuestions];
