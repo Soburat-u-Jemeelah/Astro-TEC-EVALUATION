@@ -184,567 +184,428 @@ function startCountDown() {
 // ======================
 // ======================
 
-// JavaScript
 const quizQuestions = [
-  // HTML QUESTIONS (1–15)
   {
     id: 1,
-    question: "What does HTML stand for?",
-    options: [
-      "HTML stands for HyperText Markup Language.",
-      "HTML stands for HighText Machine Language.",
-      "HTML stands for Hyperlink Text Management Language.",
-      "HTML stands for Home Tool Markup Language."
-    ],
-    correct: "HTML stands for HyperText Markup Language."
+    question: "Which HTML tag is used to define important text with strong emphasis?",
+    options: ["<strong>", "<b>", "<em>", "<mark>"],
+    correct: "<strong>",
   },
   {
     id: 2,
-    question: "What is the purpose of the <head> tag in HTML?",
-    options: [
-      "The <head> tag contains metadata about the document.",
-      "The <head> tag displays visible content on the page.",
-      "The <head> tag creates navigation menus.",
-      "The <head> tag holds images and videos."
-    ],
-    correct: "The <head> tag contains metadata about the document."
+    question: "Which HTML attribute specifies a unique identifier for an element?",
+    options: ["id", "class", "name", "key"],
+    correct: "id",
   },
   {
     id: 3,
-    question: "What does the <title> tag do?",
-    options: [
-      "The <title> tag defines the title shown in the browser tab.",
-      "The <title> tag displays large headings on the page.",
-      "The <title> tag creates tooltips.",
-      "The <title> tag styles text content."
-    ],
-    correct: "The <title> tag defines the title shown in the browser tab."
+    question: "Which HTML tag is used to define a section in a document?",
+    options: ["<section>", "<div>", "<area>", "<part>"],
+    correct: "<section>",
   },
   {
     id: 4,
-    question: "Which HTML tag is used to create a hyperlink?",
-    options: [
-      "The <a> tag is used to create hyperlinks.",
-      "The <link> tag is used to create hyperlinks.",
-      "The <href> tag is used to create hyperlinks.",
-      "The <nav> tag is used to create hyperlinks."
-    ],
-    correct: "The <a> tag is used to create hyperlinks."
+    question: "Which HTML tag is used to display preformatted text exactly as written?",
+    options: ["<pre>", "<code>", "<text>", "<format>"],
+    correct: "<pre>",
   },
   {
     id: 5,
-    question: "What is the purpose of the alt attribute in images?",
-    options: [
-      "The alt attribute provides alternative text for an image.",
-      "The alt attribute changes image size.",
-      "The alt attribute applies image animation.",
-      "The alt attribute loads images faster."
-    ],
-    correct: "The alt attribute provides alternative text for an image."
+    question: "Which HTML tag is used to define a caption for a table?",
+    options: ["<caption>", "<title>", "<thead>", "<label>"],
+    correct: "<caption>",
   },
   {
     id: 6,
-    question: "Which tag is used to create an ordered list?",
-    options: [
-      "The <ol> tag is used to create an ordered list.",
-      "The <ul> tag is used to create an ordered list.",
-      "The <li> tag is used to create an ordered list.",
-      "The <list> tag is used to create an ordered list."
-    ],
-    correct: "The <ol> tag is used to create an ordered list."
+    question: "Which CSS property is used to transform text to uppercase letters?",
+    options: ["text-transform", "uppercase", "font-case", "case"],
+    correct: "text-transform",
   },
   {
     id: 7,
-    question: "What does the <meta charset='UTF-8'> tag do?",
-    options: [
-      "It defines the character encoding for the document.",
-      "It sets the page background color.",
-      "It enables responsive layout.",
-      "It loads external scripts."
-    ],
-    correct: "It defines the character encoding for the document."
+    question: "Which CSS property controls whether element content overflows its box?",
+    options: ["overflow", "clip", "scroll", "wrap"],
+    correct: "overflow",
   },
   {
     id: 8,
-    question: "Which tag is used to create a form in HTML?",
-    options: [
-      "The <form> tag is used to create a form.",
-      "The <input> tag is used to create a form.",
-      "The <fieldset> tag is used to create a form.",
-      "The <data> tag is used to create a form."
-    ],
-    correct: "The <form> tag is used to create a form."
+    question: "Which CSS value makes an element display as inline block?",
+    options: ["inline-block", "block", "inline", "flex"],
+    correct: "inline-block",
   },
   {
     id: 9,
-    question: "What is semantic HTML?",
-    options: [
-      "Semantic HTML uses meaningful tags that describe content.",
-      "Semantic HTML uses only div tags.",
-      "Semantic HTML removes all styling.",
-      "Semantic HTML is used only for JavaScript."
-    ],
-    correct: "Semantic HTML uses meaningful tags that describe content."
+    question: "Which CSS property is used to change list item marker style?",
+    options: ["list-style", "marker", "bullet", "list-type"],
+    correct: "list-style",
   },
   {
     id: 10,
-    question: "Which tag represents the main content of a page?",
-    options: [
-      "The <main> tag represents the main content of a page.",
-      "The <section> tag represents the main content.",
-      "The <body> tag represents the main content.",
-      "The <article> tag represents the main content."
-    ],
-    correct: "The <main> tag represents the main content of a page."
+    question: "Which CSS property is used to set maximum width of element?",
+    options: ["max-width", "width", "limit", "max-size"],
+    correct: "max-width",
   },
-
-  // CSS QUESTIONS (11–25)
   {
     id: 11,
-    question: "What does CSS stand for?",
-    options: [
-      "CSS stands for Cascading Style Sheets.",
-      "CSS stands for Computer Style Sheets.",
-      "CSS stands for Colorful Style System.",
-      "CSS stands for Creative Styling Syntax."
-    ],
-    correct: "CSS stands for Cascading Style Sheets."
+    question: "Which Bootstrap class is used to create a fluid container?",
+    options: ["container-fluid", "container", "fluid", "wrapper"],
+    correct: "container-fluid",
   },
   {
     id: 12,
-    question: "What is the purpose of CSS?",
-    options: [
-      "CSS is used to style and layout web pages.",
-      "CSS is used to create database connections.",
-      "CSS is used to structure web content.",
-      "CSS is used to handle server logic."
-    ],
-    correct: "CSS is used to style and layout web pages."
+    question: "Which Bootstrap class adds primary background color utility?",
+    options: ["bg-primary", "primary-bg", "bg-blue", "bg-main"],
+    correct: "bg-primary",
   },
   {
     id: 13,
-    question: "Which property is used to change text color?",
-    options: [
-      "The color property is used to change text color.",
-      "The font property is used to change text color.",
-      "The text-style property is used to change text color.",
-      "The background property is used to change text color."
-    ],
-    correct: "The color property is used to change text color."
+    question: "Which Bootstrap class is used to align items center in flexbox?",
+    options: ["align-items-center", "items-center", "align-center", "flex-center"],
+    correct: "align-items-center",
   },
   {
     id: 14,
-    question: "What does display: flex do?",
-    options: [
-      "It enables a flexible layout system.",
-      "It hides the element.",
-      "It fixes an element to the screen.",
-      "It centers text automatically."
-    ],
-    correct: "It enables a flexible layout system."
+    question: "Which Bootstrap class creates a collapsible navigation menu?",
+    options: ["collapse", "dropdown", "toggle", "expand"],
+    correct: "collapse",
   },
   {
     id: 15,
-    question: "What is the CSS box model?",
-    options: [
-      "The box model includes margin, border, padding, and content.",
-      "The box model includes width and height only.",
-      "The box model controls animations.",
-      "The box model manages JavaScript behavior."
-    ],
-    correct: "The box model includes margin, border, padding, and content."
+    question: "Which Bootstrap class styles a table with borders?",
+    options: ["table-bordered", "border-table", "table-border", "bordered"],
+    correct: "table-bordered",
   },
   {
     id: 16,
-    question: "Which unit is relative to the viewport width?",
-    options: [
-      "The vw unit is relative to the viewport width.",
-      "The px unit is relative to the viewport width.",
-      "The em unit is relative to the viewport width.",
-      "The rem unit is relative to the viewport width."
-    ],
-    correct: "The vw unit is relative to the viewport width."
+    question: "Which JavaScript keyword is used to declare a variable?",
+    options: ["let", "var", "const", "int"],
+    correct: "let",
   },
   {
     id: 17,
-    question: "What does position: absolute do?",
-    options: [
-      "It positions an element relative to its nearest positioned ancestor.",
-      "It positions an element relative to the viewport.",
-      "It fixes an element permanently.",
-      "It aligns text automatically."
-    ],
-    correct: "It positions an element relative to its nearest positioned ancestor."
+    question: "Which JavaScript method is used to select element by ID?",
+    options: ["getElementById", "querySelector", "getById", "selectId"],
+    correct: "getElementById",
   },
   {
     id: 18,
-    question: "What is the purpose of media queries?",
-    options: [
-      "Media queries make layouts responsive.",
-      "Media queries connect to databases.",
-      "Media queries improve SEO.",
-      "Media queries load JavaScript files."
-    ],
-    correct: "Media queries make layouts responsive."
+    question: "Which JavaScript method is used to write output in browser console?",
+    options: ["console.log", "print", "log", "write"],
+    correct: "console.log",
   },
   {
     id: 19,
-    question: "Which property controls element transparency?",
-    options: [
-      "The opacity property controls transparency.",
-      "The visibility property controls transparency.",
-      "The display property controls transparency.",
-      "The filter property controls transparency."
-    ],
-    correct: "The opacity property controls transparency."
+    question: "Which JavaScript operator is used for strict equality comparison?",
+    options: ["===", "==", "=", "!="],
+    correct: "===",
   },
   {
     id: 20,
-    question: "What does z-index control?",
-    options: [
-      "z-index controls the vertical stacking order of elements.",
-      "z-index controls font size.",
-      "z-index controls animation speed.",
-      "z-index controls element width."
-    ],
-    correct: "z-index controls the vertical stacking order of elements."
+    question: "Which JavaScript keyword is used to define a function?",
+    options: ["function", "def", "method", "func"],
+    correct: "function",
   },
-
-  // JAVASCRIPT QUESTIONS (21–40)
   {
     id: 21,
-    question: "What is JavaScript mainly used for?",
-    options: [
-      "JavaScript is used to add interactivity to web pages.",
-      "JavaScript is used only for styling.",
-      "JavaScript is used for database storage.",
-      "JavaScript is used for HTML structure."
-    ],
-    correct: "JavaScript is used to add interactivity to web pages."
+    question: "Which JavaScript method converts JSON string into object?",
+    options: ["JSON.parse", "JSON.stringify", "parse", "convert"],
+    correct: "JSON.parse",
   },
   {
     id: 22,
-    question: "What is a variable in JavaScript?",
-    options: [
-      "A variable is a container for storing data values.",
-      "A variable is a function parameter.",
-      "A variable is a loop condition.",
-      "A variable is a style rule."
-    ],
-    correct: "A variable is a container for storing data values."
+    question: "Which JavaScript loop is used to iterate over array elements?",
+    options: ["for", "while", "loop", "foreach"],
+    correct: "for",
   },
   {
     id: 23,
-    question: "Which keyword is used to declare a constant?",
-    options: [
-      "The const keyword is used to declare a constant.",
-      "The let keyword is used to declare a constant.",
-      "The var keyword is used to declare a constant.",
-      "The static keyword is used to declare a constant."
-    ],
-    correct: "The const keyword is used to declare a constant."
+    question: "Which JavaScript event occurs when user clicks element?",
+    options: ["onclick", "onhover", "onchange", "onload"],
+    correct: "onclick",
   },
   {
     id: 24,
-    question: "What does typeof return?",
-    options: [
-      "typeof returns the data type of a value.",
-      "typeof returns the value itself.",
-      "typeof returns a boolean only.",
-      "typeof returns an array."
-    ],
-    correct: "typeof returns the data type of a value."
+    question: "Which JavaScript method adds element to end of array?",
+    options: ["push", "pop", "shift", "unshift"],
+    correct: "push",
   },
   {
     id: 25,
-    question: "What is an array?",
-    options: [
-      "An array stores multiple values in a single variable.",
-      "An array stores only strings.",
-      "An array stores key-value pairs.",
-      "An array stores HTML elements only."
-    ],
-    correct: "An array stores multiple values in a single variable."
+    question: "Which JavaScript method removes last element from array?",
+    options: ["pop", "push", "shift", "splice"],
+    correct: "pop",
   },
   {
     id: 26,
-    question: "What is a function?",
-    options: [
-      "A function is a reusable block of code.",
-      "A function is a data type.",
-      "A function is a loop statement.",
-      "A function is a CSS rule."
-    ],
-    correct: "A function is a reusable block of code."
+    question: "Which JavaScript keyword is used to create constant variable?",
+    options: ["const", "let", "var", "static"],
+    correct: "const",
   },
   {
     id: 27,
-    question: "What does addEventListener do?",
-    options: [
-      "It listens for events and runs code when they occur.",
-      "It adds HTML elements dynamically.",
-      "It styles interactive elements.",
-      "It connects JavaScript to a server."
-    ],
-    correct: "It listens for events and runs code when they occur."
+    question: "Which JavaScript method delays execution for specific time?",
+    options: ["setTimeout", "setInterval", "delay", "wait"],
+    correct: "setTimeout",
   },
   {
     id: 28,
-    question: "What is a promise?",
-    options: [
-      "A promise represents a value that will be available later.",
-      "A promise runs code instantly.",
-      "A promise is a loop structure.",
-      "A promise is a CSS feature."
-    ],
-    correct: "A promise represents a value that will be available later."
+    question: "Which JavaScript method repeats execution at intervals?",
+    options: ["setInterval", "setTimeout", "repeat", "loop"],
+    correct: "setInterval",
   },
   {
     id: 29,
-    question: "What does JSON stand for?",
-    options: [
-      "JSON stands for JavaScript Object Notation.",
-      "JSON stands for Java Source Object Network.",
-      "JSON stands for JavaScript Online Node.",
-      "JSON stands for Java Standard Object Name."
-    ],
-    correct: "JSON stands for JavaScript Object Notation."
+    question: "Which JavaScript keyword is used for conditional branching?",
+    options: ["if", "switch", "case", "when"],
+    correct: "if",
   },
   {
     id: 30,
-    question: "What is localStorage used for?",
-    options: [
-      "localStorage is used to store data in the browser.",
-      "localStorage is used to store server data.",
-      "localStorage is used to style components.",
-      "localStorage is used to create APIs."
-    ],
-    correct: "localStorage is used to store data in the browser."
+    question: "Which JavaScript statement handles multiple conditions efficiently?",
+    options: ["switch", "if", "case", "else"],
+    correct: "switch",
   },
-
-  // VUE QUESTIONS (31–50)
   {
     id: 31,
-    question: "What is Vue.js?",
-    options: [
-      "Vue.js is a JavaScript framework for building user interfaces.",
-      "Vue.js is a database management system.",
-      "Vue.js is a CSS library.",
-      "Vue.js is a backend programming language."
-    ],
-    correct: "Vue.js is a JavaScript framework for building user interfaces."
+    question: "Which HTML tag is used to define video content in webpage?",
+    options: ["<video>", "<media>", "<movie>", "<clip>"],
+    correct: "<video>",
   },
   {
     id: 32,
-    question: "What is a Vue component?",
-    options: [
-      "A Vue component is a reusable piece of UI.",
-      "A Vue component is a database table.",
-      "A Vue component is a CSS class.",
-      "A Vue component is a server route."
-    ],
-    correct: "A Vue component is a reusable piece of UI."
+    question: "Which HTML tag is used to define audio content in webpage?",
+    options: ["<audio>", "<sound>", "<music>", "<media>"],
+    correct: "<audio>",
   },
   {
     id: 33,
-    question: "What does v-bind do?",
-    options: [
-      "v-bind dynamically binds attributes to data.",
-      "v-bind creates loops.",
-      "v-bind handles events.",
-      "v-bind styles elements."
-    ],
-    correct: "v-bind dynamically binds attributes to data."
+    question: "Which CSS property is used to apply transition effects?",
+    options: ["transition", "transform", "animate", "effect"],
+    correct: "transition",
   },
   {
     id: 34,
-    question: "What does v-model do?",
-    options: [
-      "v-model creates two-way data binding.",
-      "v-model handles routing.",
-      "v-model fetches API data.",
-      "v-model controls animations."
-    ],
-    correct: "v-model creates two-way data binding."
+    question: "Which CSS property is used to rotate an element?",
+    options: ["transform", "rotate", "spin", "transition"],
+    correct: "transform",
   },
   {
     id: 35,
-    question: "What is computed property used for?",
-    options: [
-      "Computed properties calculate values based on data.",
-      "Computed properties store static values.",
-      "Computed properties handle API requests.",
-      "Computed properties replace methods completely."
-    ],
-    correct: "Computed properties calculate values based on data."
+    question: "Which Bootstrap class creates a progress bar component?",
+    options: ["progress", "progress-bar", "bar", "loading"],
+    correct: "progress",
   },
   {
     id: 36,
-    question: "What does v-if do?",
-    options: [
-      "v-if conditionally renders elements.",
-      "v-if styles elements.",
-      "v-if binds input values.",
-      "v-if listens for events."
-    ],
-    correct: "v-if conditionally renders elements."
+    question: "Which Bootstrap class styles a list group component?",
+    options: ["list-group", "group-list", "list-style", "group"],
+    correct: "list-group",
   },
   {
     id: 37,
-    question: "What does v-for do?",
-    options: [
-      "v-for loops through data and renders elements.",
-      "v-for handles events.",
-      "v-for styles elements.",
-      "v-for binds attributes."
-    ],
-    correct: "v-for loops through data and renders elements."
+    question: "Which JavaScript method selects first matching CSS selector?",
+    options: ["querySelector", "getElementById", "getElements", "selectOne"],
+    correct: "querySelector",
   },
   {
     id: 38,
-    question: "What is props used for?",
-    options: [
-      "Props pass data from parent to child components.",
-      "Props store local state.",
-      "Props handle API calls.",
-      "Props replace Vuex."
-    ],
-    correct: "Props pass data from parent to child components."
+    question: "Which JavaScript property returns length of an array?",
+    options: ["length", "size", "count", "index"],
+    correct: "length",
   },
   {
     id: 39,
-    question: "What is Vue Router used for?",
-    options: [
-      "Vue Router handles page navigation in Vue apps.",
-      "Vue Router manages state.",
-      "Vue Router styles components.",
-      "Vue Router connects databases."
-    ],
-    correct: "Vue Router handles page navigation in Vue apps."
+    question: "Which JavaScript keyword is used to exit a loop?",
+    options: ["break", "stop", "exit", "return"],
+    correct: "break",
   },
   {
     id: 40,
-    question: "What is reactive data in Vue?",
-    options: [
-      "Reactive data automatically updates the UI when it changes.",
-      "Reactive data never changes.",
-      "Reactive data is static HTML.",
-      "Reactive data runs only once."
-    ],
-    correct: "Reactive data automatically updates the UI when it changes."
+    question: "Which JavaScript keyword skips current loop iteration?",
+    options: ["continue", "break", "skip", "next"],
+    correct: "continue",
   },
-    {
+  {
     id: 41,
-    question: "What is the purpose of the mounted lifecycle hook in Vue?",
-    options: [
-      "The mounted hook runs after the component is added to the DOM.",
-      "The mounted hook runs before data is created.",
-      "The mounted hook styles the component.",
-      "The mounted hook replaces computed properties."
-    ],
-    correct: "The mounted hook runs after the component is added to the DOM."
+    question: "Which HTML tag defines a form input field for password?",
+    options: ["password", "text", "email", "number"],
+    correct: "password",
   },
   {
     id: 42,
-    question: "What is Vuex mainly used for?",
-    options: [
-      "Vuex is used for centralized state management.",
-      "Vuex is used for routing pages.",
-      "Vuex is used for styling components.",
-      "Vuex is used for form validation."
-    ],
-    correct: "Vuex is used for centralized state management."
+    question: "Which CSS unit is relative to root element font size?",
+    options: ["rem", "em", "px", "%"],
+    correct: "rem",
   },
   {
     id: 43,
-    question: "What does emit do in Vue?",
-    options: [
-      "Emit sends custom events from child to parent components.",
-      "Emit updates the DOM directly.",
-      "Emit fetches API data.",
-      "Emit creates reactive variables."
-    ],
-    correct: "Emit sends custom events from child to parent components."
+    question: "Which CSS property controls element transparency level?",
+    options: ["opacity", "visibility", "alpha", "display"],
+    correct: "opacity",
   },
   {
     id: 44,
-    question: "What is the purpose of scoped styles in Vue?",
-    options: [
-      "Scoped styles apply CSS only to a specific component.",
-      "Scoped styles apply globally to all components.",
-      "Scoped styles improve JavaScript performance.",
-      "Scoped styles control routing behavior."
-    ],
-    correct: "Scoped styles apply CSS only to a specific component."
+    question: "Which Bootstrap class makes element display flex?",
+    options: ["d-flex", "flex", "display-flex", "flexbox"],
+    correct: "d-flex",
   },
   {
     id: 45,
-    question: "What does ref do in Vue?",
-    options: [
-      "Ref provides direct access to DOM elements or component instances.",
-      "Ref stores global state.",
-      "Ref replaces props.",
-      "Ref handles API requests."
-    ],
-    correct: "Ref provides direct access to DOM elements or component instances."
+    question: "Which JavaScript method converts object into JSON string?",
+    options: ["JSON.stringify", "JSON.parse", "stringify", "convert"],
+    correct: "JSON.stringify",
   },
   {
     id: 46,
-    question: "What is the purpose of slots in Vue?",
-    options: [
-      "Slots allow components to receive and display custom content.",
-      "Slots manage application routing.",
-      "Slots store component data.",
-      "Slots replace event listeners."
-    ],
-    correct: "Slots allow components to receive and display custom content."
+    question: "Which JavaScript function displays alert dialog box?",
+    options: ["alert", "prompt", "confirm", "message"],
+    correct: "alert",
   },
   {
     id: 47,
-    question: "What is the difference between methods and computed properties?",
-    options: [
-      "Computed properties are cached while methods run every time they are called.",
-      "Methods are cached while computed properties are not.",
-      "Methods are reactive while computed properties are not.",
-      "There is no difference between them."
-    ],
-    correct: "Computed properties are cached while methods run every time they are called."
+    question: "Which JavaScript function asks user for input?",
+    options: ["prompt", "alert", "confirm", "input"],
+    correct: "prompt",
   },
   {
     id: 48,
-    question: "What does watch do in Vue?",
-    options: [
-      "Watch observes data changes and reacts to them.",
-      "Watch styles components dynamically.",
-      "Watch replaces lifecycle hooks.",
-      "Watch handles user authentication."
-    ],
-    correct: "Watch observes data changes and reacts to them."
+    question: "Which JavaScript function confirms user decision with OK or Cancel?",
+    options: ["confirm", "alert", "prompt", "verify"],
+    correct: "confirm",
   },
   {
     id: 49,
-    question: "What is the purpose of key in v-for?",
-    options: [
-      "The key helps Vue efficiently track and update list items.",
-      "The key styles list elements.",
-      "The key binds input values.",
-      "The key prevents loops from running."
-    ],
-    correct: "The key helps Vue efficiently track and update list items."
+    question: "Which CSS property is used to change mouse pointer to hand?",
+    options: ["cursor", "pointer", "hover", "icon"],
+    correct: "cursor",
   },
   {
     id: 50,
-    question: "Why is Vue suitable for frontend development?",
-    options: [
-      "Vue is lightweight, reactive, and easy to integrate into projects.",
-      "Vue replaces HTML and CSS completely.",
-      "Vue works only on backend servers.",
-      "Vue does not support components."
-    ],
-    correct: "Vue is lightweight, reactive, and easy to integrate into projects."
+    question: "Which Bootstrap class creates rounded corners utility?",
+    options: ["rounded", "radius", "round", "border-radius"],
+    correct: "rounded",
+  },
+  {
+    id: 51,
+    question: "Which HTML tag defines a label for form input element?",
+    options: ["<label>", "<input>", "<form>", "<tag>"],
+    correct: "<label>",
+  },
+  {
+    id: 52,
+    question: "Which JavaScript method removes element from DOM?",
+    options: ["remove", "delete", "detach", "pop"],
+    correct: "remove",
+  },
+  {
+    id: 53,
+    question: "Which CSS property applies grid layout to container?",
+    options: ["grid", "flex", "block", "inline"],
+    correct: "grid",
+  },
+  {
+    id: 54,
+    question: "Which Bootstrap class centers block element horizontally?",
+    options: ["mx-auto", "m-auto", "center", "auto"],
+    correct: "mx-auto",
+  },
+  {
+    id: 55,
+    question: "Which JavaScript data type represents true or false values?",
+    options: ["boolean", "string", "number", "object"],
+    correct: "boolean",
+  },
+  {
+    id: 56,
+    question: "Which JavaScript operator concatenates two strings?",
+    options: ["+", "&&", "||", "*"],
+    correct: "+",
+  },
+  {
+    id: 57,
+    question: "Which CSS property sets element border thickness?",
+    options: ["border-width", "border", "outline", "thickness"],
+    correct: "border-width",
+  },
+  {
+    id: 58,
+    question: "Which Bootstrap class creates breadcrumb navigation?",
+    options: ["breadcrumb", "nav", "pagination", "path"],
+    correct: "breadcrumb",
+  },
+  {
+    id: 59,
+    question: "Which JavaScript method finds element in array?",
+    options: ["find", "filter", "map", "search"],
+    correct: "find",
+  },
+  {
+    id: 60,
+    question: "Which CSS property sets element minimum height?",
+    options: ["min-height", "height", "min-width", "size"],
+    correct: "min-height",
+  },
+  {
+    id: 61,
+    question: "Which HTML tag is used to create canvas for drawing graphics?",
+    options: ["<canvas>", "<svg>", "<draw>", "<graphic>"],
+    correct: "<canvas>",
+  },
+  {
+    id: 62,
+    question: "Which JavaScript method attaches event listener to element?",
+    options: ["addEventListener", "onclick", "listen", "attach"],
+    correct: "addEventListener",
+  },
+  {
+    id: 63,
+    question: "Which Bootstrap class creates pagination component?",
+    options: ["pagination", "pages", "pager", "nav-pages"],
+    correct: "pagination",
+  },
+  {
+    id: 64,
+    question: "Which CSS property sets font family of text?",
+    options: ["font-family", "font-style", "font-type", "family"],
+    correct: "font-family",
+  },
+  {
+    id: 65,
+    question: "Which JavaScript array method creates new array from existing?",
+    options: ["map", "filter", "reduce", "slice"],
+    correct: "map",
+  },
+  {
+    id: 66,
+    question: "Which HTML tag defines metadata about HTML document?",
+    options: ["<meta>", "<head>", "<data>", "<info>"],
+    correct: "<meta>",
+  },
+  {
+    id: 67,
+    question: "Which CSS property changes element display to none?",
+    options: ["display", "visibility", "hidden", "remove"],
+    correct: "display",
+  },
+  {
+    id: 68,
+    question: "Which Bootstrap class adds shadow utility to element?",
+    options: ["shadow", "box-shadow", "shadow-sm", "shadow-lg"],
+    correct: "shadow",
+  },
+  {
+    id: 69,
+    question: "Which JavaScript method sorts elements of an array?",
+    options: ["sort", "order", "arrange", "filter"],
+    correct: "sort",
+  },
+  {
+    id: 70,
+    question: "Which CSS property changes element background image?",
+    options: ["background-image", "bg-image", "image", "background"],
+    correct: "background-image",
   }
 ];
-
 
 
 
