@@ -826,135 +826,348 @@ function startCountDown() {
 // ];
 
 const quizQuestions = [
-  // Variables
+  // =========================
+  // VARIABLES
+  // =========================
   {
     id: 1,
-    question: "Which keyword is used to declare a block-scoped variable in JavaScript?",
+    question: "Which keyword declares a block-scoped variable that can be reassigned?",
     options: ["var", "let", "const", "define"],
     correct: "let",
   },
   {
     id: 2,
-    question: "Which keyword is used to declare a constant that cannot be reassigned?",
+    question: "Which keyword declares a block-scoped variable that cannot be reassigned?",
     options: ["let", "const", "var", "static"],
     correct: "const",
   },
   {
     id: 3,
-    question: "Which keyword was used to declare variables before ES6?",
-    options: ["const", "let", "var", "new"],
+    question: "Which keyword was commonly used to declare variables before ES6?",
+    options: ["var", "let", "const", "value"],
     correct: "var",
   },
   {
     id: 4,
-    question: "Which of the following is a valid JavaScript variable name?",
-    options: ["2name", "user-name", "userName", "let"],
-    correct: "userName",
+    question: "Which variable declaration allows its value to be reassigned?",
+    options: ["const", "let", "fixed", "constant"],
+    correct: "let",
   },
-
-  // Data Types
   {
     id: 5,
-    question: "Which of the following is NOT a JavaScript primitive data type?",
-    options: ["String", "Object", "Boolean", "Number"],
-    correct: "Object",
-  },
-  {
-    id: 6,
-    question: "Which primitive data type is used to represent text?",
-    options: ["Boolean", "Number", "String", "Null"],
-    correct: "String",
-  },
-  {
-    id: 7,
-    question: "Which primitive data type represents true or false values?",
-    options: ["Boolean", "Number", "String", "Undefined"],
-    correct: "Boolean",
-  },
-  {
-    id: 8,
-    question: "What is the data type of the value 25?",
-    options: ["String", "Boolean", "Number", "Object"],
-    correct: "Number",
-  },
-  {
-    id: 9,
-    question: "What is the value of a variable that has been declared but not assigned?",
-    options: ["null", "0", "undefined", "false"],
+    question: "What is the value of an uninitialized JavaScript variable?",
+    options: ["null", "undefined", "false", "0"],
     correct: "undefined",
   },
   {
-    id: 10,
-    question: "Which primitive value represents the intentional absence of any value?",
-    options: ["undefined", "false", "null", "0"],
-    correct: "null",
+    id: 6,
+    question: "Which is a valid JavaScript variable name?",
+    options: ["2student", "student-name", "studentName", "student name"],
+    correct: "studentName",
   },
   {
+    id: 7,
+    question: "Which symbol is used to assign a value to a variable?",
+    options: ["==", "=", "===", "=>"],
+    correct: "=",
+  },
+  {
+    id: 8,
+    question: "What will `let score = 10; score = 20;` store in score?",
+    options: ["10", "20", "undefined", "An error"],
+    correct: "20",
+  },
+  {
+    id: 9,
+    question: "What happens when you reassign a variable declared with const?",
+    options: [
+      "The value changes",
+      "The variable is deleted",
+      "A TypeError occurs",
+      "It becomes undefined",
+    ],
+    correct: "A TypeError occurs",
+  },
+  {
+    id: 10,
+    question: "Which naming style is commonly used for JavaScript variables?",
+    options: ["camelCase", "kebab-case", "Title Case", "UPPER CASE WITH SPACES"],
+    correct: "camelCase",
+  },
+
+  // =========================
+  // PRIMITIVE DATA TYPES
+  // =========================
+  {
     id: 11,
-    question: "Which primitive data type is used to represent very large integers?",
-    options: ["Number", "BigInt", "Boolean", "Symbol"],
-    correct: "BigInt",
+    question: "Which of these is a JavaScript primitive data type?",
+    options: ["Array", "Object", "String", "Function"],
+    correct: "String",
   },
   {
     id: 12,
-    question: "Which primitive data type is commonly used to create unique identifiers?",
-    options: ["String", "BigInt", "Symbol", "Object"],
-    correct: "Symbol",
+    question: "Which primitive data type represents text?",
+    options: ["Number", "String", "Boolean", "BigInt"],
+    correct: "String",
   },
-
-  // Scope
   {
     id: 13,
-    question: "A variable declared outside any function or block has what type of scope?",
-    options: ["Block Scope", "Function Scope", "Global Scope", "Local Scope"],
-    correct: "Global Scope",
+    question: "Which primitive data type represents numeric values?",
+    options: ["String", "Number", "Boolean", "Symbol"],
+    correct: "Number",
   },
   {
     id: 14,
-    question: "Which keyword creates a block-scoped variable?",
-    options: ["var", "let", "const", "Both let and const"],
-    correct: "Both let and const",
+    question: "What is the data type of `25` in JavaScript?",
+    options: ["String", "Number", "Boolean", "BigInt"],
+    correct: "Number",
   },
   {
     id: 15,
-    question: "Variables declared with 'var' inside a function are available where?",
-    options: ["Only inside the block", "Throughout the function", "Globally", "Nowhere"],
-    correct: "Throughout the function",
+    question: "What is the data type of `'25'` in JavaScript?",
+    options: ["String", "Number", "Boolean", "Undefined"],
+    correct: "String",
   },
   {
     id: 16,
-    question: "What type of scope does a variable declared inside a function have?",
-    options: ["Global Scope", "Function Scope", "Block Scope", "Module Scope"],
-    correct: "Function Scope",
+    question: "What does the null value represent?",
+    options: [
+      "An intentional absence of a value",
+      "A syntax error",
+      "The number zero",
+      "An empty function",
+    ],
+    correct: "An intentional absence of a value",
   },
   {
     id: 17,
-    question: "A variable declared inside an if statement using 'let' can be accessed where?",
-    options: ["Anywhere in the program", "Only inside that block", "Inside every function", "Globally"],
-    correct: "Only inside that block",
-  },
-  {
-    id: 18,
-    question: "Which keyword ignores block scope?",
-    options: ["let", "const", "var", "class"],
-    correct: "var",
-  },
-
-  // Mixed Questions
-  {
-    id: 19,
-    question: "Which of the following is a primitive data type?",
-    options: ["Array", "Object", "Boolean", "Function"],
+    question: "Which data type has only true and false values?",
+    options: ["String", "Number", "Boolean", "Undefined"],
     correct: "Boolean",
   },
   {
+    id: 18,
+    question: "Which operator checks the data type of a value?",
+    options: ["type", "typeof", "datatype", "checkType"],
+    correct: "typeof",
+  },
+  {
+    id: 19,
+    question: "What is the result of `typeof 'Hello'`?",
+    options: ["text", "String", "string", "character"],
+    correct: "string",
+  },
+  {
     id: 20,
-    question: "Which variable declaration keyword can be reassigned but is block-scoped?",
-    options: ["const", "var", "let", "static"],
-    correct: "let",
+    question: "What is the result of `typeof 100`?",
+    options: ["integer", "number", "Number", "float"],
+    correct: "number",
+  },
+  {
+    id: 21,
+    question: "What is the result of `typeof true`?",
+    options: ["true", "Boolean", "boolean", "logical"],
+    correct: "boolean",
+  },
+  {
+    id: 22,
+    question: "Which value is produced when a variable has no assigned value?",
+    options: ["null", "undefined", "false", "NaN"],
+    correct: "undefined",
+  },
+  {
+    id: 23,
+    question: "Which primitive type is used for very large integers?",
+    options: ["LargeNumber", "BigInt", "Decimal", "Integer"],
+    correct: "BigInt",
+  },
+  {
+    id: 24,
+    question: "Which value is a BigInt literal?",
+    options: ["100", `"100"`, "100n", "big(100)"],
+    correct: "100n",
+  },
+  {
+    id: 25,
+    question: "Which primitive data type creates unique identifiers?",
+    options: ["Symbol", "String", "Object", "Array"],
+    correct: "Symbol",
+  },
+  {
+    id: 26,
+    question: "Which of these is NOT a primitive data type?",
+    options: ["String", "Boolean", "Number", "Array"],
+    correct: "Array",
+  },
+  {
+    id: 27,
+    question: "What is the result of `typeof undefined`?",
+    options: ["null", "undefined", "object", "empty"],
+    correct: "undefined",
+  },
+  {
+    id: 28,
+    question: "Which value represents an invalid numeric result?",
+    options: ["undefined", "NaN", "null", "false"],
+    correct: "NaN",
+  },
+  {
+    id: 29,
+    question: "Which function checks whether a value is NaN?",
+    options: ["Number.isNaN()", "Number.check()", "isNumber()", "checkNaN()"],
+    correct: "Number.isNaN()",
+  },
+  {
+    id: 30,
+    question: "What is the data type of `3.14` in JavaScript?",
+    options: ["Float", "Decimal", "Number", "Double"],
+    correct: "Number",
+  },
+
+  // =========================
+  // BOOLEAN VALUES
+  // =========================
+  {
+    id: 31,
+    question: "Which of these is a Boolean value?",
+    options: [`"true"`, "1", "true", `"false"`],
+    correct: "true",
+  },
+  {
+    id: 32,
+    question: "What does the logical NOT operator look like?",
+    options: ["!!", "!", "not", "!="],
+    correct: "!",
+  },
+  {
+    id: 33,
+    question: "What is the result of `!true`?",
+    options: ["true", "false", "undefined", "null"],
+    correct: "false",
+  },
+  {
+    id: 34,
+    question: "What is the result of `!false`?",
+    options: ["true", "false", "0", "undefined"],
+    correct: "true",
+  },
+  {
+    id: 35,
+    question: "Which operator means logical AND?",
+    options: ["||", "&&", "!", "&"],
+    correct: "&&",
+  },
+  {
+    id: 36,
+    question: "Which operator means logical OR?",
+    options: ["&&", "||", "!", "??"],
+    correct: "||",
+  },
+  {
+    id: 37,
+    question: "What is the result of `true && false`?",
+    options: ["true", "false", "undefined", "null"],
+    correct: "false",
+  },
+  {
+    id: 38,
+    question: "What is the result of `true || false`?",
+    options: ["true", "false", "undefined", "0"],
+    correct: "true",
+  },
+  {
+    id: 39,
+    question: "Which value is falsy in JavaScript?",
+    options: [`"Hello"`, "1", "0", "[]"],
+    correct: "0",
+  },
+  {
+    id: 40,
+    question: "Which value is truthy in JavaScript?",
+    options: ["false", "0", `""`, `"JavaScript"`],
+    correct: `"JavaScript"`,
+  },
+  {
+    id: 41,
+    question: "What is the result of `5 > 3`?",
+    options: ["true", "false", "5", "3"],
+    correct: "true",
+  },
+  {
+    id: 42,
+    question: "What is the result of `10 < 5`?",
+    options: ["true", "false", "10", "undefined"],
+    correct: "false",
+  },
+
+  // =========================
+  // SCOPE
+  // =========================
+  {
+    id: 43,
+    question: "What is the area where a variable can be accessed called?",
+    options: ["Range", "Scope", "Environment", "Block name"],
+    correct: "Scope",
+  },
+  {
+    id: 44,
+    question: "A variable declared outside every function has which scope?",
+    options: ["Local scope", "Block scope", "Global scope", "Function scope"],
+    correct: "Global scope",
+  },
+  {
+    id: 45,
+    question: "A variable declared inside a function normally has which scope?",
+    options: ["Global scope", "Function scope", "Browser scope", "Public scope"],
+    correct: "Function scope",
+  },
+  {
+    id: 46,
+    question: "Which keywords are block-scoped?",
+    options: ["var only", "let and const", "var and let", "function and var"],
+    correct: "let and const",
+  },
+  {
+    id: 47,
+    question: "Which keyword is function-scoped instead of block-scoped?",
+    options: ["let", "const", "var", "static"],
+    correct: "var",
+  },
+  {
+    id: 48,
+    question: "Can a global variable normally be accessed inside a function?",
+    options: [
+      "Yes",
+      "No",
+      "Only inside a loop",
+      "Only when declared with const",
+    ],
+    correct: "Yes",
+  },
+  {
+    id: 49,
+    question: "Can a local variable normally be accessed outside its function?",
+    options: [
+      "Yes",
+      "No",
+      "Only when it contains a number",
+      "Only when declared with let",
+    ],
+    correct: "No",
+  },
+  {
+    id: 50,
+    question: "What is variable shadowing?",
+    options: [
+      "Deleting a variable",
+      "Changing a variable into a Boolean",
+      "Declaring an inner variable with the same name as an outer variable",
+      "Hiding JavaScript code from the browser",
+    ],
+    correct:
+      "Declaring an inner variable with the same name as an outer variable",
   },
 ];
-
 
 
 let remainingQuestion = [...quizQuestions];
