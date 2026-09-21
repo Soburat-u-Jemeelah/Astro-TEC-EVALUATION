@@ -1,411 +1,440 @@
 const quizQuestions = [
   // =========================
-  // VARIABLES
+  // 00 BEFORE WE BEGIN
+  // How It Works / Browser / Editor / Extensions
   // =========================
   {
     id: 1,
-    question: "Which keyword declares a block-scoped variable that can be reassigned?",
-    options: ["var", "let", "const", "define"],
-    correct: "let",
+    question: "What does a web browser mainly do with an HTML file?",
+    options: [
+      "Compiles it into a mobile app",
+      "Reads and displays it as a web page",
+      "Converts it into a database",
+      "Uploads it to email automatically",
+    ],
+    correct: "Reads and displays it as a web page",
   },
   {
     id: 2,
-    question: "Which keyword declares a block-scoped variable that cannot be reassigned?",
-    options: ["let", "const", "var", "static"],
-    correct: "const",
+    question: "Which of these is a web browser?",
+    options: ["VS Code", "Chrome", "GitHub", "Node.js"],
+    correct: "Chrome",
   },
   {
     id: 3,
-    question: "Which keyword was commonly used to declare variables before ES6?",
-    options: ["var", "let", "const", "value"],
-    correct: "var",
+    question: "What is a code editor used for?",
+    options: [
+      "Only browsing websites",
+      "Writing and editing code files",
+      "Hosting websites online",
+      "Designing logos only",
+    ],
+    correct: "Writing and editing code files",
   },
   {
     id: 4,
-    question: "What is the value of an uninitialized JavaScript variable?",
-    options: ["null", "undefined", "false", "0"],
-    correct: "undefined",
+    question: "Which of these is a popular code editor for web development?",
+    options: ["Google Docs", "Visual Studio Code", "Photoshop", "Excel"],
+    correct: "Visual Studio Code",
   },
   {
     id: 5,
-    question: "Which is a valid JavaScript variable name?",
-    options: ["2student", "student-name", "studentName", "student name"],
-    correct: "studentName",
+    question: "What are editor extensions mainly used for?",
+    options: [
+      "Deleting your project files",
+      "Adding extra features to the editor",
+      "Replacing the browser",
+      "Changing HTML into CSS automatically",
+    ],
+    correct: "Adding extra features to the editor",
   },
 
   // =========================
-  // VARIABLE SCOPE
+  // 01 COURSE INTRODUCTION
   // =========================
   {
     id: 6,
-    question: "What is the area where a variable can be accessed called?",
-    options: ["Range", "Scope", "Environment", "Block name"],
-    correct: "Scope",
+    question: "HTML stands for:",
+    options: [
+      "Hyper Text Markup Language",
+      "HighText Machine Language",
+      "HyperTool Multi Language",
+      "Home Tool Markup Language",
+    ],
+    correct: "HyperText Markup Language",
   },
   {
     id: 7,
-    question: "A variable declared outside every function has which scope?",
-    options: ["Local scope", "Block scope", "Global scope", "Function scope"],
-    correct: "Global scope",
+    question: "HTML is mainly used to:",
+    options: [
+      "Style colors and fonts only",
+      "Structure the content of a web page",
+      "Store passwords securely",
+      "Replace JavaScript completely",
+    ],
+    correct: "Structure the content of a web page",
   },
   {
     id: 8,
-    question: "A variable declared inside a function normally has which scope?",
-    options: ["Global scope", "Function scope", "Browser scope", "Public scope"],
-    correct: "Function scope",
+    question: "In front-end development, HTML is best described as:",
+    options: [
+      "The structure of a page",
+      "The styling of a page",
+      "The database of a page",
+      "The server of a page",
+    ],
+    correct: "The structure of a page",
   },
   {
     id: 9,
-    question: "Which keywords are block-scoped?",
-    options: ["var only", "let and const", "var and let", "function and var"],
-    correct: "let and const",
+    question: "Which file extension is commonly used for HTML files?",
+    options: [".css", ".js", ".html", ".json"],
+    correct: ".html",
   },
+
+  // =========================
+  // 02 HTML PAGE STRUCTURE
+  // =========================
   {
     id: 10,
-    question: "Which keyword is function-scoped instead of block-scoped?",
-    options: ["let", "const", "var", "static"],
-    correct: "var",
+    question: "Which declaration tells the browser the document is HTML5?",
+    options: ["<html5>", "<!DOCTYPE html>", "<doctype>", "<meta html>"],
+    correct: "<!DOCTYPE html>",
   },
   {
     id: 11,
-    question: "Can a global variable normally be accessed inside a function?",
-    options: ["Yes", "No", "Only inside a loop", "Only when declared with const"],
-    correct: "Yes",
+    question: "Which element is the root element of an HTML page?",
+    options: ["<body>", "<head>", "<html>", "<main>"],
+    correct: "<html>",
   },
   {
     id: 12,
-    question: "Can a local (function-scoped) variable normally be accessed outside its function?",
-    options: ["Yes", "No", "Only when it contains a number", "Only when declared with let"],
-    correct: "No",
+    question: "Where do you usually put the page title and meta information?",
+    options: ["<body>", "<head>", "<footer>", "<section>"],
+    correct: "<head>",
   },
   {
     id: 13,
-    question: "A variable declared with let inside an if { } block has which scope?",
-    options: ["Global scope", "Function scope", "Block scope", "Module scope only"],
-    correct: "Block scope",
+    question: "Where does the visible content of a webpage go?",
+    options: ["<head>", "<meta>", "<body>", "<title>"],
+    correct: "<body>",
   },
-
-  // =========================
-  // PRIMITIVE DATA TYPES
-  // =========================
   {
     id: 14,
-    question: "Which of these is a JavaScript primitive data type?",
-    options: ["Array", "Object", "String", "Function"],
-    correct: "String",
+    question: "Which element sets the text shown on the browser tab?",
+    options: ["<header>", "<title>", "<h1>", "<caption>"],
+    correct: "<title>",
   },
   {
     id: 15,
-    question: "Which primitive data type represents text?",
-    options: ["Number", "String", "Boolean", "BigInt"],
-    correct: "String",
+    question: "What is the correct basic order of a simple HTML page?",
+    options: [
+      "<html> → <body> → <head>",
+      "<!DOCTYPE html> → <html> → <head> → <body>",
+      "<body> → <!DOCTYPE html> → <html>",
+      "<head> → <!DOCTYPE html> → <body>",
+    ],
+    correct: "<!DOCTYPE html> → <html> → <head> → <body>",
   },
+
+  // =========================
+  // 03 ELEMENTS, TAGS & ATTRIBUTES
+  // =========================
   {
     id: 16,
-    question: "What is the data type of `25` in JavaScript?",
-    options: ["String", "Number", "Boolean", "BigInt"],
-    correct: "Number",
+    question: "In HTML, a tag is usually written with:",
+    options: ["Parentheses ()", "Angle brackets <>", "Curly braces {}", "Square brackets []"],
+    correct: "Angle brackets <>",
   },
   {
     id: 17,
-    question: "What is the data type of `'25'` in JavaScript?",
-    options: ["String", "Number", "Boolean", "Undefined"],
-    correct: "String",
+    question: "What is an HTML element?",
+    options: [
+      "Only the opening tag",
+      "A tag plus its content (and usually a closing tag)",
+      "Only a CSS class",
+      "Only an image file",
+    ],
+    correct: "A tag plus its content (and usually a closing tag)",
   },
   {
     id: 18,
-    question: "Which data type has only true and false values?",
-    options: ["String", "Number", "Boolean", "Undefined"],
-    correct: "Boolean",
+    question: "Which is an example of an HTML attribute?",
+    options: ["href", "paragraph", "browser", "stylesheet"],
+    correct: "href",
   },
   {
     id: 19,
-    question: "What is the result of `typeof 'Hello'`?",
-    options: ["text", "String", "string", "character"],
-    correct: "string",
+    question: "Attributes are usually written in:",
+    options: [
+      "The closing tag only",
+      "The opening tag",
+      "A separate .attr file",
+      "The browser address bar",
+    ],
+    correct: "The opening tag",
   },
   {
     id: 20,
-    question: "Which of these is NOT a primitive data type?",
-    options: ["String", "Boolean", "Number", "Array"],
-    correct: "Array",
+    question: "Which attribute uniquely identifies an element?",
+    options: ["class", "id", "src", "alt"],
+    correct: "id",
   },
-
-  // =========================
-  // FOR LOOP
-  // =========================
   {
     id: 21,
-    question: "Which part of a for loop runs before the first iteration?",
-    options: ["Condition", "Initialization", "Increment", "Body"],
-    correct: "Initialization",
+    question: "Which attribute can be shared by multiple elements for styling or scripting?",
+    options: ["id", "class", "charset", "lang"],
+    correct: "class",
   },
   {
     id: 22,
-    question: "In `for (let i = 0; i < 5; i++)`, how many times does the loop body run?",
-    options: ["4", "5", "6", "0"],
-    correct: "5",
+    question: "Which of these is a self-closing / void element?",
+    options: ["<p>", "<div>", "<img>", "<h1>"],
+    correct: "<img>",
   },
+
+  // =========================
+  // 04 META TAGS
+  // =========================
   {
     id: 23,
-    question: "Which is the correct structure of a for loop?",
-    options: [
-      "for (condition; init; increment)",
-      "for (initialization; condition; increment)",
-      "for (increment; condition; initialization)",
-      "for (condition; increment)",
-    ],
-    correct: "for (initialization; condition; increment)",
+    question: "Where should <meta> tags usually be placed?",
+    options: ["Inside <body>", "Inside <head>", "After </html>", "Inside <footer>"],
+    correct: "Inside <head>",
   },
   {
     id: 24,
-    question: "What does the increment expression in a for loop typically do?",
-    options: [
-      "Ends the program",
-      "Updates the loop counter",
-      "Declares a new function",
-      "Skips the next question",
-    ],
-    correct: "Updates the loop counter",
+    question: "Which meta attribute is commonly used with charset?",
+    options: ["name", "content", "charset", "http-src"],
+    correct: "charset",
   },
   {
     id: 25,
-    question: "What happens when a for loop's condition becomes false?",
+    question: "What does `<meta charset=\"UTF-8\">` help with?",
     options: [
-      "The loop continues forever",
-      "The loop stops",
-      "JavaScript throws an error",
-      "The counter resets to 0 automatically",
+      "Choosing the page font size",
+      "Defining the character encoding",
+      "Linking an external stylesheet",
+      "Creating a navigation menu",
     ],
-    correct: "The loop stops",
+    correct: "Defining the character encoding",
   },
-
-  // =========================
-  // forEach()
-  // =========================
   {
     id: 26,
-    question: "What does array.forEach() do?",
+    question: "Which meta tag helps control how a page scales on mobile devices?",
     options: [
-      "Runs a callback once for each array element",
-      "Removes the last element",
-      "Creates a new filtered array only",
-      "Converts the array to a string",
+      '<meta name="viewport" content="width=device-width, initial-scale=1.0">',
+      '<meta name="mobile" content="true">',
+      "<meta scale=\"phone\">",
+      '<meta name="responsive">',
     ],
-    correct: "Runs a callback once for each array element",
+    correct:
+      '<meta name="viewport" content="width=device-width, initial-scale=1.0">',
   },
   {
     id: 27,
-    question: "What is the first parameter of the forEach callback usually?",
-    options: ["Index", "Current element", "Array length", "Previous element"],
-    correct: "Current element",
+    question: "Meta description tags are mainly useful for:",
+    options: [
+      "Changing button colors",
+      "Search engines and page summaries",
+      "Creating lists",
+      "Embedding videos",
+    ],
+    correct: "Search engines and page summaries",
   },
+
+  // =========================
+  // 05 PARAGRAPHS & HEADINGS
+  // =========================
   {
     id: 28,
-    question: "Does forEach() return a new array by default?",
-    options: ["Yes, always", "No, it returns undefined", "Yes, only for numbers", "Only when using map"],
-    correct: "No, it returns undefined",
+    question: "Which tag is used for a paragraph?",
+    options: ["<para>", "<p>", "<text>", "<paragraph>"],
+    correct: "<p>",
   },
   {
     id: 29,
-    question: "Which of these is valid forEach usage?",
-    options: [
-      "arr.forEach(item => console.log(item))",
-      "forEach(arr)",
-      "arr.forEach()",
-      "for each (item in arr)",
-    ],
-    correct: "arr.forEach(item => console.log(item))",
+    question: "Which heading tag is the most important / largest by default?",
+    options: ["<h6>", "<h3>", "<h1>", "<head>"],
+    correct: "<h1>",
   },
   {
     id: 30,
-    question: "forEach() is mainly used with which data structure?",
-    options: ["Objects only", "Arrays", "Strings only", "Numbers only"],
-    correct: "Arrays",
+    question: "How many heading levels does HTML provide from h1 to h6?",
+    options: ["3", "4", "5", "6"],
+    correct: "6",
   },
-
-  // =========================
-  // push()
-  // =========================
   {
     id: 31,
-    question: "What does push() do to an array?",
-    options: [
-      "Adds an element to the beginning",
-      "Adds an element to the end",
-      "Removes the last element",
-      "Removes the first element",
-    ],
-    correct: "Adds an element to the end",
+    question: "Which heading is usually the least important visually?",
+    options: ["<h1>", "<h2>", "<h4>", "<h6>"],
+    correct: "<h6>",
   },
   {
     id: 32,
-    question: "After `let nums = [1, 2]; nums.push(3);`, what is nums?",
-    options: ["[1, 2]", "[3, 1, 2]", "[1, 2, 3]", "[1, 3, 2]"],
-    correct: "[1, 2, 3]",
+    question: "Why should headings be used in a sensible order (h1, then h2, etc.)?",
+    options: [
+      "To make the file smaller",
+      "For accessibility and clear page structure",
+      "Because browsers reject wrong orders",
+      "To enable JavaScript automatically",
+    ],
+    correct: "For accessibility and clear page structure",
   },
+
+  // =========================
+  // 06 SEMANTIC ELEMENTS
+  // Div & Span / Block & Inline
+  // =========================
   {
     id: 33,
-    question: "What does push() return?",
+    question: "What does a semantic HTML element do?",
     options: [
-      "The removed element",
-      "The new length of the array",
-      "true or false",
-      "A copy of the array",
+      "Only adds color to text",
+      "Describes the meaning of its content",
+      "Hides the content from the browser",
+      "Replaces CSS completely",
     ],
-    correct: "The new length of the array",
+    correct: "Describes the meaning of its content",
   },
   {
     id: 34,
-    question: "Can push() add more than one element at once?",
-    options: ["No", "Yes", "Only numbers", "Only strings"],
-    correct: "Yes",
+    question: "Which of these is a semantic element?",
+    options: ["<div>", "<span>", "<header>", "<b>"],
+    correct: "<header>",
   },
   {
     id: 35,
-    question: "Which method is the opposite of push() for removing from the end?",
-    options: ["shift()", "unshift()", "pop()", "includes()"],
-    correct: "pop()",
+    question: "What is <div> mainly used for?",
+    options: [
+      "A generic block-level container",
+      "Playing audio files",
+      "Defining the page title",
+      "Creating numbered lists only",
+    ],
+    correct: "A generic block-level container",
   },
-
-  // =========================
-  // pop()
-  // =========================
   {
     id: 36,
-    question: "What does pop() do to an array?",
+    question: "What is <span> mainly used for?",
     options: [
-      "Removes the first element",
-      "Removes the last element",
-      "Adds an element to the end",
-      "Checks if a value exists",
+      "A generic inline container",
+      "A full-page section",
+      "The document head",
+      "An unordered list",
     ],
-    correct: "Removes the last element",
+    correct: "A generic inline container",
   },
   {
     id: 37,
-    question: "After `let nums = [1, 2, 3]; nums.pop();`, what is nums?",
-    options: ["[1, 2, 3]", "[2, 3]", "[1, 2]", "[1, 3]"],
-    correct: "[1, 2]",
+    question: "Which statement about block-level elements is true?",
+    options: [
+      "They usually start on a new line and take full width",
+      "They always sit on the same line as text",
+      "They cannot contain other elements",
+      "They are only used inside <title>",
+    ],
+    correct: "They usually start on a new line and take full width",
   },
   {
     id: 38,
-    question: "What does pop() return?",
-    options: [
-      "The new array length",
-      "The removed element",
-      "true",
-      "undefined always",
-    ],
-    correct: "The removed element",
+    question: "Which of these is typically an inline element?",
+    options: ["<div>", "<p>", "<span>", "<section>"],
+    correct: "<span>",
   },
   {
     id: 39,
-    question: "Calling pop() on an empty array returns:",
-    options: ["0", "null", "undefined", "false"],
-    correct: "undefined",
+    question: "Which element is commonly used for the main navigation area?",
+    options: ["<nav>", "<aside>", "<br>", "<meta>"],
+    correct: "<nav>",
   },
   {
     id: 40,
-    question: "Does pop() change the original array?",
-    options: ["No", "Yes", "Only if it contains strings", "Only in strict mode"],
-    correct: "Yes",
+    question: "Which element typically wraps the main unique content of a page?",
+    options: ["<main>", "<span>", "<head>", "<link>"],
+    correct: "<main>",
   },
 
   // =========================
-  // shift()
+  // 07 HTML LISTS
   // =========================
   {
     id: 41,
-    question: "What does shift() do to an array?",
-    options: [
-      "Removes the last element",
-      "Removes the first element",
-      "Adds an element to the beginning",
-      "Adds an element to the end",
-    ],
-    correct: "Removes the first element",
+    question: "Which tag creates an unordered (bulleted) list?",
+    options: ["<ol>", "<ul>", "<li>", "<dl>"],
+    correct: "<ul>",
   },
   {
     id: 42,
-    question: "After `let nums = [1, 2, 3]; nums.shift();`, what is nums?",
-    options: ["[1, 2]", "[2, 3]", "[1, 3]", "[1, 2, 3]"],
-    correct: "[2, 3]",
+    question: "Which tag creates an ordered (numbered) list?",
+    options: ["<ul>", "<ol>", "<list>", "<order>"],
+    correct: "<ol>",
   },
   {
     id: 43,
-    question: "What does shift() return?",
-    options: [
-      "The removed first element",
-      "The new length",
-      "The last element",
-      "true or false",
-    ],
-    correct: "The removed first element",
+    question: "Which tag is used for each item inside a list?",
+    options: ["<item>", "<li>", "<list>", "<ul>"],
+    correct: "<li>",
   },
   {
     id: 44,
-    question: "Which method is the opposite of shift() for adding at the start?",
-    options: ["push()", "pop()", "unshift()", "includes()"],
-    correct: "unshift()",
+    question: "In a correct list structure, <li> elements should be placed inside:",
+    options: ["<p> only", "<ul> or <ol>", "<img>", "<meta>"],
+    correct: "<ul> or <ol>",
+  },
+  {
+    id: 45,
+    question: "Which list type is best for step-by-step instructions?",
+    options: ["Unordered list <ul>", "Ordered list <ol>", "Only <div>", "Only <span>"],
+    correct: "Ordered list <ol>",
   },
 
   // =========================
-  // unshift()
+  // 08 HTML IMAGES
   // =========================
   {
-    id: 45,
-    question: "What does unshift() do to an array?",
-    options: [
-      "Adds an element to the end",
-      "Adds an element to the beginning",
-      "Removes the first element",
-      "Removes the last element",
-    ],
-    correct: "Adds an element to the beginning",
-  },
-  {
     id: 46,
-    question: "After `let nums = [1, 2]; nums.unshift(0);`, what is nums?",
-    options: ["[1, 2, 0]", "[0, 1, 2]", "[1, 0, 2]", "[0, 2]"],
-    correct: "[0, 1, 2]",
+    question: "Which tag is used to display an image?",
+    options: ["<picture>", "<img>", "<image>", "<src>"],
+    correct: "<img>",
   },
   {
     id: 47,
-    question: "What does unshift() return?",
-    options: [
-      "The removed element",
-      "The new length of the array",
-      "A boolean",
-      "A new array copy",
-    ],
-    correct: "The new length of the array",
+    question: "Which attribute tells the browser where the image file is?",
+    options: ["href", "src", "alt", "link"],
+    correct: "src",
   },
-
-  // =========================
-  // includes()
-  // =========================
   {
     id: 48,
-    question: "What does includes() check?",
+    question: "What does the alt attribute provide?",
     options: [
-      "Whether an array contains a value",
-      "The length of an array",
-      "Whether an array is empty",
-      "The type of each element",
+      "Alternative text if the image cannot be shown",
+      "The image width only",
+      "A CSS animation",
+      "The browser tab title",
     ],
-    correct: "Whether an array contains a value",
+    correct: "Alternative text if the image cannot be shown",
   },
   {
     id: 49,
-    question: "What does `[1, 2, 3].includes(2)` return?",
-    options: ["2", "true", "false", "1"],
-    correct: "true",
+    question: "Why is alt text important?",
+    options: [
+      "It makes images load faster always",
+      "It helps accessibility and SEO",
+      "It replaces the need for src",
+      "It converts PNG to JPG",
+    ],
+    correct: "It helps accessibility and SEO",
   },
   {
     id: 50,
-    question: "What does `['a', 'b'].includes('c')` return?",
-    options: ["'c'", "true", "false", "undefined"],
-    correct: "false",
+    question: "Which is the correct way to add an image?",
+    options: [
+      '<img src="photo.jpg" alt="A student coding">',
+      '<image href="photo.jpg">',
+      '<img href="photo.jpg">',
+      '<img alt="photo.jpg">',
+    ],
+    correct: '<img src="photo.jpg" alt="A student coding">',
   },
 ];

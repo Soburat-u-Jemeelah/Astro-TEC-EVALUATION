@@ -1,45 +1,35 @@
-# Power BI & Excel Quiz Questions
+# HTML Class Evaluation
 
-## Overview
-
-This project contains a set of multiple-choice quiz questions related to Power BI, Excel, and data analysis. The questions are formatted in a JavaScript array to be used in quiz applications or learning platforms.
-
-## Features
-
-- 30 multiple-choice questions covering Power BI, Excel, and data analysis concepts.
-- Includes correct answers for validation.
-- Suitable for beginners and intermediate learners.
+Interactive quiz for HTML class evaluation covering Day 1 (Foundations) and Day 2 (Content & Semantics).
 
 ## Topics Covered
 
-1. **Data Cleaning** – Understanding its importance in data analysis.
-2. **Power BI** – Features, visuals, views, and data import sources.
-3. **Excel Functions** – CONCATENATE, IF, COUNT, MAX, AVERAGE, etc.
-4. **Data Visualization** – Different types of charts and their applications.
-5. **Data Analysis** – Roles and responsibilities of a data analyst.
-6. **Workbook vs Worksheet** – Differences and usage in Excel.
+### Day 1 — Foundations
+- Before We Begin (How It Works, Web Browser, Code Editor, Extensions)
+- Course Introduction
+- HTML Page Structure
+- Elements, Tags & Attributes
+- Meta Tags
 
-## Theory Questions
+### Day 2 — Content & Semantics
+- Paragraphs & Headings
+- Semantic Elements (Div & Span, Block & Inline)
+- HTML Lists
+- HTML Images
 
-In addition to the multiple-choice questions, here are five theory-based questions:
+## How to Run
 
-1. Explain the concept of data cleaning and why it is important in data analysis.
-2. Describe the different types of data visualizations in Power BI and their use cases.
-3. What are the roles and responsibilities of a data analyst in an organization?
-4. Differentiate between a workbook and a worksheet in Microsoft Excel.
-5. Explain the purpose of the IF function in Excel and provide an example of how it is used.
+Open `index.html` in a browser, or serve the folder locally:
 
-## Usage
+```bash
+python3 -m http.server 3000
+```
 
-- Integrate the `quizQuestions` array into your JavaScript-based quiz application.
-- Use the theory questions for discussions, assessments, or interviews.
+Then visit `http://localhost:3000`
 
-## How to Contribute
+## Features
 
-If you have suggestions for new questions or improvements, feel free to submit a pull request or open an issue.
-
-## License
-
-This project is open-source and can be used freely for educational purposes.
-
-## link : https://javascript-quiz-kappa.vercel.app/
+- 50 multiple-choice HTML questions
+- 30-minute quiz timer
+- Auto-advance 3 seconds after each answer
+- Scores saved to localStorage

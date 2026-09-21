@@ -81,7 +81,7 @@ playerForm.addEventListener("submit", function (e) {
 });
 
 function saveQuizResult() {
-  const results = JSON.parse(localStorage.getItem("quizResults")) || [];
+  const results = JSON.parse(localStorage.getItem("htmlQuizResults")) || [];
   const total = quizQuestions.length;
   const percentage = total
     ? ((correctPicked / total) * 100).toFixed(1)
@@ -97,7 +97,7 @@ function saveQuizResult() {
 
   results.push(newResult);
   results.sort((a, b) => b.percentage - a.percentage);
-  localStorage.setItem("quizResults", JSON.stringify(results));
+  localStorage.setItem("htmlQuizResults", JSON.stringify(results));
 }
 
 startBtn.addEventListener("click", () => {

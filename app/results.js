@@ -1,6 +1,6 @@
 function displayResults() {
     const resultsBody = document.getElementById('resultsBody');
-    const results = JSON.parse(localStorage.getItem('quizResults')) || [];
+    const results = JSON.parse(localStorage.getItem('htmlQuizResults')) || [];
     
     resultsBody.innerHTML = results.map((result, index) => `
         <tr>
