@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HTML | Class Evaluation</title>
+    <title>Astrotec Web Development CBT</title>
     <!-- font awesome -->
     <link
       rel="stylesheet"
@@ -53,6 +53,9 @@
       <!-- Add this before the quiz starts -->
       <div class="name-container hidden" id="nameContainer">
         <form class="player-form" id="playerForm">
+          <div style="text-align: center; margin-bottom: 1rem;">
+            <img src="../assests/astrotec_logo.png" alt="Astro-TEC Logo" style="max-width: 190px; height: auto;" />
+          </div>
           <h2>Enter Your Full Name</h2>
           <input
             type="text"
@@ -76,15 +79,16 @@
       </div>
 
       <div class="quiz-rules hidden" id="quiz_rules">
-        <div class="card-top">
+        <div class="card-top" style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px;">
           <h2 class="heading">Some Rules of this Quiz</h2>
-          <span class="hr-top"><hr /></span>
+          <img src="../assests/astrotec_logo.png" alt="Astro-TEC Logo" style="height: 28px; width: auto;" />
         </div>
+        <span class="hr-top"><hr /></span>
         <div class="card-body">
           <ol type="1">
             <li>
-              You will have <span class="sec">30 minutes</span> to complete the
-              entire quiz.
+              You will have <span class="sec">60 minutes</span> to complete the
+              entire quiz (100 Questions).
             </li>
             <li>Once you select your answer, it can't be undone.</li>
             <li>
@@ -106,7 +110,10 @@
 
       <div class="quiz-card hidden" id="quiz_card">
         <div class="quiz-card-top">
-          <h3 class="heading">HTML Class Evaluation</h3>
+          <div style="display: flex; align-items: center; gap: 10px;">
+            <img src="../assests/astrotec_logo.png" alt="Astro-TEC Logo" style="height: 30px; width: auto;" />
+            <h3 class="heading" style="font-size: 1.05rem;">Astrotec Web Dev CBT</h3>
+          </div>
           <div class="left-time">
             <p>Time Left <span class="tym"></span></p>
           </div>
@@ -134,6 +141,7 @@
 
       <div class="complete hidden" id="complete">
         <div class="complete-card">
+          <img src="../assests/astrotec_logo.png" alt="Astro-TEC Logo" style="max-width: 170px; margin-bottom: 10px;" />
           <span class="crown">👑</span>
           <p>
             You've completed the Quiz! <br />

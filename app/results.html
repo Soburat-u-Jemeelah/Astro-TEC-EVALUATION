@@ -3,31 +3,86 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Quiz Results</title>
+    <title>Quiz Results | Astrotec Web Development CBT</title>
     <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        background-color: #fcfbf9;
+        min-height: 100vh;
+      }
+      .results-card {
+        background: #fff;
+        border-radius: 12px;
+        padding: 2.5rem;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+      }
+      .results-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 1.5rem;
+      }
+      .results-header img {
+        max-width: 220px;
+        height: auto;
+        margin-bottom: 1rem;
+      }
+      .results-header h1 {
+        color: #1f242d;
+        font-size: 2rem;
+      }
+      th {
+        background-color: #fff0e0;
+        color: #994d00;
+        font-weight: 600;
+      }
+      .btn-again {
+        background: #FF8000;
+        color: #fff;
+        padding: 12px 28px;
+        border: none;
+        border-radius: 8px;
+        font-size: 1rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+      .btn-again:hover {
+        background: #e67300;
+        transform: translateY(-1px);
+        box-shadow: 0 6px 16px rgba(255, 128, 0, 0.35);
+      }
+    </style>
   </head>
   <body>
     <div class="results-container">
-      <h1>Quiz Results</h1>
-      <div class="results-table">
-        <table>
-          <thead>
-            <tr>
-              <th>Rank</th>
-              <th>Name</th>
-              <th>Score</th>
-              <th>Percentage</th>
-              <th>Date</th>
-            </tr>
-          </thead>
-          <tbody id="resultsBody">
-            <!-- Results will be inserted here dynamically -->
-          </tbody>
-        </table>
+      <div class="results-card">
+        <div class="results-header">
+          <img src="../assests/astrotec_logo.png" alt="Astro-TEC Logo" />
+          <h1>Quiz Results Leaderboard</h1>
+        </div>
+        <div class="results-table">
+          <table>
+            <thead>
+              <tr>
+                <th>Rank</th>
+                <th>Name</th>
+                <th>Score</th>
+                <th>Percentage</th>
+                <th>Date</th>
+              </tr>
+            </thead>
+            <tbody id="resultsBody">
+              <!-- Results will be inserted here dynamically -->
+            </tbody>
+          </table>
+        </div>
+        <div style="text-align: center; margin-top: 1.5rem;">
+          <button class="btn-again" onclick="window.location.href='index.html'">
+            Take Quiz Again
+          </button>
+        </div>
       </div>
-      <button class="btn" onclick="window.location.href='index.html'">
-        Take Quiz Again
-      </button>
     </div>
     <script src="results.js"></script>
   </body>

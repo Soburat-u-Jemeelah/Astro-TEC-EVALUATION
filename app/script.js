@@ -35,7 +35,7 @@ let quizEnded = false;
 let quizTimerInterval = null;
 let autoAdvanceTimeout = null;
 
-const QUIZ_DURATION_SECONDS = 30 * 60; // 30 minutes for the whole quiz
+const QUIZ_DURATION_SECONDS = 60 * 60; // 60 minutes for 100 questions
 let quizTimeRemaining = QUIZ_DURATION_SECONDS;
 
 if (typeof quizQuestions === "undefined" || !Array.isArray(quizQuestions)) {
@@ -77,6 +77,7 @@ playerForm.addEventListener("submit", function (e) {
     title: `Welcome ${playerName}!`,
     text: "Click Start Quiz when you're ready to begin.",
     confirmButtonText: "OK",
+    confirmButtonColor: "#FF8000",
   });
 });
 
@@ -142,7 +143,7 @@ exitBtn.addEventListener("click", function () {
     title: "Are you sure you want to exit?",
     icon: "warning",
     showCancelButton: true,
-    confirmButtonColor: "#0a69ed",
+    confirmButtonColor: "#FF8000",
     cancelButtonColor: "#d33",
     confirmButtonText: "Yes",
   }).then((result) => {
@@ -303,7 +304,7 @@ quitBtn.addEventListener("click", function () {
     title: "Are you sure you want to quit the game?",
     icon: "warning",
     showCancelButton: true,
-    confirmButtonColor: "#0a69ed",
+    confirmButtonColor: "#FF8000",
     cancelButtonColor: "#d33",
     confirmButtonText: "Yes",
   }).then((result) => {

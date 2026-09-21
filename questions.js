@@ -1,440 +1,742 @@
 const quizQuestions = [
-  // =========================
-  // 00 BEFORE WE BEGIN
-  // How It Works / Browser / Editor / Extensions
-  // =========================
+  // ==========================================
+  // SECTION A — HTML (Questions 1 to 30)
+  // ==========================================
   {
     id: 1,
-    question: "What does a web browser mainly do with an HTML file?",
+    question: "What does HTML stand for?",
     options: [
-      "Compiles it into a mobile app",
-      "Reads and displays it as a web page",
-      "Converts it into a database",
-      "Uploads it to email automatically",
+      "Hyper Text Markup Language",
+      "High Text Machine Language",
+      "Hyperlink Text Management Language",
+      "Home Tool Markup Language"
     ],
-    correct: "Reads and displays it as a web page",
+    correct: "Hyper Text Markup Language"
   },
   {
     id: 2,
-    question: "Which of these is a web browser?",
-    options: ["VS Code", "Chrome", "GitHub", "Node.js"],
-    correct: "Chrome",
+    question: "What is HTML primarily used for?",
+    options: [
+      "Styling webpages",
+      "Structuring webpage content",
+      "Creating databases",
+      "Programming servers"
+    ],
+    correct: "Structuring webpage content"
   },
   {
     id: 3,
-    question: "What is a code editor used for?",
-    options: [
-      "Only browsing websites",
-      "Writing and editing code files",
-      "Hosting websites online",
-      "Designing logos only",
-    ],
-    correct: "Writing and editing code files",
+    question: "Which tag is used to create the largest heading?",
+    options: ["<heading>", "<h6>", "<h1>", "<head>"],
+    correct: "<h1>"
   },
   {
     id: 4,
-    question: "Which of these is a popular code editor for web development?",
-    options: ["Google Docs", "Visual Studio Code", "Photoshop", "Excel"],
-    correct: "Visual Studio Code",
+    question: "Which tag is used to create a paragraph?",
+    options: ["<paragraph>", "<p>", "<para>", "<text>"],
+    correct: "<p>"
   },
   {
     id: 5,
-    question: "What are editor extensions mainly used for?",
-    options: [
-      "Deleting your project files",
-      "Adding extra features to the editor",
-      "Replacing the browser",
-      "Changing HTML into CSS automatically",
-    ],
-    correct: "Adding extra features to the editor",
+    question: "Which tag is used to create a hyperlink?",
+    options: ["<link>", "<a>", "<href>", "<url>"],
+    correct: "<a>"
   },
-
-  // =========================
-  // 01 COURSE INTRODUCTION
-  // =========================
   {
     id: 6,
-    question: "HTML stands for:",
-    options: [
-      "Hyper Text Markup Language",
-      "HighText Machine Language",
-      "HyperTool Multi Language",
-      "Home Tool Markup Language",
-    ],
-    correct: "HyperText Markup Language",
+    question: "Which attribute specifies the destination of a hyperlink?",
+    options: ["src", "link", "href", "url"],
+    correct: "href"
   },
   {
     id: 7,
-    question: "HTML is mainly used to:",
-    options: [
-      "Style colors and fonts only",
-      "Structure the content of a web page",
-      "Store passwords securely",
-      "Replace JavaScript completely",
-    ],
-    correct: "Structure the content of a web page",
+    question: "Which tag is used to display an image?",
+    options: ["<image>", "<img>", "<picture>", "<src>"],
+    correct: "<img>"
   },
   {
     id: 8,
-    question: "In front-end development, HTML is best described as:",
-    options: [
-      "The structure of a page",
-      "The styling of a page",
-      "The database of a page",
-      "The server of a page",
-    ],
-    correct: "The structure of a page",
+    question: "Which attribute specifies the location of an image?",
+    options: ["href", "link", "src", "alt"],
+    correct: "src"
   },
   {
     id: 9,
-    question: "Which file extension is commonly used for HTML files?",
-    options: [".css", ".js", ".html", ".json"],
-    correct: ".html",
+    question: "What is the purpose of the alt attribute on an image?",
+    options: [
+      "Changes the image size",
+      "Provides alternative text for the image",
+      "Changes the image color",
+      "Creates an image link"
+    ],
+    correct: "Provides alternative text for the image"
   },
-
-  // =========================
-  // 02 HTML PAGE STRUCTURE
-  // =========================
   {
     id: 10,
-    question: "Which declaration tells the browser the document is HTML5?",
-    options: ["<html5>", "<!DOCTYPE html>", "<doctype>", "<meta html>"],
-    correct: "<!DOCTYPE html>",
+    question: "Which HTML tag creates an unordered list?",
+    options: ["<ol>", "<ul>", "<li>", "<list>"],
+    correct: "<ul>"
   },
   {
     id: 11,
-    question: "Which element is the root element of an HTML page?",
-    options: ["<body>", "<head>", "<html>", "<main>"],
-    correct: "<html>",
+    question: "Which HTML tag creates an ordered list?",
+    options: ["<ul>", "<ol>", "<li>", "<order>"],
+    correct: "<ol>"
   },
   {
     id: 12,
-    question: "Where do you usually put the page title and meta information?",
-    options: ["<body>", "<head>", "<footer>", "<section>"],
-    correct: "<head>",
+    question: "Which tag represents an item in a list?",
+    options: ["<item>", "<list>", "<li>", "<i>"],
+    correct: "<li>"
   },
   {
     id: 13,
-    question: "Where does the visible content of a webpage go?",
-    options: ["<head>", "<meta>", "<body>", "<title>"],
-    correct: "<body>",
+    question: "Which tag is used to create a line break?",
+    options: ["<break>", "<lb>", "<br>", "<line>"],
+    correct: "<br>"
   },
   {
     id: 14,
-    question: "Which element sets the text shown on the browser tab?",
-    options: ["<header>", "<title>", "<h1>", "<caption>"],
-    correct: "<title>",
+    question: "Which tag is used to make text bold semantically?",
+    options: ["<bold>", "<b>", "<strong>", "Both B and C"],
+    correct: "<strong>"
   },
   {
     id: 15,
-    question: "What is the correct basic order of a simple HTML page?",
-    options: [
-      "<html> → <body> → <head>",
-      "<!DOCTYPE html> → <html> → <head> → <body>",
-      "<body> → <!DOCTYPE html> → <html>",
-      "<head> → <!DOCTYPE html> → <body>",
-    ],
-    correct: "<!DOCTYPE html> → <html> → <head> → <body>",
+    question: "Which tag is commonly used for emphasized text?",
+    options: ["<em>", "<italic>", "<i-text>", "<emphasis>"],
+    correct: "<em>"
   },
-
-  // =========================
-  // 03 ELEMENTS, TAGS & ATTRIBUTES
-  // =========================
   {
     id: 16,
-    question: "In HTML, a tag is usually written with:",
-    options: ["Parentheses ()", "Angle brackets <>", "Curly braces {}", "Square brackets []"],
-    correct: "Angle brackets <>",
+    question: "Which section contains information about the HTML document that is not normally displayed on the page?",
+    options: ["<body>", "<main>", "<head>", "<footer>"],
+    correct: "<head>"
   },
   {
     id: 17,
-    question: "What is an HTML element?",
-    options: [
-      "Only the opening tag",
-      "A tag plus its content (and usually a closing tag)",
-      "Only a CSS class",
-      "Only an image file",
-    ],
-    correct: "A tag plus its content (and usually a closing tag)",
+    question: "Which tag contains the visible content of a webpage?",
+    options: ["<head>", "<body>", "<html-head>", "<content>"],
+    correct: "<body>"
   },
   {
     id: 18,
-    question: "Which is an example of an HTML attribute?",
-    options: ["href", "paragraph", "browser", "stylesheet"],
-    correct: "href",
+    question: "Which declaration tells the browser that the document uses HTML5?",
+    options: ["<html5>", "<!HTML5>", "<!DOCTYPE html>", "<doctype html>"],
+    correct: "<!DOCTYPE html>"
   },
   {
     id: 19,
-    question: "Attributes are usually written in:",
-    options: [
-      "The closing tag only",
-      "The opening tag",
-      "A separate .attr file",
-      "The browser address bar",
-    ],
-    correct: "The opening tag",
+    question: "Which attribute is commonly used to uniquely identify an HTML element?",
+    options: ["class", "id", "name", "unique"],
+    correct: "id"
   },
   {
     id: 20,
-    question: "Which attribute uniquely identifies an element?",
-    options: ["class", "id", "src", "alt"],
-    correct: "id",
+    question: "Which attribute can be applied to multiple HTML elements?",
+    options: ["id", "class", "unique", "single"],
+    correct: "class"
   },
   {
     id: 21,
-    question: "Which attribute can be shared by multiple elements for styling or scripting?",
-    options: ["id", "class", "charset", "lang"],
-    correct: "class",
+    question: "Which tag is used to create a form?",
+    options: ["<input>", "<form>", "<formbox>", "<data>"],
+    correct: "<form>"
   },
   {
     id: 22,
-    question: "Which of these is a self-closing / void element?",
-    options: ["<p>", "<div>", "<img>", "<h1>"],
-    correct: "<img>",
+    question: "Which HTML element is used to collect user input?",
+    options: ["<input>", "<collect>", "<text>", "<user>"],
+    correct: "<input>"
   },
-
-  // =========================
-  // 04 META TAGS
-  // =========================
   {
     id: 23,
-    question: "Where should <meta> tags usually be placed?",
-    options: ["Inside <body>", "Inside <head>", "After </html>", "Inside <footer>"],
-    correct: "Inside <head>",
+    question: "Which input type is used for entering a password?",
+    options: ['type="text"', 'type="password"', 'type="hidden"', 'type="secure"'],
+    correct: 'type="password"'
   },
   {
     id: 24,
-    question: "Which meta attribute is commonly used with charset?",
-    options: ["name", "content", "charset", "http-src"],
-    correct: "charset",
+    question: "Which input type allows a user to select one option from a group?",
+    options: ["checkbox", "radio", "select-one", "option"],
+    correct: "radio"
   },
   {
     id: 25,
-    question: "What does `<meta charset=\"UTF-8\">` help with?",
-    options: [
-      "Choosing the page font size",
-      "Defining the character encoding",
-      "Linking an external stylesheet",
-      "Creating a navigation menu",
-    ],
-    correct: "Defining the character encoding",
+    question: "Which input type allows multiple selections?",
+    options: ["radio", "multiple", "checkbox", "select"],
+    correct: "checkbox"
   },
   {
     id: 26,
-    question: "Which meta tag helps control how a page scales on mobile devices?",
-    options: [
-      '<meta name="viewport" content="width=device-width, initial-scale=1.0">',
-      '<meta name="mobile" content="true">',
-      "<meta scale=\"phone\">",
-      '<meta name="responsive">',
-    ],
-    correct:
-      '<meta name="viewport" content="width=device-width, initial-scale=1.0">',
+    question: "Which tag is used to create a table row?",
+    options: ["<td>", "<tr>", "<row>", "<table-row>"],
+    correct: "<tr>"
   },
   {
     id: 27,
-    question: "Meta description tags are mainly useful for:",
-    options: [
-      "Changing button colors",
-      "Search engines and page summaries",
-      "Creating lists",
-      "Embedding videos",
-    ],
-    correct: "Search engines and page summaries",
+    question: "Which tag represents a table data cell?",
+    options: ["<td>", "<tr>", "<data>", "<cell>"],
+    correct: "<td>"
   },
-
-  // =========================
-  // 05 PARAGRAPHS & HEADINGS
-  // =========================
   {
     id: 28,
-    question: "Which tag is used for a paragraph?",
-    options: ["<para>", "<p>", "<text>", "<paragraph>"],
-    correct: "<p>",
+    question: "Which tag represents a table heading cell?",
+    options: ["<heading>", "<th>", "<thead-cell>", "<tdh>"],
+    correct: "<th>"
   },
   {
     id: 29,
-    question: "Which heading tag is the most important / largest by default?",
-    options: ["<h6>", "<h3>", "<h1>", "<head>"],
-    correct: "<h1>",
+    question: "Which HTML element is a generic block-level container?",
+    options: ["<span>", "<div>", "<section-block>", "<container>"],
+    correct: "<div>"
   },
   {
     id: 30,
-    question: "How many heading levels does HTML provide from h1 to h6?",
-    options: ["3", "4", "5", "6"],
-    correct: "6",
+    question: "Which HTML element is commonly used as an inline container?",
+    options: ["<div>", "<section>", "<span>", "<inline>"],
+    correct: "<span>"
   },
+
+  // ==========================================
+  // SECTION B — CSS (Questions 31 to 60)
+  // ==========================================
   {
     id: 31,
-    question: "Which heading is usually the least important visually?",
-    options: ["<h1>", "<h2>", "<h4>", "<h6>"],
-    correct: "<h6>",
+    question: "What does CSS stand for?",
+    options: [
+      "Computer Style Sheets",
+      "Cascading Style Sheets",
+      "Creative Style Syntax",
+      "Colorful Style Sheets"
+    ],
+    correct: "Cascading Style Sheets"
   },
   {
     id: 32,
-    question: "Why should headings be used in a sensible order (h1, then h2, etc.)?",
+    question: "What is CSS mainly used for?",
     options: [
-      "To make the file smaller",
-      "For accessibility and clear page structure",
-      "Because browsers reject wrong orders",
-      "To enable JavaScript automatically",
+      "Structuring webpages",
+      "Styling webpages",
+      "Creating databases",
+      "Writing server-side code"
     ],
-    correct: "For accessibility and clear page structure",
+    correct: "Styling webpages"
   },
-
-  // =========================
-  // 06 SEMANTIC ELEMENTS
-  // Div & Span / Block & Inline
-  // =========================
   {
     id: 33,
-    question: "What does a semantic HTML element do?",
-    options: [
-      "Only adds color to text",
-      "Describes the meaning of its content",
-      "Hides the content from the browser",
-      "Replaces CSS completely",
-    ],
-    correct: "Describes the meaning of its content",
+    question: "Which HTML element can be used to write internal CSS?",
+    options: ["<css>", "<style>", "<stylesheet>", "<design>"],
+    correct: "<style>"
   },
   {
     id: 34,
-    question: "Which of these is a semantic element?",
-    options: ["<div>", "<span>", "<header>", "<b>"],
-    correct: "<header>",
+    question: "Which HTML element is used to connect an external CSS file?",
+    options: ["<css>", "<style>", "<link>", "<script>"],
+    correct: "<link>"
   },
   {
     id: 35,
-    question: "What is <div> mainly used for?",
-    options: [
-      "A generic block-level container",
-      "Playing audio files",
-      "Defining the page title",
-      "Creating numbered lists only",
-    ],
-    correct: "A generic block-level container",
+    question: "Which attribute specifies the CSS file in a <link> element?",
+    options: ["src", "href", "file", "style"],
+    correct: "href"
   },
   {
     id: 36,
-    question: "What is <span> mainly used for?",
-    options: [
-      "A generic inline container",
-      "A full-page section",
-      "The document head",
-      "An unordered list",
-    ],
-    correct: "A generic inline container",
+    question: "Which CSS property changes text color?",
+    options: ["font-color", "text-color", "color", "foreground"],
+    correct: "color"
   },
   {
     id: 37,
-    question: "Which statement about block-level elements is true?",
+    question: "Which CSS property changes the background color?",
     options: [
-      "They usually start on a new line and take full width",
-      "They always sit on the same line as text",
-      "They cannot contain other elements",
-      "They are only used inside <title>",
+      "background-color",
+      "bg-color",
+      "color-background",
+      "background-style"
     ],
-    correct: "They usually start on a new line and take full width",
+    correct: "background-color"
   },
   {
     id: 38,
-    question: "Which of these is typically an inline element?",
-    options: ["<div>", "<p>", "<span>", "<section>"],
-    correct: "<span>",
+    question: "Which property changes the size of text?",
+    options: ["text-size", "font-size", "size", "font-height"],
+    correct: "font-size"
   },
   {
     id: 39,
-    question: "Which element is commonly used for the main navigation area?",
-    options: ["<nav>", "<aside>", "<br>", "<meta>"],
-    correct: "<nav>",
+    question: "Which property makes text bold?",
+    options: ["font-weight", "font-bold", "text-weight", "bold-text"],
+    correct: "font-weight"
   },
   {
     id: 40,
-    question: "Which element typically wraps the main unique content of a page?",
-    options: ["<main>", "<span>", "<head>", "<link>"],
-    correct: "<main>",
+    question: "Which property changes the font family?",
+    options: ["font-type", "font-family", "text-family", "typeface"],
+    correct: "font-family"
   },
-
-  // =========================
-  // 07 HTML LISTS
-  // =========================
   {
     id: 41,
-    question: "Which tag creates an unordered (bulleted) list?",
-    options: ["<ol>", "<ul>", "<li>", "<dl>"],
-    correct: "<ul>",
+    question: "Which property aligns text horizontally?",
+    options: ["text-align", "align-text", "horizontal-align", "font-align"],
+    correct: "text-align"
   },
   {
     id: 42,
-    question: "Which tag creates an ordered (numbered) list?",
-    options: ["<ul>", "<ol>", "<list>", "<order>"],
-    correct: "<ol>",
+    question: "Which value centers text?",
+    options: ["middle", "center", "central", "align-center"],
+    correct: "center"
   },
   {
     id: 43,
-    question: "Which tag is used for each item inside a list?",
-    options: ["<item>", "<li>", "<list>", "<ul>"],
-    correct: "<li>",
+    question: "Which CSS property adds space inside an element?",
+    options: ["margin", "padding", "spacing", "inside-space"],
+    correct: "padding"
   },
   {
     id: 44,
-    question: "In a correct list structure, <li> elements should be placed inside:",
-    options: ["<p> only", "<ul> or <ol>", "<img>", "<meta>"],
-    correct: "<ul> or <ol>",
+    question: "Which CSS property adds space outside an element?",
+    options: ["padding", "margin", "outside-space", "border-spacing"],
+    correct: "margin"
   },
   {
     id: 45,
-    question: "Which list type is best for step-by-step instructions?",
-    options: ["Unordered list <ul>", "Ordered list <ol>", "Only <div>", "Only <span>"],
-    correct: "Ordered list <ol>",
+    question: "Which property adds a border around an element?",
+    options: ["outline-border", "border", "element-border", "box-border"],
+    correct: "border"
   },
-
-  // =========================
-  // 08 HTML IMAGES
-  // =========================
   {
     id: 46,
-    question: "Which tag is used to display an image?",
-    options: ["<picture>", "<img>", "<image>", "<src>"],
-    correct: "<img>",
+    question: "Which CSS property controls the width of an element?",
+    options: ["element-width", "width", "size-width", "box-width"],
+    correct: "width"
   },
   {
     id: 47,
-    question: "Which attribute tells the browser where the image file is?",
-    options: ["href", "src", "alt", "link"],
-    correct: "src",
+    question: "Which CSS property controls the height of an element?",
+    options: ["height", "element-height", "box-height", "size-height"],
+    correct: "height"
   },
   {
     id: 48,
-    question: "What does the alt attribute provide?",
-    options: [
-      "Alternative text if the image cannot be shown",
-      "The image width only",
-      "A CSS animation",
-      "The browser tab title",
-    ],
-    correct: "Alternative text if the image cannot be shown",
+    question: "Which selector selects all <p> elements?",
+    options: [".p", "#p", "p", "*p"],
+    correct: "p"
   },
   {
     id: 49,
-    question: "Why is alt text important?",
-    options: [
-      "It makes images load faster always",
-      "It helps accessibility and SEO",
-      "It replaces the need for src",
-      "It converts PNG to JPG",
-    ],
-    correct: "It helps accessibility and SEO",
+    question: "Which selector selects an element with a specific class?",
+    options: ["#className", ".className", "className", "@className"],
+    correct: ".className"
   },
   {
     id: 50,
-    question: "Which is the correct way to add an image?",
-    options: [
-      '<img src="photo.jpg" alt="A student coding">',
-      '<image href="photo.jpg">',
-      '<img href="photo.jpg">',
-      '<img alt="photo.jpg">',
-    ],
-    correct: '<img src="photo.jpg" alt="A student coding">',
+    question: "Which selector selects an element with a specific ID?",
+    options: [".myId", "#myId", "myId", "@myId"],
+    correct: "#myId"
   },
+  {
+    id: 51,
+    question: "What does the * selector represent?",
+    options: ["Only paragraphs", "Only classes", "All elements", "Only IDs"],
+    correct: "All elements"
+  },
+  {
+    id: 52,
+    question: "Which CSS property is used to control how an element is displayed?",
+    options: ["display", "show", "visibility-type", "element-type"],
+    correct: "display"
+  },
+  {
+    id: 53,
+    question: "Which display value makes an element a block-level element?",
+    options: ["inline", "block", "flexible", "box"],
+    correct: "block"
+  },
+  {
+    id: 54,
+    question: "Which display value allows elements to appear next to each other while behaving like inline elements?",
+    options: ["inline", "block", "inline-block", "side-block"],
+    correct: "inline-block"
+  },
+  {
+    id: 55,
+    question: "Which CSS unit is relative to the font size of the root HTML element?",
+    options: ["px", "em", "rem", "%"],
+    correct: "rem"
+  },
+  {
+    id: 56,
+    question: "If the root font size is 16px, what is 2rem?",
+    options: ["8px", "16px", "24px", "32px"],
+    correct: "32px"
+  },
+  {
+    id: 57,
+    question: "If the root font size is 16px, what is 1.5rem?",
+    options: ["20px", "24px", "26px", "32px"],
+    correct: "24px"
+  },
+  {
+    id: 58,
+    question: "Which CSS property controls the space between lines of text?",
+    options: ["line-spacing", "line-height", "text-spacing", "height-line"],
+    correct: "line-height"
+  },
+  {
+    id: 59,
+    question: "Which property rounds the corners of an element?",
+    options: ["corner-radius", "border-radius", "radius-border", "round-corner"],
+    correct: "border-radius"
+  },
+  {
+    id: 60,
+    question: "Which CSS property controls transparency?",
+    options: ["opacity", "transparent", "visibility", "alpha-color"],
+    correct: "opacity"
+  },
+
+  // ==========================================
+  // SECTION C — JAVASCRIPT FUNDAMENTALS (Questions 61 to 80)
+  // ==========================================
+  {
+    id: 61,
+    question: "What is JavaScript primarily used for on webpages?",
+    options: [
+      "Creating the structure",
+      "Styling the webpage",
+      "Adding behavior and interactivity",
+      "Creating HTML files"
+    ],
+    correct: "Adding behavior and interactivity"
+  },
+  {
+    id: 62,
+    question: "Which tag is used to add JavaScript to an HTML document?",
+    options: ["<javascript>", "<js>", "<script>", "<code>"],
+    correct: "<script>"
+  },
+  {
+    id: 63,
+    question: "Which keyword declares a variable that can be reassigned?",
+    options: ["const", "let", "fixed", "varible"],
+    correct: "let"
+  },
+  {
+    id: 64,
+    question: "Which keyword declares a variable that should not be reassigned?",
+    options: ["let", "change", "const", "fixed"],
+    correct: "const"
+  },
+  {
+    id: 65,
+    question: "Which is a valid JavaScript variable declaration?",
+    options: [
+      'let name = "John";',
+      'variable name = "John";',
+      'let = name "John";',
+      'name let = "John";'
+    ],
+    correct: 'let name = "John";'
+  },
+  {
+    id: 66,
+    question: "Which symbol is commonly used to assign a value to a variable?",
+    options: ["==", "===", "=", "=>"],
+    correct: "="
+  },
+  {
+    id: 67,
+    question: "Which data type represents text?",
+    options: ["Number", "Boolean", "String", "Object"],
+    correct: "String"
+  },
+  {
+    id: 68,
+    question: "Which of the following is a string?",
+    options: ["25", "true", '"Hello"', "null"],
+    correct: '"Hello"'
+  },
+  {
+    id: 69,
+    question: "Which data type represents true or false?",
+    options: ["String", "Boolean", "Number", "Array"],
+    correct: "Boolean"
+  },
+  {
+    id: 70,
+    question: "Which of the following is a Boolean?",
+    options: ['"true"', "true", '"false"', "1"],
+    correct: "true"
+  },
+  {
+    id: 71,
+    question: "Which data type is used for numeric values?",
+    options: ["Number", "String", "Boolean", "Text"],
+    correct: "Number"
+  },
+  {
+    id: 72,
+    question: "Which operator is used for addition?",
+    options: ["&", "+", "*", "%"],
+    correct: "+"
+  },
+  {
+    id: 73,
+    question: "What is the result of 10 - 3?",
+    options: ["5", "6", "7", "8"],
+    correct: "7"
+  },
+  {
+    id: 74,
+    question: "What is the result of 5 * 4?",
+    options: ["9", "15", "20", "25"],
+    correct: "20"
+  },
+  {
+    id: 75,
+    question: "What is the result of 10 / 2?",
+    options: ["2", "5", "10", "20"],
+    correct: "5"
+  },
+  {
+    id: 76,
+    question: "Which operator checks whether two values are strictly equal?",
+    options: ["=", "==", "===", "!="],
+    correct: "==="
+  },
+  {
+    id: 77,
+    question: "Which symbol starts a single-line comment in JavaScript?",
+    options: ["<!--", "//", "#", "**"],
+    correct: "//"
+  },
+  {
+    id: 78,
+    question: "Which function displays a message in the browser console?",
+    options: [
+      "console.message()",
+      "console.log()",
+      "browser.log()",
+      "log.console()"
+    ],
+    correct: "console.log()"
+  },
+  {
+    id: 79,
+    question: 'What will console.log("Hello"); do?',
+    options: [
+      "Display Hello in the HTML page",
+      "Display Hello in the browser console",
+      "Create a button",
+      "Change the webpage title"
+    ],
+    correct: "Display Hello in the browser console"
+  },
+  {
+    id: 80,
+    question: "Which statement is used to make a decision in JavaScript?",
+    options: ["if", "decide", "check", "when"],
+    correct: "if"
+  },
+
+  // ==========================================
+  // SECTION D — JAVASCRIPT + DOM (Questions 81 to 100)
+  // ==========================================
+  {
+    id: 81,
+    question: "What does DOM stand for?",
+    options: [
+      "Document Object Model",
+      "Data Object Management",
+      "Document Oriented Method",
+      "Digital Object Model"
+    ],
+    correct: "Document Object Model"
+  },
+  {
+    id: 82,
+    question: "What does the DOM represent?",
+    options: [
+      "Only CSS styles",
+      "The webpage as objects that JavaScript can interact with",
+      "Only JavaScript variables",
+      "The computer's operating system"
+    ],
+    correct: "The webpage as objects that JavaScript can interact with"
+  },
+  {
+    id: 83,
+    question: "Which object represents the webpage document in JavaScript?",
+    options: ["html", "page", "document", "webpage"],
+    correct: "document"
+  },
+  {
+    id: 84,
+    question: "Which method selects an element using a CSS selector?",
+    options: [
+      "document.select()",
+      "document.querySelector()",
+      "document.findElement()",
+      "document.getSelector()"
+    ],
+    correct: "document.querySelector()"
+  },
+  {
+    id: 85,
+    question: "How would you select an element with the ID title?",
+    options: [
+      'document.querySelector("title")',
+      'document.querySelector("#title")',
+      'document.querySelector(".title")',
+      'document.querySelector("@title")'
+    ],
+    correct: 'document.querySelector("#title")'
+  },
+  {
+    id: 86,
+    question: "How would you select an element with the class box?",
+    options: [
+      'document.querySelector("#box")',
+      'document.querySelector("box")',
+      'document.querySelector(".box")',
+      'document.querySelector("@box")'
+    ],
+    correct: 'document.querySelector(".box")'
+  },
+  {
+    id: 87,
+    question: "Which property can be used to change the text content of an element?",
+    options: ["textContent", "textChange", "changeText", "innerStyle"],
+    correct: "textContent"
+  },
+  {
+    id: 88,
+    question: 'Consider this HTML:\n<h1 id="title">Hello</h1>\n\nWhich code changes the text to Welcome?',
+    options: [
+      'document.querySelector("#title").textContent = "Welcome";',
+      'document.querySelector("#title").text = "Welcome";',
+      'document.title("#title") = "Welcome";',
+      '#title.textContent = "Welcome";'
+    ],
+    correct: 'document.querySelector("#title").textContent = "Welcome";'
+  },
+  {
+    id: 89,
+    question: "What does textContent do?",
+    options: [
+      "Changes the CSS",
+      "Gets or changes the text content of an element",
+      "Creates a new HTML document",
+      "Removes an element"
+    ],
+    correct: "Gets or changes the text content of an element"
+  },
+  {
+    id: 90,
+    question: "Which property allows JavaScript to modify CSS styles directly?",
+    options: ["style", "css", "design", "stylesheets"],
+    correct: "style"
+  },
+  {
+    id: 91,
+    question: 'Consider:\nconst heading = document.querySelector("h1");\nheading.style.color = "red";\n\nWhat does this do?',
+    options: [
+      "Changes the heading text",
+      "Changes the heading's color to red",
+      "Creates a red heading",
+      "Removes the heading"
+    ],
+    correct: "Changes the heading's color to red"
+  },
+  {
+    id: 92,
+    question: "How would you change the background color using JavaScript?",
+    options: [
+      'element.style.backgroundColor = "blue";',
+      'element.css.background = "blue";',
+      'element.background = "blue";',
+      'element.style.background-colour = "blue";'
+    ],
+    correct: 'element.style.backgroundColor = "blue";'
+  },
+  {
+    id: 93,
+    question: "Which method creates a new HTML element?",
+    options: [
+      "document.newElement()",
+      "document.createElement()",
+      "document.addElement()",
+      "document.makeElement()"
+    ],
+    correct: "document.createElement()"
+  },
+  {
+    id: 94,
+    question: "Which code creates a new paragraph element?",
+    options: [
+      'document.createElement("p")',
+      'document.new("p")',
+      'document.create("paragraph")',
+      'document.addElement("p")'
+    ],
+    correct: 'document.createElement("p")'
+  },
+  {
+    id: 95,
+    question: "After creating an element, which method can be used to add it inside another element?",
+    options: ["appendChild()", "insertElement()", "addHTML()", "placeChild()"],
+    correct: "appendChild()"
+  },
+  {
+    id: 96,
+    question: "What does classList allow you to do?",
+    options: [
+      "Create JavaScript classes",
+      "Manage the CSS classes of an element",
+      "Create HTML documents",
+      "Change JavaScript variables"
+    ],
+    correct: "Manage the CSS classes of an element"
+  },
+  {
+    id: 97,
+    question: "Which method adds a class to an element?",
+    options: ["classList.add()", "classList.insert()", "class.add()", "add.class()"],
+    correct: "classList.add()"
+  },
+  {
+    id: 98,
+    question: "Which method removes a class from an element?",
+    options: [
+      "classList.delete()",
+      "classList.remove()",
+      "class.remove()",
+      "remove.class()"
+    ],
+    correct: "classList.remove()"
+  },
+  {
+    id: 99,
+    question: "Which method removes an element from the DOM?",
+    options: [
+      "element.delete()",
+      "element.remove()",
+      "document.deleteElement()",
+      "element.destroy()"
+    ],
+    correct: "element.remove()"
+  },
+  {
+    id: 100,
+    question: "Which statement about rem is correct?",
+    options: [
+      "rem is relative to the parent element's font size",
+      "rem is relative to the root element's font size",
+      "rem always equals 10px",
+      "rem is a JavaScript unit"
+    ],
+    correct: "rem is relative to the root element's font size"
+  }
 ];
