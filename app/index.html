@@ -83,11 +83,14 @@
         <div class="card-body">
           <ol type="1">
             <li>
-              You will have only <span class="sec">30 seconds</span> per each
-              question.
+              You will have <span class="sec">30 minutes</span> to complete the
+              entire quiz.
             </li>
             <li>Once you select your answer, it can't be undone.</li>
-            <li>You can't select any option ance time goes off.</li>
+            <li>
+              After you answer, the next question appears automatically in 3
+              seconds.
+            </li>
             <li>You can't exit from the Quiz while you're playing.</li>
             <li>You'll get points on the basis of your correct answers.</li>
           </ol>
@@ -123,7 +126,9 @@
             <span class="next-question"></span> of
             <span class="total-question2"></span> Questions
           </p>
-          <button class="btn btn-next hidden" id="nextBtn">Next</button>
+          <button class="btn btn-next hidden" id="nextBtn" aria-hidden="true">
+            Next
+          </button>
         </div>
       </div>
 
@@ -146,7 +151,9 @@
       </div>
     </div>
 
-    <!-- my js -->
+    <!-- questions + quiz logic -->
+    <script src="../protect.js"></script>
+    <script src="../questions.js"></script>
     <script src="script.js"></script>
     <!-- sweet alert -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
