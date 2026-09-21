@@ -1,7 +1,7 @@
 {
   "name": "html-class-evaluation",
   "version": "1.0.0",
-  "description": "HTML class evaluation quiz covering Day 1 Foundations and Day 2 Content & Semantics.",
+  "description": "ASTROTEC Web Development CBT - HTML & CSS evaluation quiz with 60 questions.",
   "main": "index.html",
   "scripts": {
     "build": "echo 'Static build ready'",

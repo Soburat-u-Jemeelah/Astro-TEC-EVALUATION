@@ -1,6 +1,8 @@
-# ASTROTEC WEB DEVELOPMENT CBT
+# ASTROTEC WEB DEVELOPMENT CBT HTML & CSS — 60
 
-Interactive CBT quiz covering HTML, CSS & JavaScript (100 Questions).
+Interactive CBT quiz covering HTML & CSS.
+
+**Instructions:** Choose the correct answer from A–D.
 
 ## Sections Covered
 
@@ -16,19 +18,6 @@ Interactive CBT quiz covering HTML, CSS & JavaScript (100 Questions).
 - Selectors (tag, class, ID, universal)
 - Display properties, units (`rem`, `px`), line-height, opacity
 
-### Section C — JavaScript Fundamentals (Questions 61–80)
-- JavaScript role and `<script>` tag
-- Variables (`let`, `const`) and assignment
-- Data types (String, Number, Boolean)
-- Operators, console logging, conditionals
-
-### Section D — JavaScript + DOM (Questions 81–100)
-- Document Object Model concept and representations
-- Element selection (`document.querySelector`)
-- Updating content (`textContent`) and styles (`element.style`)
-- Creating, appending, removing DOM elements
-- Manipulating CSS classes (`classList.add()`, `classList.remove()`)
-
 ## How to Run
 
 Open `index.html` in a browser, or serve the folder locally:
@@ -41,7 +30,8 @@ Then visit `http://localhost:3000/html_class_valuation/`
 
 ## Features
 
-- **100 multiple-choice questions** spanning HTML, CSS & JavaScript
+- **60 multiple-choice questions** covering HTML & CSS (Sections A & B)
+- **Instructions:** Choose the correct answer from A–D
 - **60-minute CBT timer**
 - **Anti-cheat protection** (blocks right-click, F12, developer tools shortcuts, blur on devtools open)
 - **Auto-advance 3 seconds** after answering
