@@ -1,385 +1,474 @@
 const quizQuestions = [
   // ==========================================
-  // HTML EVALUATION — 60 CBT QUESTIONS
+  // PART A — HTML (1–30)
   // ==========================================
   {
     id: 1,
     question: "What does HTML stand for?",
     options: [
-      "Hyper Text Markup Language",
-      "High Text Machine Language",
+      "HyperText Markup Language",
+      "HighText Machine Language",
       "Hyperlink Text Management Language",
-      "Home Tool Markup Language"
+      "Hyper Transfer Markup Language"
     ],
-    correct: "Hyper Text Markup Language"
+    correct: "HyperText Markup Language"
   },
   {
     id: 2,
-    question: "What is the main purpose of HTML?",
+    question: "What is the primary purpose of HTML?",
     options: [
-      "To style webpages",
-      "To structure webpage content",
-      "To create databases",
-      "To add animations"
+      "To add animations to a website",
+      "To structure the content of a webpage",
+      "To manage databases",
+      "To style a webpage"
     ],
-    correct: "To structure webpage content"
+    correct: "To structure the content of a webpage"
   },
   {
     id: 3,
-    question: "Which declaration defines an HTML5 document?",
-    options: ["<html5>", "<!DOCTYPE html>", "<doctype html>", "<!HTML5>"],
+    question: "Which declaration tells the browser that the document uses HTML5?",
+    options: ["<html5>", "<doctype html>", "<!DOCTYPE html>", '<html version="5">'],
     correct: "<!DOCTYPE html>"
   },
   {
     id: 4,
-    question: "Which element is the root element of an HTML document?",
-    options: ["<body>", "<head>", "<html>", "<main>"],
-    correct: "<html>"
-  },
-  {
-    id: 5,
-    question: "Which element contains the visible content of a webpage?",
-    options: ["<head>", "<body>", "<html>", "<main>"],
+    question: "Which element contains the visible content of an HTML document?",
+    options: ["<head>", "<body>", "<main>", "<content>"],
     correct: "<body>"
   },
   {
-    id: 6,
-    question: "Which element contains metadata and information about the webpage?",
-    options: ["<body>", "<main>", "<head>", "<meta-data>"],
+    id: 5,
+    question: "Which element contains metadata, the page title, and links to stylesheets?",
+    options: ["<body>", "<footer>", "<head>", "<meta>"],
     correct: "<head>"
   },
   {
-    id: 7,
-    question: "Which tag creates the largest heading?",
-    options: ["<h6>", "<heading>", "<h1>", "<head>"],
+    id: 6,
+    question: "Which HTML element is used for the largest heading?",
+    options: ["<heading>", "<h6>", "<h1>", "<head>"],
     correct: "<h1>"
   },
   {
-    id: 8,
-    question: "Which tag is used to create a paragraph?",
-    options: ["<para>", "<p>", "<paragraph>", "<text>"],
+    id: 7,
+    question: "Which element is used to create a paragraph?",
+    options: ["<paragraph>", "<p>", "<para>", "<text>"],
     correct: "<p>"
   },
   {
-    id: 9,
-    question: "Which tag creates a hyperlink?",
-    options: ["<link>", "<a>", "<href>", "<url>"],
-    correct: "<a>"
-  },
-  {
-    id: 10,
-    question: "Which attribute specifies where a hyperlink points?",
-    options: ["src", "href", "link", "target"],
-    correct: "href"
-  },
-  {
-    id: 11,
-    question: "Which tag is used to display an image?",
-    options: ["<image>", "<img>", "<picture>", "<photo>"],
-    correct: "<img>"
-  },
-  {
-    id: 12,
-    question: "Which attribute specifies the image file?",
-    options: ["href", "src", "file", "source"],
-    correct: "src"
-  },
-  {
-    id: 13,
-    question: "What is the purpose of the alt attribute?",
-    options: [
-      "To change an image's size",
-      "To provide alternative text for an image",
-      "To add a border",
-      "To link an image"
-    ],
-    correct: "To provide alternative text for an image"
-  },
-  {
-    id: 14,
-    question: "Which tag creates an unordered list?",
-    options: ["<ol>", "<ul>", "<li>", "<list>"],
-    correct: "<ul>"
-  },
-  {
-    id: 15,
-    question: "Which tag creates an ordered list?",
-    options: ["<ul>", "<ol>", "<li>", "<order>"],
-    correct: "<ol>"
-  },
-  {
-    id: 16,
-    question: "Which tag represents an item in a list?",
-    options: ["<item>", "<li>", "<list-item>", "<i>"],
-    correct: "<li>"
-  },
-  {
-    id: 17,
-    question: "Which tag creates a line break?",
-    options: ["<break>", "<br>", "<lb>", "<newline>"],
+    id: 8,
+    question: "Which element creates a line break?",
+    options: ["<break>", "<lb>", "<br>", "<newline>"],
     correct: "<br>"
   },
   {
-    id: 18,
-    question: "Which element creates a horizontal line?",
-    options: ["<line>", "<hr>", "<horizontal>", "<br>"],
+    id: 9,
+    question: "Which element creates a horizontal thematic break?",
+    options: ["<line>", "<hr>", "<break>", "<horizontal>"],
     correct: "<hr>"
   },
   {
-    id: 19,
-    question: "Which element is used to create a generic block container?",
-    options: ["<span>", "<div>", "<container>", "<block>"],
-    correct: "<div>"
-  },
-  {
-    id: 20,
-    question: "Which element is commonly used as an inline container?",
-    options: ["<div>", "<span>", "<inline>", "<text>"],
-    correct: "<span>"
-  },
-  {
-    id: 21,
-    question: "Which attribute gives an element a unique identifier?",
-    options: ["class", "id", "name", "unique"],
-    correct: "id"
-  },
-  {
-    id: 22,
-    question: "Which attribute can be shared by multiple elements?",
-    options: ["id", "class", "unique", "identifier"],
-    correct: "class"
-  },
-  {
-    id: 23,
-    question: "Which HTML element represents the main content of a webpage?",
-    options: ["<content>", "<main>", "<primary>", "<body-content>"],
-    correct: "<main>"
-  },
-  {
-    id: 24,
-    question: "Which semantic element represents navigation links?",
-    options: ["<navigation>", "<nav>", "<links>", "<menu>"],
-    correct: "<nav>"
-  },
-  {
-    id: 25,
-    question: "Which element represents the footer of a webpage?",
-    options: ["<bottom>", "<footer>", "<end>", "<foot>"],
-    correct: "<footer>"
-  },
-  {
-    id: 26,
-    question: "Which element represents a standalone piece of content such as a blog post?",
-    options: ["<article>", "<post>", "<content>", "<blog>"],
-    correct: "<article>"
-  },
-  {
-    id: 27,
-    question: "Which semantic element is used to group related content?",
-    options: ["<group>", "<section>", "<content-group>", "<div-section>"],
+    id: 10,
+    question: "Which of the following is a semantic HTML element?",
+    options: ["<div>", "<span>", "<section>", "<box>"],
     correct: "<section>"
   },
   {
-    id: 28,
-    question: "Which element is commonly used for introductory content or a header?",
-    options: ["<top>", "<header>", "<intro>", "<heading-section>"],
-    correct: "<header>"
+    id: 11,
+    question: "What is an HTML attribute?",
+    options: [
+      "A CSS rule",
+      "Additional information provided inside an HTML element",
+      "A JavaScript function",
+      "A type of HTML comment"
+    ],
+    correct: "Additional information provided inside an HTML element"
   },
   {
-    id: 29,
-    question: "Which element is used to create a form?",
-    options: ["<input>", "<form>", "<form-container>", "<data>"],
-    correct: "<form>"
+    id: 12,
+    question: "Which attribute specifies the destination of a hyperlink?",
+    options: ["src", "link", "href", "url"],
+    correct: "href"
   },
   {
-    id: 30,
-    question: "Which element collects user input?",
-    options: ["<input>", "<user>", "<collect>", "<data-input>"],
-    correct: "<input>"
+    id: 13,
+    question: "Which code correctly creates a link to Google?",
+    options: [
+      '<link src="https://google.com">Google</link>',
+      '<a href="https://google.com">Google</a>',
+      '<a src="https://google.com">Google</a>',
+      '<href="https://google.com">Google</href>'
+    ],
+    correct: '<a href="https://google.com">Google</a>'
   },
   {
-    id: 31,
-    question: "Which input type is used for entering a password?",
-    options: ['type="text"', 'type="password"', 'type="secure"', 'type="hidden"'],
-    correct: 'type="password"'
+    id: 14,
+    question: "Which attribute specifies the path of an image?",
+    options: ["href", "link", "src", "path"],
+    correct: "src"
   },
   {
-    id: 32,
-    question: "Which input type is used to enter an email address?",
-    options: ['type="mail"', 'type="email"', 'type="address"', 'type="text-email"'],
-    correct: 'type="email"'
+    id: 15,
+    question: "What is the primary purpose of the alt attribute on an image?",
+    options: [
+      "To change the image size",
+      "To provide alternative text describing the image",
+      "To make the image responsive",
+      "To add an image border"
+    ],
+    correct: "To provide alternative text describing the image"
   },
   {
-    id: 33,
-    question: "Which input type allows a user to select one option from a group?",
-    options: ["checkbox", "radio", "select", "option"],
-    correct: "radio"
+    id: 16,
+    question: "Which code correctly displays an image?",
+    options: [
+      '<image src="photo.jpg">',
+      '<img href="photo.jpg">',
+      '<img src="photo.jpg" alt="Product">',
+      '<picture href="photo.jpg">'
+    ],
+    correct: '<img src="photo.jpg" alt="Product">'
   },
   {
-    id: 34,
-    question: "Which input type allows multiple selections?",
-    options: ["radio", "multiple", "checkbox", "select"],
-    correct: "checkbox"
-  },
-  {
-    id: 35,
-    question: "Which element creates a dropdown menu?",
-    options: ["<dropdown>", "<select>", "<menu>", "<list>"],
-    correct: "<select>"
-  },
-  {
-    id: 36,
-    question: "Which element represents an option inside a <select>?",
-    options: ["<choice>", "<option>", "<item>", "<select-item>"],
-    correct: "<option>"
-  },
-  {
-    id: 37,
-    question: "Which element is used to provide a label for a form control?",
-    options: ["<label>", "<form-label>", "<caption>", "<name>"],
-    correct: "<label>"
-  },
-  {
-    id: 38,
-    question: "Which attribute connects a <label> to an input using the input's ID?",
-    options: ["id", "for", "target", "input"],
-    correct: "for"
-  },
-  {
-    id: 39,
-    question: "Which element creates a multi-line text input?",
-    options: ['<input type="textarea">', "<textarea>", "<text-area>", "<multiline>"],
-    correct: "<textarea>"
-  },
-  {
-    id: 40,
-    question: "Which button type submits a form?",
-    options: ['type="send"', 'type="submit"', 'type="form"', 'type="upload"'],
-    correct: 'type="submit"'
-  },
-  {
-    id: 41,
-    question: "Which element creates a table?",
-    options: ["<table>", "<tab>", "<data-table>", "<grid>"],
-    correct: "<table>"
-  },
-  {
-    id: 42,
-    question: "Which element represents a table row?",
-    options: ["<row>", "<tr>", "<td>", "<table-row>"],
-    correct: "<tr>"
-  },
-  {
-    id: 43,
-    question: "Which element represents a table data cell?",
-    options: ["<cell>", "<td>", "<data>", "<table-data>"],
-    correct: "<td>"
-  },
-  {
-    id: 44,
-    question: "Which element represents a table heading cell?",
-    options: ["<thead>", "<th>", "<heading>", "<table-heading>"],
-    correct: "<th>"
-  },
-  {
-    id: 45,
-    question: "Which element groups table header rows?",
-    options: ["<header>", "<thead>", "<thgroup>", "<table-head>"],
-    correct: "<thead>"
-  },
-  {
-    id: 46,
-    question: "Which element groups the main body of table rows?",
-    options: ["<tbody>", "<body>", "<table-body>", "<rows>"],
-    correct: "<tbody>"
-  },
-  {
-    id: 47,
-    question: "Which element groups the footer rows of a table?",
-    options: ["<footer>", "<tfoot>", "<table-footer>", "<foot>"],
-    correct: "<tfoot>"
-  },
-  {
-    id: 48,
-    question: "Which HTML tag is used to emphasize text semantically?",
-    options: ["<italic>", "<em>", "<i-text>", "<emphasis-text>"],
-    correct: "<em>"
-  },
-  {
-    id: 49,
-    question: "Which HTML tag indicates strong importance?",
-    options: ["<bold>", "<strong>", "<important>", "<bolder>"],
-    correct: "<strong>"
-  },
-  {
-    id: 50,
-    question: "Which tag is used to display preformatted text?",
-    options: ["<pre>", "<format>", "<code-block>", "<text-format>"],
-    correct: "<pre>"
-  },
-  {
-    id: 51,
-    question: "Which element is used to represent computer code?",
-    options: ["<program>", "<code>", "<script-code>", "<coding>"],
-    correct: "<code>"
-  },
-  {
-    id: 52,
+    id: 17,
     question: "Which attribute opens a link in a new browsing context?",
     options: ['new="true"', 'target="_blank"', 'open="new"', 'window="new"'],
     correct: 'target="_blank"'
   },
   {
-    id: 53,
-    question: "Which attribute provides additional information that is commonly shown as a tooltip?",
-    options: ["info", "title", "tooltip", "description"],
-    correct: "title"
+    id: 18,
+    question: "What is the difference between an absolute and relative URL?",
+    options: [
+      "Absolute URLs contain the complete address; relative URLs depend on the current location",
+      "Relative URLs always use HTTPS",
+      "Absolute URLs only work with images",
+      "There is no difference"
+    ],
+    correct: "Absolute URLs contain the complete address; relative URLs depend on the current location"
   },
   {
-    id: 54,
-    question: "Which attribute makes a form input mandatory?",
-    options: ["required", "mandatory", "must-fill", "validate"],
+    id: 19,
+    question: "Which element creates an unordered list?",
+    options: ["<ol>", "<list>", "<ul>", "<li>"],
+    correct: "<ul>"
+  },
+  {
+    id: 20,
+    question: "Which element creates an ordered list?",
+    options: ["<ul>", "<ol>", "<li>", "<order>"],
+    correct: "<ol>"
+  },
+  {
+    id: 21,
+    question: "Which element represents an item inside a list?",
+    options: ["<item>", "<list-item>", "<li>", "<ul>"],
+    correct: "<li>"
+  },
+  {
+    id: 22,
+    question: "Which HTML element defines a table row?",
+    options: ["<td>", "<tr>", "<th>", "<row>"],
+    correct: "<tr>"
+  },
+  {
+    id: 23,
+    question: "Which element represents a table header cell?",
+    options: ["<thead>", "<header>", "<th>", "<td>"],
+    correct: "<th>"
+  },
+  {
+    id: 24,
+    question: "Which attribute allows a table cell to span multiple columns?",
+    options: ["rowspan", "colspan", "span-columns", "columns"],
+    correct: "colspan"
+  },
+  {
+    id: 25,
+    question: "Which HTML element is used to create a form?",
+    options: ["<input>", "<form>", "<fieldset>", "<data>"],
+    correct: "<form>"
+  },
+  {
+    id: 26,
+    question: "Which input type is appropriate for collecting an email address?",
+    options: [
+      '<input type="text">',
+      '<input type="mail">',
+      '<input type="email">',
+      "<email>"
+    ],
+    correct: '<input type="email">'
+  },
+  {
+    id: 27,
+    question: "Which input type hides the characters entered by the user?",
+    options: ["hidden", "password", "secure", "private"],
+    correct: "password"
+  },
+  {
+    id: 28,
+    question: "Which attribute makes a form field mandatory?",
+    options: ["mandatory", "required", "validate", "must-fill"],
     correct: "required"
   },
   {
+    id: 29,
+    question: "What is the main purpose of the <label> element?",
+    options: [
+      "To style an input",
+      "To provide a name/description associated with a form control",
+      "To submit a form",
+      "To validate an input"
+    ],
+    correct: "To provide a name/description associated with a form control"
+  },
+  {
+    id: 30,
+    question: "Which practice improves HTML accessibility?",
+    options: [
+      "Using <div> for every element",
+      "Removing all alt attributes",
+      "Using semantic HTML and properly associated labels",
+      "Using only uppercase HTML tags"
+    ],
+    correct: "Using semantic HTML and properly associated labels"
+  },
+
+  // ==========================================
+  // PART B — CSS (31–60)
+  // ==========================================
+  {
+    id: 31,
+    question: "What does CSS stand for?",
+    options: [
+      "Computer Style Sheets",
+      "Cascading Style Sheets",
+      "Creative Style Syntax",
+      "Colorful Style Sheets"
+    ],
+    correct: "Cascading Style Sheets"
+  },
+  {
+    id: 32,
+    question: "What is the primary purpose of CSS?",
+    options: [
+      "To structure webpage content",
+      "To store website data",
+      "To style and control the presentation of HTML elements",
+      "To create databases"
+    ],
+    correct: "To style and control the presentation of HTML elements"
+  },
+  {
+    id: 33,
+    question: "Which is the correct way to link an external CSS file?",
+    options: [
+      '<style src="style.css">',
+      '<css href="style.css">',
+      '<link rel="stylesheet" href="style.css">',
+      '<stylesheet src="style.css">'
+    ],
+    correct: '<link rel="stylesheet" href="style.css">'
+  },
+  {
+    id: 34,
+    question: "Which CSS property changes the text color?",
+    options: ["font-color", "text-color", "color", "foreground"],
+    correct: "color"
+  },
+  {
+    id: 35,
+    question: "Which CSS property changes the background color?",
+    options: ["background-color", "bg-color", "color-background", "background"],
+    correct: "background-color"
+  },
+  {
+    id: 36,
+    question: "Which selector targets all <p> elements?",
+    options: [".p", "#p", "p", "*p"],
+    correct: "p"
+  },
+  {
+    id: 37,
+    question: "Which selector targets an element with the class card?",
+    options: ["#card", ".card", "card", "*card"],
+    correct: ".card"
+  },
+  {
+    id: 38,
+    question: "Which selector targets an element with the ID header?",
+    options: [".header", "header", "#header", "@header"],
+    correct: "#header"
+  },
+  {
+    id: 39,
+    question: "What does the universal selector * select?",
+    options: ["Only paragraphs", "Only classes", "Only IDs", "All elements"],
+    correct: "All elements"
+  },
+  {
+    id: 40,
+    question: "Which CSS property changes the size of text?",
+    options: ["text-size", "font-size", "font-height", "size"],
+    correct: "font-size"
+  },
+  {
+    id: 41,
+    question: "Which of the following correctly represents the CSS box model from inside to outside?",
+    options: [
+      "Margin → Border → Padding → Content",
+      "Content → Padding → Border → Margin",
+      "Padding → Content → Margin → Border",
+      "Border → Content → Padding → Margin"
+    ],
+    correct: "Content → Padding → Border → Margin"
+  },
+  {
+    id: 42,
+    question: "Which property controls the space inside an element, between its content and border?",
+    options: ["margin", "padding", "spacing", "gap"],
+    correct: "padding"
+  },
+  {
+    id: 43,
+    question: "Which property controls the space outside an element's border?",
+    options: ["padding", "margin", "border-spacing", "outside"],
+    correct: "margin"
+  },
+  {
+    id: 44,
+    question: "What does box-sizing: border-box do?",
+    options: [
+      "Removes the border",
+      "Makes width and height include padding and border",
+      "Makes the element invisible",
+      "Adds extra margin"
+    ],
+    correct: "Makes width and height include padding and border"
+  },
+  {
+    id: 45,
+    question: "Which unit is relative to the root element's font size?",
+    options: ["em", "%", "rem", "px"],
+    correct: "rem"
+  },
+  {
+    id: 46,
+    question: "Which unit is relative to the viewport width?",
+    options: ["vh", "vw", "rem", "em"],
+    correct: "vw"
+  },
+  {
+    id: 47,
+    question: "Which display value makes an element a flex container?",
+    options: ["display: block", "display: grid", "display: flex", "display: inline"],
+    correct: "display: flex"
+  },
+  {
+    id: 48,
+    question: "What does display: none do?",
+    options: [
+      "Makes the element transparent",
+      "Removes the element from the layout",
+      "Makes the element smaller",
+      "Moves the element behind another element"
+    ],
+    correct: "Removes the element from the layout"
+  },
+  {
+    id: 49,
+    question: "Which position value keeps an element attached to the viewport while scrolling?",
+    options: ["relative", "absolute", "fixed", "static"],
+    correct: "fixed"
+  },
+  {
+    id: 50,
+    question: "An absolutely positioned element is normally positioned relative to:",
+    options: [
+      "Always the <body>",
+      "The nearest positioned ancestor",
+      "The nearest <p>",
+      "The browser's stylesheet"
+    ],
+    correct: "The nearest positioned ancestor"
+  },
+  {
+    id: 51,
+    question: "What is Flexbox mainly designed for?",
+    options: [
+      "Creating databases",
+      "One-dimensional layouts",
+      "Creating HTML documents",
+      "Editing images"
+    ],
+    correct: "One-dimensional layouts"
+  },
+  {
+    id: 52,
+    question: "Which property controls the direction of flex items?",
+    options: ["flex-direction", "flex-position", "direction-flex", "flex-flow-direction"],
+    correct: "flex-direction"
+  },
+  {
+    id: 53,
+    question: "Which property controls alignment along the main axis in Flexbox?",
+    options: ["align-items", "justify-content", "align-content", "main-align"],
+    correct: "justify-content"
+  },
+  {
+    id: 54,
+    question: "Which property controls alignment along the cross axis in a typical row-based flex container?",
+    options: ["justify-content", "align-items", "flex-direction", "cross-axis"],
+    correct: "align-items"
+  },
+  {
     id: 55,
-    question: "Which attribute provides a hint about what a user should enter into an input?",
-    options: ["hint", "placeholder", "suggestion", "description"],
-    correct: "placeholder"
+    question: "Which property creates space between Flexbox or Grid items without adding margins to the individual children?",
+    options: ["spacing", "margin-gap", "gap", "item-space"],
+    correct: "gap"
   },
   {
     id: 56,
-    question: "Which HTML element is used to embed audio?",
-    options: ["<sound>", "<audio>", "<music>", "<media-audio>"],
-    correct: "<audio>"
+    question: "CSS Grid is primarily designed for:",
+    options: [
+      "Two-dimensional layouts",
+      "Audio processing",
+      "Form validation",
+      "HTML document structure"
+    ],
+    correct: "Two-dimensional layouts"
   },
   {
     id: 57,
-    question: "Which HTML element is used to embed video?",
-    options: ["<movie>", "<video>", "<media>", "<film>"],
-    correct: "<video>"
+    question: "Which property defines the columns of a CSS Grid?",
+    options: ["grid-columns", "grid-template-columns", "columns-grid", "grid-column-layout"],
+    correct: "grid-template-columns"
   },
   {
     id: 58,
-    question: "Which tag is used to add a caption to a <figure>?",
-    options: ["<caption>", "<figcaption>", "<figure-caption>", "<description>"],
-    correct: "<figcaption>"
+    question: "Which CSS declaration creates three equal-width grid columns?",
+    options: [
+      "grid-template-columns: 3;",
+      "grid-template-columns: repeat(3, 1fr);",
+      "grid-columns: equal(3);",
+      "columns: 1fr 1fr 1fr 1fr;"
+    ],
+    correct: "grid-template-columns: repeat(3, 1fr);"
   },
   {
     id: 59,
-    question: "Which HTML element is used to represent a quotation?",
-    options: ["<quote>", "<blockquote>", "<quotation>", "<qtext>"],
-    correct: "<blockquote>"
+    question: "Which CSS feature is commonly used to apply different styles at different screen sizes?",
+    options: ["Variables", "Media queries", "Pseudo-elements", "Transitions"],
+    correct: "Media queries"
   },
   {
     id: 60,
-    question: "Which of the following is the correct basic HTML structure?",
+    question: "Which of the following is the most appropriate approach for creating a responsive website?",
     options: [
-      "<body> <head> <html> </html> </head> </body>",
-      "<html> <head></head> <body></body> </html>",
-      "<head> <html> <body></body> </html> </head>",
-      "<html> <body> <head></head> </body> </html>"
+      "Use fixed widths everywhere",
+      "Design only for desktop and ignore mobile",
+      "Use flexible layouts, responsive units, media queries, Flexbox/Grid, and responsive images",
+      "Create a separate HTML page for every screen size"
     ],
-    correct: "<html> <head></head> <body></body> </html>"
+    correct: "Use flexible layouts, responsive units, media queries, Flexbox/Grid, and responsive images"
   }
 ];

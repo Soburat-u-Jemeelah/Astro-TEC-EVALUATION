@@ -1,22 +1,26 @@
-# Astro_TEC SIWES CBT - HTML & CSS
+# Astro_TEC WEB DEVELOPMENT CBT - HTML & CSS
 
-Interactive CBT quiz covering HTML & CSS.
+Interactive CBT quiz covering HTML & CSS — 60 Questions.
 
 **Instructions:** Choose the correct answer from A–D.
 
 ## Sections Covered
 
-### Section A — HTML (Questions 1–30)
+### Part A — HTML (Questions 1–30)
 - HTML definitions, structure, and fundamentals
 - Headings, paragraphs, links, images, lists, tables
-- Semantic markup (`<strong>`, `<em>`, `<div>`, `<span>`)
+- Semantic markup and accessibility
 - Forms and input types
+- HTML attributes
 
-### Section B — CSS (Questions 31–60)
-- Cascading Style Sheets syntax and linking methods
-- Text styling, colors, backgrounds, borders, padding, and margin
+### Part B — CSS (Questions 31–60)
+- CSS fundamentals and linking methods
 - Selectors (tag, class, ID, universal)
-- Display properties, units (`rem`, `px`), line-height, opacity
+- Text styling, colors, backgrounds
+- Box model (content, padding, border, margin)
+- Display properties and positioning
+- Flexbox and CSS Grid
+- Responsive design and media queries
 
 ## How to Run
 
