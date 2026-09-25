@@ -1,7 +1,7 @@
 {
   "name": "html-class-evaluation",
   "version": "1.0.0",
-  "description": "Astro_TEC WEB DEVELOPMENT CBT - HTML & CSS evaluation quiz with 60 questions.",
+  "description": "Astro_TEC SIWES CBT - HTML & CSS evaluation quiz with 60 questions.",
   "main": "index.html",
   "scripts": {
     "build": "echo 'Static build ready'",

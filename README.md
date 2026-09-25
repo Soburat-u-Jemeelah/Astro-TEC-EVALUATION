@@ -1,4 +1,4 @@
-# Astro_TEC WEB DEVELOPMENT CBT - HTML & CSS
+# Astro_TEC SIWES CBT - HTML & CSS
 
 Interactive CBT quiz covering HTML & CSS — 60 Questions.
 
