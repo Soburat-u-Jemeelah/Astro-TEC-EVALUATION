@@ -1,43 +1,38 @@
-# Astro_TEC SIWES CBT - HTML & CSS
+# Astro_TEC SIWES CBT - JavaScript
 
-Interactive CBT quiz covering HTML & CSS — 60 Questions.
+Interactive CBT quiz covering JavaScript — 100 Questions.
 
 **Instructions:** Choose the correct answer from A–D.
 
 ## Sections Covered
 
-### Part A — HTML (Questions 1–30)
-- HTML definitions, structure, and fundamentals
-- Headings, paragraphs, links, images, lists, tables
-- Semantic markup and accessibility
-- Forms and input types
-- HTML attributes
-
-### Part B — CSS (Questions 31–60)
-- CSS fundamentals and linking methods
-- Selectors (tag, class, ID, universal)
-- Text styling, colors, backgrounds
-- Box model (content, padding, border, margin)
-- Display properties and positioning
-- Flexbox and CSS Grid
-- Responsive design and media queries
+- **Section A: JavaScript Basics** (Questions 1–10)
+- **Section B: Variables** (Questions 11–20)
+- **Section C: Data Types** (Questions 21–30)
+- **Section D: Operators** (Questions 31–40)
+- **Section E: Strings and Type Conversion** (Questions 41–50)
+- **Section F: Conditional Statements** (Questions 51–60)
+- **Section G: Functions** (Questions 61–70)
+- **Section H: Arrays and Objects** (Questions 71–80)
+- **Section I: DOM Manipulation** (Questions 81–90)
+- **Section J: Events and Event Listeners** (Questions 91–96)
+- **Section K: Forms and Validation** (Questions 97–100)
 
 ## How to Run
 
-Open `index.html` in a browser, or serve the folder locally:
+Open `index.html` in a browser, or run the Node.js server:
 
 ```bash
-python -m http.server 3000
+node server.js
 ```
 
-Then visit `http://localhost:3000/html_class_valuation/`
+Then visit `http://localhost:3000`
 
 ## Features
 
-- **60 multiple-choice questions** covering HTML & CSS (Sections A & B)
+- **100 multiple-choice questions** covering JavaScript (Sections A through K)
 - **Instructions:** Choose the correct answer from A–D
-- **35-minute CBT timer**
-- **Anti-cheat protection** (blocks right-click, F12, developer tools shortcuts, blur on devtools open)
+- **60-minute CBT timer**
+- **Anti-cheat protection** (blocks right-click, F12, developer tools shortcuts)
 - **Auto-advance 3 seconds** after answering
 - **Scores & percentages saved** to `localStorage`
-- **Leaderboard / Results table** (`results.html`)

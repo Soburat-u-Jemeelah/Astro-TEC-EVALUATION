@@ -35,7 +35,7 @@ let quizEnded = false;
 let quizTimerInterval = null;
 let autoAdvanceTimeout = null;
 
-const QUIZ_DURATION_SECONDS = 35 * 60; // 35 minutes for 60 questions
+const QUIZ_DURATION_SECONDS = 60 * 60; // 60 minutes for 100 questions
 let quizTimeRemaining = QUIZ_DURATION_SECONDS;
 
 if (typeof quizQuestions === "undefined" || !Array.isArray(quizQuestions)) {
@@ -82,7 +82,7 @@ playerForm.addEventListener("submit", function (e) {
 });
 
 function saveQuizResult() {
-  const results = JSON.parse(localStorage.getItem("htmlQuizResults")) || [];
+  const results = JSON.parse(localStorage.getItem("jsQuizResults")) || JSON.parse(localStorage.getItem("htmlQuizResults")) || [];
   const total = quizQuestions.length;
   const percentage = total
     ? ((correctPicked / total) * 100).toFixed(1)
@@ -98,7 +98,7 @@ function saveQuizResult() {
 
   results.push(newResult);
   results.sort((a, b) => b.percentage - a.percentage);
-  localStorage.setItem("htmlQuizResults", JSON.stringify(results));
+  localStorage.setItem("jsQuizResults", JSON.stringify(results));
 }
 
 startBtn.addEventListener("click", () => {
