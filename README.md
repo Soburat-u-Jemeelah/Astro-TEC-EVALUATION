@@ -39,7 +39,7 @@ Then visit `http://localhost:3000`
 
 - **100 multiple-choice questions** covering HTML, CSS & Bootstrap
 - **Instructions:** Choose the correct answer from A–D
-- **60-minute CBT timer**
+- **37-minute CBT timer**
 - **Anti-cheat protection** (blocks right-click, F12, developer tools shortcuts)
 - **Auto-advance 3 seconds** after answering
 - **Scores & percentages saved** to `localStorage`
