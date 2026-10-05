@@ -1,4 +1,4 @@
-# Astro_TEC SIWES CBT - JavaScript
+# Frontend Development CBT - JavaScript
 
 Interactive CBT quiz covering JavaScript — 100 Questions.
 
