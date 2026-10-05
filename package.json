@@ -1,7 +1,7 @@
 {
   "name": "html-class-evaluation",
   "version": "1.0.0",
-  "description": "Frontend Development CBT - JavaScript evaluation quiz with 100 questions.",
+  "description": "Frontend Development CBT - HTML, CSS & Bootstrap evaluation quiz with 100 questions.",
   "main": "index.html",
   "scripts": {
     "build": "echo 'Static build ready'",

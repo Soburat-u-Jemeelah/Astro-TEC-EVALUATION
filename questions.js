@@ -1,835 +1,839 @@
 const quizQuestions = [
   // ==========================================
-  // SECTION A: JavaScript Basics (1–10)
+  // SECTION A — HTML
+  // HTML Basics (1–10)
   // ==========================================
   {
     id: 1,
-    question: "What is JavaScript?",
+    question: "What does HTML stand for?",
     options: [
-      "A database",
-      "A programming language",
-      "A markup language",
-      "A styling language"
+      "Hyper Text Markup Language",
+      "High Text Machine Language",
+      "Hyperlink Text Management Language",
+      "Home Tool Markup Language"
     ],
-    correct: "A programming language"
+    correct: "Hyper Text Markup Language"
   },
   {
     id: 2,
-    question: "Which HTML tag is used to add JavaScript to a webpage?",
-    options: ["<js>", "<javascript>", "<script>", "<code>"],
-    correct: "<script>"
+    question: "What is HTML mainly used for?",
+    options: [
+      "Styling webpages",
+      "Structuring webpage content",
+      "Programming databases",
+      "Creating animations only"
+    ],
+    correct: "Structuring webpage content"
   },
   {
     id: 3,
-    question: "Which method is commonly used to display information in the browser console?",
-    options: ["print()", "console.log()", "display()", "show()"],
-    correct: "console.log()"
+    question: "Which declaration defines an HTML5 document?",
+    options: [
+      "<html5>",
+      "<!DOCTYPE html>",
+      "<doctype html5>",
+      '<html version="5">'
+    ],
+    correct: "<!DOCTYPE html>"
   },
   {
     id: 4,
-    question: "Which symbol is used for a single-line comment in JavaScript?",
-    options: ["//", "<!--", "##", "**"],
-    correct: "//"
+    question: "Which element is the root element of an HTML document?",
+    options: ["<body>", "<head>", "<html>", "<main>"],
+    correct: "<html>"
   },
   {
     id: 5,
-    question: "Which file extension is normally used for JavaScript files?",
-    options: [".html", ".css", ".js", ".java"],
-    correct: ".js"
+    question: "Which section contains information about the webpage that is generally not displayed directly on the page?",
+    options: ["<body>", "<head>", "<main>", "<footer>"],
+    correct: "<head>"
   },
   {
     id: 6,
-    question: "Which attribute is used to connect an external JavaScript file?",
-    options: ["href", "src", "link", "file"],
-    correct: "src"
+    question: "Which element contains the visible content of a webpage?",
+    options: ["<head>", "<title>", "<body>", "<meta>"],
+    correct: "<body>"
   },
   {
     id: 7,
-    question: "JavaScript is mainly used to make webpages:",
-    options: ["Interactive", "Smaller", "Printed", "Static"],
-    correct: "Interactive"
+    question: "Which tag defines the title shown on the browser tab?",
+    options: ["<head>", "<title>", "<h1>", "<caption>"],
+    correct: "<title>"
   },
   {
     id: 8,
-    question: "Is JavaScript case-sensitive?",
-    options: ["Yes", "No", "Only in HTML", "Only in CSS"],
-    correct: "Yes"
+    question: "Which tag is used for the largest heading?",
+    options: ["<h6>", "<heading>", "<h1>", "<head>"],
+    correct: "<h1>"
   },
   {
     id: 9,
-    question: "Which is a valid JavaScript statement?",
-    options: [
-      'let name = "John";',
-      "variable name = John;",
-      'name let "John";',
-      'let = name "John";'
-    ],
-    correct: 'let name = "John";'
+    question: "Which tag is used to create a paragraph?",
+    options: ["<text>", "<p>", "<paragraph>", "<para>"],
+    correct: "<p>"
   },
   {
     id: 10,
-    question: "Which of the following is an external JavaScript file connection?",
-    options: [
-      '<script href="app.js"></script>',
-      '<script src="app.js"></script>',
-      '<js src="app.js">',
-      '<javascript file="app.js">'
-    ],
-    correct: '<script src="app.js"></script>'
+    question: "Which tag creates a line break?",
+    options: ["<break>", "<lb>", "<br>", "<line>"],
+    correct: "<br>"
   },
 
   // ==========================================
-  // SECTION B: Variables (11–20)
+  // HTML Elements and Attributes (11–20)
   // ==========================================
   {
     id: 11,
-    question: "Which keyword is used to declare a variable that can be reassigned?",
-    options: ["let", "fixed", "constant", "define"],
-    correct: "let"
+    question: "What is an HTML attribute?",
+    options: [
+      "A CSS property",
+      "Additional information provided about an HTML element",
+      "A JavaScript function",
+      "A webpage"
+    ],
+    correct: "Additional information provided about an HTML element"
   },
   {
     id: 12,
-    question: "Which keyword is used to declare a constant?",
-    options: ["let", "const", "constant", "static"],
-    correct: "const"
+    question: "Which attribute is used to provide alternative text for an image?",
+    options: ["src", "title", "alt", "text"],
+    correct: "alt"
   },
   {
     id: 13,
-    question: "Which of the following correctly declares a variable?",
-    options: [
-      "let age = 20;",
-      "age let = 20;",
-      "variable age = 20;",
-      "let = age 20;"
-    ],
-    correct: "let age = 20;"
+    question: "Which attribute specifies the path to an image?",
+    options: ["href", "src", "path", "link"],
+    correct: "src"
   },
   {
     id: 14,
-    question: "What will this code produce?\n\nlet age = 20;\nage = 25;",
-    options: ["An error", "20", "25", "undefined"],
-    correct: "25"
+    question: "Which tag is used to display an image?",
+    options: ["<picture>", "<img>", "<image>", "<src>"],
+    correct: "<img>"
   },
   {
     id: 15,
-    question: "What happens when you try to reassign a const variable?",
-    options: [
-      "Its value changes",
-      "JavaScript produces an error",
-      "It becomes let",
-      "Nothing happens"
-    ],
-    correct: "JavaScript produces an error"
+    question: "Which tag is used to create a hyperlink?",
+    options: ["<link>", "<a>", "<href>", "<url>"],
+    correct: "<a>"
   },
   {
     id: 16,
-    question: "Which is NOT a valid variable name?",
-    options: ["firstName", "user_age", "2name", "studentName"],
-    correct: "2name"
+    question: "Which attribute specifies the destination of a hyperlink?",
+    options: ["src", "link", "href", "url"],
+    correct: "href"
   },
   {
     id: 17,
-    question: "Which variable naming style is commonly used for multiple words in JavaScript?",
-    options: ["first-name", "first name", "firstName", "First Name"],
-    correct: "firstName"
+    question: 'What does target="_blank" generally do?',
+    options: [
+      "Opens the link in a new browsing context/tab",
+      "Deletes the link",
+      "Opens the link in the same page",
+      "Makes the link bold"
+    ],
+    correct: "Opens the link in a new browsing context/tab"
   },
   {
     id: 18,
-    question: "What is the purpose of a variable?",
-    options: [
-      "To store data",
-      "To style HTML",
-      "To create CSS",
-      "To open a browser"
-    ],
-    correct: "To store data"
+    question: "Which tag creates an unordered list?",
+    options: ["<ol>", "<ul>", "<li>", "<list>"],
+    correct: "<ul>"
   },
   {
     id: 19,
-    question: "What does let allow you to do?",
-    options: [
-      "Reassign the variable",
-      "Never change the variable",
-      "Create HTML",
-      "Create CSS"
-    ],
-    correct: "Reassign the variable"
+    question: "Which tag creates an ordered list?",
+    options: ["<ul>", "<ol>", "<li>", "<order>"],
+    correct: "<ol>"
   },
   {
     id: 20,
-    question: "Which declaration creates a constant?",
-    options: [
-      'let country = "Nigeria";',
-      'var country = "Nigeria";',
-      'const country = "Nigeria";',
-      'constant country = "Nigeria";'
-    ],
-    correct: 'const country = "Nigeria";'
+    question: "Which tag represents an item inside a list?",
+    options: ["<item>", "<list-item>", "<li>", "<i>"],
+    correct: "<li>"
   },
 
   // ==========================================
-  // SECTION C: Data Types (21–30)
+  // Semantic HTML (21–28)
   // ==========================================
   {
     id: 21,
-    question: 'Which data type is "Hello"?',
-    options: ["Number", "String", "Boolean", "Object"],
-    correct: "String"
+    question: "What does semantic HTML mean?",
+    options: [
+      "Using elements that clearly describe their meaning and purpose",
+      "Using only CSS",
+      "Using JavaScript inside HTML",
+      "Using colorful HTML elements"
+    ],
+    correct: "Using elements that clearly describe their meaning and purpose"
   },
   {
     id: 22,
-    question: "Which data type is 25?",
-    options: ["String", "Boolean", "Number", "Character"],
-    correct: "Number"
+    question: "Which element is commonly used for the main navigation links?",
+    options: ["<navigation>", "<nav>", "<menu-bar>", "<links>"],
+    correct: "<nav>"
   },
   {
     id: 23,
-    question: "Which data type can have the value true or false?",
-    options: ["String", "Number", "Boolean", "Array"],
-    correct: "Boolean"
+    question: "Which semantic element represents the main content of a webpage?",
+    options: ["<main>", "<content>", "<body-content>", "<section-main>"],
+    correct: "<main>"
   },
   {
     id: 24,
-    question: 'What is the data type of "25"?',
-    options: ["Number", "String", "Boolean", "Null"],
-    correct: "String"
+    question: "Which element is commonly used for the bottom section of a webpage?",
+    options: ["<bottom>", "<footer>", "<end>", "<down>"],
+    correct: "<footer>"
   },
   {
     id: 25,
-    question: 'What is the difference between 25 and "25"?',
-    options: [
-      "They are exactly the same",
-      "The first is a number and the second is a string",
-      "The first is a string and the second is a number",
-      "Both are Boolean"
-    ],
-    correct: "The first is a number and the second is a string"
+    question: "Which element is commonly used for introductory content or a website's top section?",
+    options: ["<header>", "<top>", "<intro>", "<heading>"],
+    correct: "<header>"
   },
   {
     id: 26,
-    question: "Which operator is used to check the type of a value?",
-    options: ["type", "typeof", "checkType", "datatype"],
-    correct: "typeof"
+    question: "Which element is used to represent a standalone piece of content?",
+    options: ["<article>", "<content>", "<post-content>", "<standalone>"],
+    correct: "<article>"
   },
   {
     id: 27,
-    question: 'What does typeof "Hello" return?',
-    options: ["number", "boolean", "string", "text"],
-    correct: "string"
+    question: "Which element is used to group related content into a section?",
+    options: ["<section>", "<group>", "<div-section>", "<part>"],
+    correct: "<section>"
   },
   {
     id: 28,
-    question: "What does typeof 100 return?",
-    options: ["string", "number", "integer", "boolean"],
-    correct: "number"
+    question: "Which HTML element is a generic block-level container?",
+    options: ["<span>", "<div>", "<container>", "<block>"],
+    correct: "<div>"
   },
+
+  // ==========================================
+  // HTML Tables (29–33)
+  // ==========================================
   {
     id: 29,
-    question: "Which value is a Boolean?",
-    options: ['"true"', "true", '"false"', "1"],
-    correct: "true"
+    question: "Which tag creates an HTML table?",
+    options: ["<table>", "<tab>", "<data>", "<grid>"],
+    correct: "<table>"
   },
   {
     id: 30,
-    question: "Which value represents an intentional absence of a value?",
-    options: ["null", "empty", "none", "blank"],
-    correct: "null"
+    question: "Which tag represents a table row?",
+    options: ["<td>", "<tr>", "<row>", "<th>"],
+    correct: "<tr>"
   },
-
-  // ==========================================
-  // SECTION D: Operators (31–40)
-  // ==========================================
   {
     id: 31,
-    question: "Which operator is used for addition?",
-    options: ["+", "*", "/", "%"],
-    correct: "+"
+    question: "Which tag represents a normal table cell?",
+    options: ["<cell>", "<td>", "<tr>", "<data>"],
+    correct: "<td>"
   },
   {
     id: 32,
-    question: "Which operator is used for multiplication?",
-    options: ["+", "-", "*", "/"],
-    correct: "*"
+    question: "Which tag represents a table header cell?",
+    options: ["<header>", "<th>", "<thead-cell>", "<td-header>"],
+    correct: "<th>"
   },
   {
     id: 33,
-    question: "Which operator is used for division?",
-    options: ["+", "/", "%", "*"],
-    correct: "/"
+    question: "Which element groups the main body rows of a table?",
+    options: ["<tbody>", "<body>", "<table-body>", "<rows>"],
+    correct: "<tbody>"
   },
+
+  // ==========================================
+  // HTML Forms (34–40)
+  // ==========================================
   {
     id: 34,
-    question: "What does % return?",
-    options: [
-      "The percentage",
-      "The remainder",
-      "The quotient",
-      "The total"
-    ],
-    correct: "The remainder"
+    question: "Which element is used to create an HTML form?",
+    options: ["<input>", "<form>", "<forms>", "<fieldset-form>"],
+    correct: "<form>"
   },
   {
     id: 35,
-    question: "What is the result of 10 + 5?",
-    options: ["15", "50", "5", "105"],
-    correct: "15"
+    question: "Which element is commonly used to accept user input?",
+    options: ["<input>", "<text>", "<data>", "<user>"],
+    correct: "<input>"
   },
   {
     id: 36,
-    question: "What is the result of 10 % 3?",
-    options: ["3", "1", "0", "10"],
-    correct: "1"
+    question: "Which input type is used for passwords?",
+    options: [
+      'type="secret"',
+      'type="password"',
+      'type="hidden-password"',
+      'type="protected"'
+    ],
+    correct: 'type="password"'
   },
   {
     id: 37,
-    question: "Which operator checks equality without performing type conversion?",
-    options: ["=", "==", "===", "!="],
-    correct: "==="
+    question: "Which input type is used for an email address?",
+    options: [
+      'type="mail"',
+      'type="email"',
+      'type="text-email"',
+      'type="address"'
+    ],
+    correct: 'type="email"'
   },
   {
     id: 38,
-    question: "What does = mean in JavaScript?",
-    options: [
-      "Equal comparison",
-      "Assignment",
-      "Not equal",
-      "Greater than"
-    ],
-    correct: "Assignment"
+    question: "Which attribute makes a form field mandatory?",
+    options: ["needed", "required", "must", "validate"],
+    correct: "required"
   },
   {
     id: 39,
-    question: "What does > mean?",
-    options: ["Less than", "Greater than", "Equal to", "Not equal"],
-    correct: "Greater than"
+    question: "Which element is used to create a multi-line text input?",
+    options: [
+      '<input type="textarea">',
+      "<textarea>",
+      "<text-box>",
+      "<multitext>"
+    ],
+    correct: "<textarea>"
   },
   {
     id: 40,
-    question: "What does && represent?",
-    options: ["OR", "NOT", "AND", "Equal"],
-    correct: "AND"
+    question: "Which element is used to create a dropdown list?",
+    options: ["<dropdown>", "<select>", "<option-list>", "<list-select>"],
+    correct: "<select>"
   },
 
   // ==========================================
-  // SECTION E: Strings and Type Conversion (41–50)
+  // SECTION B — CSS
+  // CSS Basics (41–50)
   // ==========================================
   {
     id: 41,
-    question: "Which method converts a string to uppercase?",
-    options: ["toUpperCase()", "upper()", "uppercase()", "makeUpper()"],
-    correct: "toUpperCase()"
+    question: "What does CSS stand for?",
+    options: [
+      "Computer Style Sheets",
+      "Cascading Style Sheets",
+      "Creative Style Syntax",
+      "Colorful Style Sheets"
+    ],
+    correct: "Cascading Style Sheets"
   },
   {
     id: 42,
-    question: "Which method converts a string to lowercase?",
-    options: ["lower()", "toLowerCase()", "lowerCase()", "makeLower()"],
-    correct: "toLowerCase()"
+    question: "What is CSS mainly used for?",
+    options: [
+      "Structuring webpages",
+      "Styling and designing webpages",
+      "Creating databases",
+      "Writing server-side code"
+    ],
+    correct: "Styling and designing webpages"
   },
   {
     id: 43,
-    question: 'What does "Hello".length return?',
-    options: ["4", "5", "6", "10"],
-    correct: "5"
+    question: "Which HTML attribute can be used for inline CSS?",
+    options: ["css", "style", "design", "styles"],
+    correct: "style"
   },
   {
     id: 44,
-    question: "Which symbol is used for template literals?",
-    options: ["' '", '" "', "` `", "( )"],
-    correct: "` `"
+    question: "Which HTML element is used for internal CSS?",
+    options: ["<css>", "<style>", "<stylesheet>", "<design>"],
+    correct: "<style>"
   },
   {
     id: 45,
-    question: "Which syntax is used to insert a variable inside a template literal?",
-    options: ["$(name)", "${name}", "#{name}", "@{name}"],
-    correct: "${name}"
+    question: "Which HTML element is used to connect an external CSS file?",
+    options: ["<style>", "<css>", "<link>", "<stylesheet>"],
+    correct: "<link>"
   },
   {
     id: 46,
-    question: 'What does Number("20") do?',
-    options: [
-      "Converts the number to a string",
-      "Converts the string to a number",
-      "Converts it to Boolean",
-      "Deletes the value"
-    ],
-    correct: "Converts the string to a number"
+    question: "What is the usual file extension for a CSS file?",
+    options: [".style", ".css", ".design", ".cs"],
+    correct: ".css"
   },
   {
     id: 47,
-    question: "What does String(50) return?",
-    options: [
-      "50 as a number",
-      '"50" as a string',
-      "true",
-      "null"
-    ],
-    correct: '"50" as a string'
+    question: "Which CSS property changes text color?",
+    options: ["text-color", "font-color", "color", "foreground"],
+    correct: "color"
   },
   {
     id: 48,
-    question: 'What does parseInt("25") generally return?',
-    options: ['"25"', "25", "true", "null"],
-    correct: "25"
+    question: "Which CSS property changes the background color?",
+    options: ["background-color", "bg-color", "color-background", "background"],
+    correct: "background-color"
   },
   {
     id: 49,
-    question: "What will this produce?\n\nlet name = \"John\";\nconsole.log(`Hello ${name}`);",
-    options: ["Hello name", "Hello John", "${name}", "John Hello"],
-    correct: "Hello John"
+    question: "Which property changes the size of text?",
+    options: ["text-size", "font-size", "size", "font-height"],
+    correct: "font-size"
   },
   {
     id: 50,
-    question: "What does the + operator do when used with two strings?",
-    options: [
-      "Divides them",
-      "Multiplies them",
-      "Concatenates them",
-      "Removes them"
-    ],
-    correct: "Concatenates them"
+    question: "Which property makes text bold?",
+    options: ["font-weight", "text-bold", "font-style", "bold"],
+    correct: "font-weight"
   },
 
   // ==========================================
-  // SECTION F: Conditional Statements (51–60)
+  // CSS Selectors (51–56)
   // ==========================================
   {
     id: 51,
-    question: "Which statement is used to make a decision based on a condition?",
-    options: ["if", "for", "function", "return"],
-    correct: "if"
+    question: "Which selector targets all <p> elements?",
+    options: [".p", "#p", "p", "*p"],
+    correct: "p"
   },
   {
     id: 52,
-    question: "Which keyword is used when the if condition is false?",
-    options: ["otherwise", "else", "then", "default"],
-    correct: "else"
+    question: "Which selector targets an element with the class box?",
+    options: ["#box", ".box", "box", "*box"],
+    correct: ".box"
   },
   {
     id: 53,
-    question: "Which keyword allows you to check another condition?",
-    options: ["else if", "another", "check", "next"],
-    correct: "else if"
+    question: "Which selector targets an element with the ID header?",
+    options: [".header", "header", "#header", "*header"],
+    correct: "#header"
   },
   {
     id: 54,
-    question: "What will this code print?\n\nlet age = 20;\n\nif (age >= 18) {\n    console.log(\"Adult\");\n}",
-    options: ["Child", "Adult", "20", "Nothing"],
-    correct: "Adult"
+    question: "Which selector targets every element?",
+    options: ["all", "*", "every", "#all"],
+    correct: "*"
   },
   {
     id: 55,
-    question: "What will this code print?\n\nlet age = 15;\n\nif (age >= 18) {\n    console.log(\"Adult\");\n} else {\n    console.log(\"Child\");\n}",
-    options: ["Adult", "15", "Child", "Error"],
-    correct: "Child"
+    question: "Which selector has higher specificity between these two?\n\n.box { color: red; }\n\nand\n\n#box { color: blue; }",
+    options: [".box", "#box", "They are equal", "Neither"],
+    correct: "#box"
   },
   {
     id: 56,
-    question: 'Which symbol means "greater than or equal to"?',
-    options: ["=>", ">=", "=<", "=="],
-    correct: ">="
+    question: "Which CSS syntax is correct?",
+    options: [
+      "p { color: red; }",
+      "p: color = red;",
+      "p(color: red)",
+      "p = {color red}"
+    ],
+    correct: "p { color: red; }"
   },
+
+  // ==========================================
+  // CSS Box Model (57–63)
+  // ==========================================
   {
     id: 57,
-    question: 'Which symbol means "less than or equal to"?',
-    options: ["<=", "=<", "<<", "=="],
-    correct: "<="
+    question: "Which of the following is NOT part of the CSS box model?",
+    options: ["Content", "Padding", "Border", "Font"],
+    correct: "Font"
   },
   {
     id: 58,
-    question: "What does ! generally mean when used as a logical operator?",
-    options: ["AND", "OR", "NOT", "Equal"],
-    correct: "NOT"
+    question: "What does padding control?",
+    options: [
+      "Space outside the element",
+      "Space between content and border",
+      "Text size",
+      "Border thickness"
+    ],
+    correct: "Space between content and border"
   },
   {
     id: 59,
-    question: "Which condition checks if age is exactly 18?",
-    options: ["age = 18", "age == 18", "age === 18", "Both B and C"],
-    correct: "Both B and C"
+    question: "What does margin control?",
+    options: [
+      "Space outside an element",
+      "Space inside an element",
+      "Text color",
+      "Element height only"
+    ],
+    correct: "Space outside an element"
   },
   {
     id: 60,
-    question: "What is the purpose of an else block?",
+    question: "What does border control?",
     options: [
-      "To run code when the if condition is false",
-      "To declare a variable",
-      "To create a function",
-      "To select an HTML element"
+      "Space between elements",
+      "The line surrounding an element",
+      "Text alignment",
+      "Font size"
     ],
-    correct: "To run code when the if condition is false"
+    correct: "The line surrounding an element"
   },
-
-  // ==========================================
-  // SECTION G: Functions (61–70)
-  // ==========================================
   {
     id: 61,
-    question: "What is a function?",
-    options: [
-      "A reusable block of code",
-      "A CSS property",
-      "An HTML tag",
-      "A database"
-    ],
-    correct: "A reusable block of code"
+    question: "Which property controls the width of an element?",
+    options: ["element-width", "width", "size-width", "box-width"],
+    correct: "width"
   },
   {
     id: 62,
-    question: "Which keyword is used to declare a normal function?",
-    options: ["function", "func", "method", "define"],
-    correct: "function"
+    question: "Which property controls the height of an element?",
+    options: ["height", "element-height", "box-height", "size"],
+    correct: "height"
   },
   {
     id: 63,
-    question: "How do you call a function named greet?",
-    options: ["call greet", "greet()", "function greet", "run.greet"],
-    correct: "greet()"
+    question: "What does box-sizing: border-box generally do?",
+    options: [
+      "Includes padding and border within the declared width/height",
+      "Removes the border",
+      "Removes padding",
+      "Makes the element circular"
+    ],
+    correct: "Includes padding and border within the declared width/height"
   },
+
+  // ==========================================
+  // CSS Display and Positioning (64–70)
+  // ==========================================
   {
     id: 64,
-    question: "What is a parameter?",
-    options: [
-      "A value passed when calling a function",
-      "A variable listed in a function definition",
-      "A CSS property",
-      "An HTML element"
-    ],
-    correct: "A variable listed in a function definition"
+    question: "Which display value makes an element behave as a block-level element?",
+    options: ["inline", "block", "flex", "none"],
+    correct: "block"
   },
   {
     id: 65,
-    question: "What is an argument?",
-    options: [
-      "A value passed to a function",
-      "A function name",
-      "A variable declaration",
-      "An HTML attribute"
-    ],
-    correct: "A value passed to a function"
+    question: "Which display value makes an element behave as an inline element?",
+    options: ["inline", "block", "grid", "absolute"],
+    correct: "inline"
   },
   {
     id: 66,
-    question: "What does return do in a function?",
+    question: "What does display: none do?",
     options: [
-      "Stops the browser",
-      "Sends a value back from the function",
-      "Creates an event",
-      "Creates an HTML element"
+      "Makes the element transparent",
+      "Removes the element from the layout/display",
+      "Makes the element smaller",
+      "Changes its color"
     ],
-    correct: "Sends a value back from the function"
+    correct: "Removes the element from the layout/display"
   },
   {
     id: 67,
-    question: "What will this function return?\n\nfunction add(a, b) {\n    return a + b;\n}",
-    options: [
-      "Nothing",
-      "The sum of a and b",
-      "The difference",
-      "The product"
-    ],
-    correct: "The sum of a and b"
+    question: "Which CSS property is used for positioning elements?",
+    options: ["position", "place", "location", "layout"],
+    correct: "position"
   },
   {
     id: 68,
-    question: "How do you call the add function with 5 and 3?",
-    options: ["add(5, 3)", "add[5, 3]", "function add(5, 3)", "call add(5, 3)"],
-    correct: "add(5, 3)"
+    question: "Which position value positions an element relative to its normal position?",
+    options: ["absolute", "relative", "fixed", "static-only"],
+    correct: "relative"
   },
   {
     id: 69,
-    question: 'What will greet() do if it contains console.log("Hello")?',
-    options: [
-      "Display Hello in the console",
-      "Display Hello in CSS",
-      "Delete Hello",
-      "Return an error"
-    ],
-    correct: "Display Hello in the console"
+    question: "Which position value can position an element relative to its nearest positioned ancestor?",
+    options: ["relative", "absolute", "static", "inline"],
+    correct: "absolute"
   },
   {
     id: 70,
-    question: "Why are functions useful?",
-    options: [
-      "They allow code to be reused",
-      "They only work with HTML",
-      "They replace CSS",
-      "They prevent variables from working"
-    ],
-    correct: "They allow code to be reused"
+    question: "Which position value keeps an element fixed relative to the viewport?",
+    options: ["absolute", "relative", "fixed", "static"],
+    correct: "fixed"
   },
 
   // ==========================================
-  // SECTION H: Arrays and Objects (71–80)
+  // Flexbox (71–76)
   // ==========================================
   {
     id: 71,
-    question: "What is an array?",
+    question: "Which CSS property enables Flexbox?",
     options: [
-      "A collection of values",
-      "A CSS selector",
-      "A function",
-      "An event"
+      "display: flex",
+      "flex: display",
+      "position: flex",
+      "layout: flex"
     ],
-    correct: "A collection of values"
+    correct: "display: flex"
   },
   {
     id: 72,
-    question: "Which is a valid array?",
+    question: "What is the main purpose of Flexbox?",
     options: [
-      'let fruits = ["Apple", "Mango", "Orange"];',
-      'let fruits = {"Apple", "Mango"};',
-      "let fruits = (Apple, Mango);",
-      "array fruits = Apple;"
+      "Creating and arranging flexible layouts",
+      "Creating databases",
+      "Adding JavaScript",
+      "Compressing images"
     ],
-    correct: 'let fruits = ["Apple", "Mango", "Orange"];'
+    correct: "Creating and arranging flexible layouts"
   },
   {
     id: 73,
-    question: "What is the index of the first item in a JavaScript array?",
-    options: ["0", "1", "-1", "2"],
-    correct: "0"
+    question: "Which property controls alignment along the main axis in Flexbox?",
+    options: [
+      "align-items",
+      "justify-content",
+      "flex-align",
+      "main-align"
+    ],
+    correct: "justify-content"
   },
   {
     id: 74,
-    question: 'What will fruits[0] return?\n\nlet fruits = ["Apple", "Mango", "Orange"];',
-    options: ["Mango", "Orange", "Apple", "0"],
-    correct: "Apple"
+    question: "Which property controls alignment along the cross axis?",
+    options: [
+      "justify-content",
+      "align-items",
+      "cross-align",
+      "item-position"
+    ],
+    correct: "align-items"
   },
   {
     id: 75,
-    question: "Which property gives the number of items in an array?",
-    options: ["size", "count", "length", "items"],
-    correct: "length"
+    question: "Which value centers flex items along the main axis?",
+    options: [
+      "align-center",
+      "center-items",
+      "justify-content: center",
+      "flex-center"
+    ],
+    correct: "justify-content: center"
   },
   {
     id: 76,
-    question: "Which method adds an item to the end of an array?",
-    options: ["add()", "push()", "insert()", "appendItem()"],
-    correct: "push()"
+    question: "Which property changes the direction of flex items?",
+    options: [
+      "flex-direction",
+      "direction-flex",
+      "flex-position",
+      "item-direction"
+    ],
+    correct: "flex-direction"
   },
+
+  // ==========================================
+  // CSS Grid (77–80)
+  // ==========================================
   {
     id: 77,
-    question: "What is an object in JavaScript?",
-    options: [
-      "A collection of related data using key-value pairs",
-      "Only a number",
-      "Only a string",
-      "An HTML tag"
-    ],
-    correct: "A collection of related data using key-value pairs"
+    question: "Which CSS layout system is designed for two-dimensional layouts?",
+    options: ["Flexbox", "Grid", "Inline", "Float"],
+    correct: "Grid"
   },
   {
     id: 78,
-    question: "Which is a valid JavaScript object?",
+    question: "How do you enable CSS Grid?",
     options: [
-      'let student = {name: "John", age: 20};',
-      'let student = [name: "John"];',
-      'object student = "John";',
-      'let student = (name = "John");'
+      "display: grid",
+      "grid: display",
+      "position: grid",
+      "layout: grid"
     ],
-    correct: 'let student = {name: "John", age: 20};'
+    correct: "display: grid"
   },
   {
     id: 79,
-    question: "How can you access the name property of student?",
-    options: ["student->name", "student.name", "student/name", "student[name()]"],
-    correct: "student.name"
+    question: "Which property defines grid columns?",
+    options: [
+      "grid-columns",
+      "grid-template-columns",
+      "columns-grid",
+      "template-columns-grid"
+    ],
+    correct: "grid-template-columns"
   },
   {
     id: 80,
-    question: 'In {name: "John"}, what is name?',
-    options: ["Value", "Key/property", "Function", "Array"],
-    correct: "Key/property"
+    question: "Which property defines grid rows?",
+    options: [
+      "grid-template-rows",
+      "grid-rows",
+      "rows-template",
+      "grid-row-template-only"
+    ],
+    correct: "grid-template-rows"
   },
 
   // ==========================================
-  // SECTION I: DOM Manipulation (81–90)
+  // Responsive Design (81–84)
   // ==========================================
   {
     id: 81,
-    question: "What does DOM stand for?",
+    question: "What does responsive web design mean?",
     options: [
-      "Document Object Model",
-      "Data Object Method",
-      "Document Online Model",
-      "Digital Object Management"
+      "A website that adapts to different screen sizes",
+      "A website that only works on computers",
+      "A website without CSS",
+      "A website that loads only once"
     ],
-    correct: "Document Object Model"
+    correct: "A website that adapts to different screen sizes"
   },
   {
     id: 82,
-    question: "What does the DOM allow JavaScript to do?",
-    options: [
-      "Interact with HTML elements",
-      "Create CSS files only",
-      "Connect to Wi-Fi",
-      "Replace the browser"
-    ],
-    correct: "Interact with HTML elements"
+    question: "Which CSS feature is commonly used to create responsive layouts based on screen size?",
+    options: ["Media queries", "CSS comments", "Variables only", "Animations"],
+    correct: "Media queries"
   },
   {
     id: 83,
-    question: "Which method selects an element using a CSS selector?",
-    options: [
-      "querySelector()",
-      "selectElement()",
-      "getCSS()",
-      "findHTML()"
-    ],
-    correct: "querySelector()"
+    question: "Which syntax creates a media query?",
+    options: ["@media", "@screen", "@responsive", "@device"],
+    correct: "@media"
   },
   {
     id: 84,
-    question: "What does document represent?",
+    question: "Which viewport setting is commonly placed in the HTML <head> for responsive webpages?",
     options: [
-      "The HTML document/page",
-      "The browser console",
-      "A JavaScript variable",
-      "A CSS file"
+      '<meta name="viewport" content="width=device-width, initial-scale=1.0">',
+      '<meta responsive="true">',
+      '<viewport width="device">',
+      '<responsive screen="mobile">'
     ],
-    correct: "The HTML document/page"
+    correct: '<meta name="viewport" content="width=device-width, initial-scale=1.0">'
   },
+
+  // ==========================================
+  // SECTION C — BOOTSTRAP
+  // Bootstrap Basics (85–90)
+  // ==========================================
   {
     id: 85,
-    question: "Which code selects an element with the ID title?",
+    question: "What is Bootstrap?",
     options: [
-      'document.querySelector("#title")',
-      'document.querySelector(".title")',
-      'document.querySelector("title")',
-      'document.getElement("title")'
+      "A JavaScript programming language",
+      "A CSS framework",
+      "A database",
+      "An operating system"
     ],
-    correct: 'document.querySelector("#title")'
+    correct: "A CSS framework"
   },
   {
     id: 86,
-    question: "Which selector represents a class in CSS?",
-    options: ["#", ".", "@", "*"],
-    correct: "."
+    question: "What is one major benefit of Bootstrap?",
+    options: [
+      "It provides ready-made styles and components",
+      "It replaces HTML",
+      "It replaces JavaScript completely",
+      "It creates databases automatically"
+    ],
+    correct: "It provides ready-made styles and components"
   },
   {
     id: 87,
-    question: "Which selector represents an ID in CSS?",
-    options: [".", "#", "@", "&"],
-    correct: "#"
+    question: "Which class is commonly used to create a Bootstrap container?",
+    options: [".box", ".container", ".wrapper", ".bootstrap-container"],
+    correct: ".container"
   },
   {
     id: 88,
-    question: "Which property can be used to change the text of an element?",
-    options: ["textContent", "textChange", "changeText", "innerTextOnly"],
-    correct: "textContent"
+    question: "Which Bootstrap class creates a full-width container?",
+    options: [
+      ".container-full",
+      ".container-fluid",
+      ".fluid-container",
+      ".full-container"
+    ],
+    correct: ".container-fluid"
   },
   {
     id: 89,
-    question: 'What does this code do?\n\ndocument.querySelector("h1").textContent = "Welcome";',
-    options: [
-      "Creates a new h1",
-      "Changes the text of the h1",
-      "Deletes the h1",
-      "Changes the CSS file"
-    ],
-    correct: "Changes the text of the h1"
+    question: "Bootstrap's grid system is based primarily on how many columns?",
+    options: ["6", "10", "12", "24"],
+    correct: "12"
   },
   {
     id: 90,
-    question: "Which property can be used to change an element's CSS style directly?",
-    options: ["style", "css", "design", "appearance"],
-    correct: "style"
+    question: "Which class creates a Bootstrap row?",
+    options: [".line", ".row", ".grid-row", ".bootstrap-row"],
+    correct: ".row"
   },
 
   // ==========================================
-  // SECTION J: Events and Event Listeners (91–96)
+  // Bootstrap Grid (91–94)
   // ==========================================
   {
     id: 91,
-    question: "What is an event in JavaScript?",
-    options: [
-      "An action that happens on a webpage",
-      "A variable",
-      "A data type",
-      "A CSS rule"
-    ],
-    correct: "An action that happens on a webpage"
+    question: "Which class creates a column that occupies 6 of Bootstrap's 12 columns?",
+    options: [".col-6", ".column-6", ".grid-6", ".col-md"],
+    correct: ".col-6"
   },
   {
     id: 92,
-    question: "Which is an example of a JavaScript event?",
-    options: ["click", "color", "margin", "font-size"],
-    correct: "click"
+    question: "If a row contains .col-4, .col-4, and .col-4, how many columns are occupied?",
+    options: ["4", "8", "12", "16"],
+    correct: "12"
   },
   {
     id: 93,
-    question: "Which method is used to attach an event listener?",
+    question: "What does .col-12 represent in Bootstrap's grid?",
     options: [
-      "addEventListener()",
-      "addEvent()",
-      "listenEvent()",
-      "eventListener()"
+      "Half the row",
+      "One-quarter of the row",
+      "The full 12-column width",
+      "Twelve separate rows"
     ],
-    correct: "addEventListener()"
+    correct: "The full 12-column width"
   },
   {
     id: 94,
-    question: "What event occurs when a user clicks an element?",
-    options: ["press", "click", "mouseClicking", "button"],
-    correct: "click"
-  },
-  {
-    id: 95,
-    question: "Which code correctly listens for a click?",
+    question: "What is the purpose of responsive Bootstrap classes such as .col-md-6?",
     options: [
-      'button.addEventListener("click", function() {})',
-      'button.clickListener(function() {})',
-      'button.listen("click")',
-      'button.add("click")'
+      "They control column layout at specific responsive breakpoints",
+      "They change the database",
+      "They create six rows",
+      "They only change text color"
     ],
-    correct: 'button.addEventListener("click", function() {})'
-  },
-  {
-    id: 96,
-    question: "Which event is commonly used when the value of an input changes while the user types?",
-    options: ["click", "input", "submit", "changeText"],
-    correct: "input"
+    correct: "They control column layout at specific responsive breakpoints"
   },
 
   // ==========================================
-  // SECTION K: Forms and Validation (97–100)
+  // Bootstrap Utilities and Components (95–100)
   // ==========================================
   {
-    id: 97,
-    question: "What is form validation?",
+    id: 95,
+    question: "Which Bootstrap class creates a primary-colored button?",
     options: [
-      "Checking whether user input is valid",
-      "Designing a form",
-      "Creating a database",
-      "Changing the form's color"
+      ".button-primary",
+      ".btn-primary",
+      ".primary-button",
+      ".button-blue"
     ],
-    correct: "Checking whether user input is valid"
+    correct: ".btn-primary"
+  },
+  {
+    id: 96,
+    question: "Which class is required as the base class for a Bootstrap button?",
+    options: [".button", ".btn", ".bootstrap-btn", ".click"],
+    correct: ".btn"
+  },
+  {
+    id: 97,
+    question: "Which Bootstrap class adds a margin to an element?",
+    options: [".margin", ".m-3", ".space-3", ".margin-3"],
+    correct: ".m-3"
   },
   {
     id: 98,
-    question: "Which event is commonly used to handle form submission?",
-    options: ["click", "input", "submit", "send"],
-    correct: "submit"
+    question: "Which Bootstrap utility class centers text?",
+    options: [".center-text", ".text-center", ".align-text", ".text-middle"],
+    correct: ".text-center"
   },
   {
     id: 99,
-    question: "What does event.preventDefault() do when used during form submission?",
-    options: [
-      "Prevents the browser's default form submission behavior",
-      "Deletes the form",
-      "Refreshes the page",
-      "Clears all JavaScript"
-    ],
-    correct: "Prevents the browser's default form submission behavior"
+    question: "Which Bootstrap component is commonly used to create a navigation bar?",
+    options: ["Navbar", "Navigation-box", "Nav-container-only", "Menu-bar"],
+    correct: "Navbar"
   },
   {
     id: 100,
-    question: "Why is form validation important?",
+    question: "Which statement best describes the relationship between HTML, CSS, and Bootstrap?",
     options: [
-      "To ensure users provide acceptable/required information",
-      "To make JavaScript faster",
-      "To change HTML into CSS",
-      "To remove all forms from a webpage"
+      "HTML structures content, CSS styles it, and Bootstrap provides pre-built CSS components/utilities for faster development.",
+      "HTML and CSS are both JavaScript frameworks.",
+      "Bootstrap replaces HTML completely.",
+      "CSS replaces HTML while Bootstrap replaces JavaScript."
     ],
-    correct: "To ensure users provide acceptable/required information"
+    correct: "HTML structures content, CSS styles it, and Bootstrap provides pre-built CSS components/utilities for faster development."
   }
 ];

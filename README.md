@@ -1,22 +1,29 @@
-# Frontend Development CBT - JavaScript
+# Frontend Development CBT - HTML, CSS & Bootstrap
 
-Interactive CBT quiz covering JavaScript — 100 Questions.
+Interactive CBT quiz covering HTML, CSS & Bootstrap — 100 Questions.
 
 **Instructions:** Choose the correct answer from A–D.
 
 ## Sections Covered
 
-- **Section A: JavaScript Basics** (Questions 1–10)
-- **Section B: Variables** (Questions 11–20)
-- **Section C: Data Types** (Questions 21–30)
-- **Section D: Operators** (Questions 31–40)
-- **Section E: Strings and Type Conversion** (Questions 41–50)
-- **Section F: Conditional Statements** (Questions 51–60)
-- **Section G: Functions** (Questions 61–70)
-- **Section H: Arrays and Objects** (Questions 71–80)
-- **Section I: DOM Manipulation** (Questions 81–90)
-- **Section J: Events and Event Listeners** (Questions 91–96)
-- **Section K: Forms and Validation** (Questions 97–100)
+- **Section A: HTML** (Questions 1–40)
+  - HTML Basics (1–10)
+  - HTML Elements and Attributes (11–20)
+  - Semantic HTML (21–28)
+  - HTML Tables (29–33)
+  - HTML Forms (34–40)
+- **Section B: CSS** (Questions 41–84)
+  - CSS Basics (41–50)
+  - CSS Selectors (51–56)
+  - CSS Box Model (57–63)
+  - CSS Display and Positioning (64–70)
+  - Flexbox (71–76)
+  - CSS Grid (77–80)
+  - Responsive Design (81–84)
+- **Section C: Bootstrap** (Questions 85–100)
+  - Bootstrap Basics (85–90)
+  - Bootstrap Grid (91–94)
+  - Bootstrap Utilities and Components (95–100)
 
 ## How to Run
 
@@ -30,7 +37,7 @@ Then visit `http://localhost:3000`
 
 ## Features
 
-- **100 multiple-choice questions** covering JavaScript (Sections A through K)
+- **100 multiple-choice questions** covering HTML, CSS & Bootstrap
 - **Instructions:** Choose the correct answer from A–D
 - **60-minute CBT timer**
 - **Anti-cheat protection** (blocks right-click, F12, developer tools shortcuts)
