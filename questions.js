@@ -1,839 +1,835 @@
 const quizQuestions = [
   // ==========================================
-  // SECTION A — HTML
-  // HTML Basics (1–10)
+  // SECTION A: HTML (Questions 1–15)
+  // HTML assessment
   // ==========================================
   {
     id: 1,
-    question: "What does HTML stand for?",
+    question: "Which statement most accurately describes the primary role of HTML in web development?",
     options: [
-      "Hyper Text Markup Language",
-      "High Text Machine Language",
-      "Hyperlink Text Management Language",
-      "Home Tool Markup Language"
+      "It controls the visual appearance and animations of every element.",
+      "It defines the structure and meaning of webpage content.",
+      "It manages database queries and server authentication.",
+      "It determines how a webpage responds to every screen size."
     ],
-    correct: "Hyper Text Markup Language"
+    correct: "It defines the structure and meaning of webpage content."
   },
   {
     id: 2,
-    question: "What is HTML mainly used for?",
+    question: "Why is <!DOCTYPE html> placed at the beginning of a modern HTML document?",
     options: [
-      "Styling webpages",
-      "Structuring webpage content",
-      "Programming databases",
-      "Creating animations only"
+      "It creates the root element of the page.",
+      "It links the HTML document to an external stylesheet.",
+      "It tells the browser to use standards mode for the document.",
+      "It displays the document's title in the browser tab."
     ],
-    correct: "Structuring webpage content"
+    correct: "It tells the browser to use standards mode for the document."
   },
   {
     id: 3,
-    question: "Which declaration defines an HTML5 document?",
+    question: "Which statement about the <head> element is correct?",
     options: [
-      "<html5>",
-      "<!DOCTYPE html>",
-      "<doctype html5>",
-      '<html version="5">'
+      "It contains only content visible at the top of the webpage.",
+      "It contains metadata and references to resources such as stylesheets.",
+      "It replaces the <body> element when a page has no images.",
+      "It is where all visible paragraphs must be placed."
     ],
-    correct: "<!DOCTYPE html>"
+    correct: "It contains metadata and references to resources such as stylesheets."
   },
   {
     id: 4,
-    question: "Which element is the root element of an HTML document?",
-    options: ["<body>", "<head>", "<html>", "<main>"],
-    correct: "<html>"
+    question: "Which HTML structure is the most appropriate and valid basic document structure?",
+    options: [
+      "<!DOCTYPE html><html><head><title>Page</title></head><body><h1>Hello</h1></body></html>",
+      "<html><body><head><h1>Hello</h1></head><title>Page</title></body></html>",
+      "<head><html><title>Page</title><body><h1>Hello</h1></body></html></head>",
+      "<!DOCTYPE html><title>Page</title><html><h1>Hello</h1></html>"
+    ],
+    correct: "<!DOCTYPE html><html><head><title>Page</title></head><body><h1>Hello</h1></body></html>"
   },
   {
     id: 5,
-    question: "Which section contains information about the webpage that is generally not displayed directly on the page?",
-    options: ["<body>", "<head>", "<main>", "<footer>"],
-    correct: "<head>"
+    question: "What is the main difference between an HTML element and an HTML attribute?",
+    options: [
+      "An element defines content or structure, while an attribute provides additional information about an element.",
+      "An attribute always appears outside a tag, while an element appears inside it.",
+      "An element is used only for text, while an attribute is used only for images.",
+      "They are two names for exactly the same thing."
+    ],
+    correct: "An element defines content or structure, while an attribute provides additional information about an element."
   },
   {
     id: 6,
-    question: "Which element contains the visible content of a webpage?",
-    options: ["<head>", "<title>", "<body>", "<meta>"],
-    correct: "<body>"
+    question: "Given <p>One <strong>important</strong> point</p>, which statement is correct?",
+    options: [
+      "The entire paragraph is a strong element.",
+      "Only the word 'important' is inside the strong element.",
+      "The strong element is a sibling of the paragraph.",
+      "The paragraph cannot contain another element."
+    ],
+    correct: "Only the word 'important' is inside the strong element."
   },
   {
     id: 7,
-    question: "Which tag defines the title shown on the browser tab?",
-    options: ["<head>", "<title>", "<h1>", "<caption>"],
-    correct: "<title>"
+    question: "Which statement correctly compares block-level and inline elements in typical browser styling?",
+    options: [
+      "Inline elements always begin on a new line.",
+      "Block elements can never contain other elements.",
+      "Block elements typically begin on a new line, while inline elements flow within surrounding text.",
+      "Inline elements always occupy the full width of their parent."
+    ],
+    correct: "Block elements typically begin on a new line, while inline elements flow within surrounding text."
   },
   {
     id: 8,
-    question: "Which tag is used for the largest heading?",
-    options: ["<h6>", "<heading>", "<h1>", "<head>"],
-    correct: "<h1>"
+    question: "Which element is the most appropriate for linking to another webpage?",
+    options: [
+      "<link href='about.html'>",
+      "<a href='about.html'>About</a>",
+      "<nav src='about.html'>About</nav>",
+      "<url>about.html</url>"
+    ],
+    correct: "<a href='about.html'>About</a>"
   },
   {
     id: 9,
-    question: "Which tag is used to create a paragraph?",
-    options: ["<text>", "<p>", "<paragraph>", "<para>"],
-    correct: "<p>"
-  },
-  {
-    id: 10,
-    question: "Which tag creates a line break?",
-    options: ["<break>", "<lb>", "<br>", "<line>"],
-    correct: "<br>"
-  },
-
-  // ==========================================
-  // HTML Elements and Attributes (11–20)
-  // ==========================================
-  {
-    id: 11,
-    question: "What is an HTML attribute?",
+    question: "Which attribute provides alternative text for an image when the image cannot be seen or loaded, and also supports accessibility?",
     options: [
-      "A CSS property",
-      "Additional information provided about an HTML element",
-      "A JavaScript function",
-      "A webpage"
+      "title",
+      "src",
+      "alt",
+      "href"
     ],
-    correct: "Additional information provided about an HTML element"
-  },
-  {
-    id: 12,
-    question: "Which attribute is used to provide alternative text for an image?",
-    options: ["src", "title", "alt", "text"],
     correct: "alt"
   },
   {
+    id: 10,
+    question: "Which statement about HTML tables is most accurate?",
+    options: [
+      "<td> defines a table heading in every case.",
+      "<tr> defines a table row, while <td> defines a data cell.",
+      "<th> is used only to create table borders.",
+      "A table must contain exactly three rows."
+    ],
+    correct: "<tr> defines a table row, while <td> defines a data cell."
+  },
+  {
+    id: 11,
+    question: "A form contains <input type='email' required>. What does the required attribute do?",
+    options: [
+      "It sends the email automatically to a server.",
+      "It prevents submission through normal browser validation if the field is empty.",
+      "It guarantees that the entered email address belongs to the user.",
+      "It converts the field into a password field."
+    ],
+    correct: "It prevents submission through normal browser validation if the field is empty."
+  },
+  {
+    id: 12,
+    question: "Which element is best suited to associate descriptive text with a form control in an accessible way?",
+    options: [
+      "<legend> without a fieldset in every case",
+      "<label for='email'>Email</label> paired with an input whose id is 'email'",
+      "<span name='email'>Email</span>",
+      "<title>Email</title> inside the input"
+    ],
+    correct: "<label for='email'>Email</label> paired with an input whose id is 'email'"
+  },
+  {
     id: 13,
-    question: "Which attribute specifies the path to an image?",
-    options: ["href", "src", "path", "link"],
-    correct: "src"
+    question: "Which statement about HTML media elements is correct?",
+    options: [
+      "The <video> element can never contain a <source> element.",
+      "The <audio> element is intended only for background music and cannot provide controls.",
+      "The <source> element can specify alternative media resources inside supported media elements.",
+      "The <img> element can directly play video files."
+    ],
+    correct: "The <source> element can specify alternative media resources inside supported media elements."
   },
   {
     id: 14,
-    question: "Which tag is used to display an image?",
-    options: ["<picture>", "<img>", "<image>", "<src>"],
-    correct: "<img>"
+    question: "Which element is intended to provide a page title that commonly appears in the browser tab?",
+    options: [
+      "<header>",
+      "<h1>",
+      "<title>",
+      "<caption>"
+    ],
+    correct: "<title>"
   },
   {
     id: 15,
-    question: "Which tag is used to create a hyperlink?",
-    options: ["<link>", "<a>", "<href>", "<url>"],
-    correct: "<a>"
+    question: "A developer wants to style several pages consistently and update their shared design in one place. Which approach best fits that goal?",
+    options: [
+      "Use inline styles on every element.",
+      "Repeat a separate <style> block with identical rules on every page.",
+      "Use a shared external CSS stylesheet linked from each page.",
+      "Put CSS declarations inside every element's alt attribute."
+    ],
+    correct: "Use a shared external CSS stylesheet linked from each page."
   },
+
+  // ==========================================
+  // SECTION B: CSS (Questions 16–60)
+  // Part 1: CSS fundamentals and selectors (Questions 16–25)
+  // ==========================================
   {
     id: 16,
-    question: "Which attribute specifies the destination of a hyperlink?",
-    options: ["src", "link", "href", "url"],
-    correct: "href"
+    question: `Consider the following CSS:
+p {
+  color: blue;
+}
+
+.note {
+  color: green;
+}
+
+#intro {
+  color: red;
+}
+
+An element is written as <p class="note" id="intro">Hello</p>. What is its computed text color?`,
+    options: [
+      "Blue",
+      "Green",
+      "Red",
+      "It depends on the order of the HTML attributes."
+    ],
+    correct: "Red"
   },
   {
     id: 17,
-    question: 'What does target="_blank" generally do?',
+    question: "Which selector targets only <li> elements that are direct children of a <ul>?",
     options: [
-      "Opens the link in a new browsing context/tab",
-      "Deletes the link",
-      "Opens the link in the same page",
-      "Makes the link bold"
+      "ul li",
+      "ul > li",
+      "ul + li",
+      "ul ~ li"
     ],
-    correct: "Opens the link in a new browsing context/tab"
+    correct: "ul > li"
   },
   {
     id: 18,
-    question: "Which tag creates an unordered list?",
-    options: ["<ol>", "<ul>", "<li>", "<list>"],
-    correct: "<ul>"
+    question: `Given this HTML, which elements are selected by article p?
+<article>
+  <p>First</p>
+  <section>
+    <p>Second</p>
+  </section>
+</article>
+<p>Third</p>`,
+    options: [
+      "First only",
+      "First and Second only",
+      "First, Second, and Third",
+      "Second and Third only"
+    ],
+    correct: "First and Second only"
   },
   {
     id: 19,
-    question: "Which tag creates an ordered list?",
-    options: ["<ul>", "<ol>", "<li>", "<order>"],
-    correct: "<ol>"
+    question: "Which selector has the highest specificity?",
+    options: [
+      "#main .card p",
+      ".main .card .text",
+      "section article p",
+      "p.text"
+    ],
+    correct: "#main .card p"
   },
   {
     id: 20,
-    question: "Which tag represents an item inside a list?",
-    options: ["<item>", "<list-item>", "<li>", "<i>"],
-    correct: "<li>"
+    question: "Two declarations target the same element and property. They have equal specificity, equal importance, and belong to the same cascade origin and layer. Which declaration normally wins?",
+    options: [
+      "The declaration written first",
+      "The declaration written last",
+      "The declaration with the shortest selector",
+      "The declaration with the fewest properties"
+    ],
+    correct: "The declaration written last"
   },
-
-  // ==========================================
-  // Semantic HTML (21–28)
-  // ==========================================
   {
     id: 21,
-    question: "What does semantic HTML mean?",
+    question: "Which statement correctly describes an external stylesheet?",
     options: [
-      "Using elements that clearly describe their meaning and purpose",
-      "Using only CSS",
-      "Using JavaScript inside HTML",
-      "Using colorful HTML elements"
+      "It can style only one HTML element.",
+      "It must be placed inside the <body>.",
+      "It allows multiple HTML documents to share the same CSS rules.",
+      "It cannot be cached by browsers."
     ],
-    correct: "Using elements that clearly describe their meaning and purpose"
+    correct: "It allows multiple HTML documents to share the same CSS rules."
   },
   {
     id: 22,
-    question: "Which element is commonly used for the main navigation links?",
-    options: ["<navigation>", "<nav>", "<menu-bar>", "<links>"],
-    correct: "<nav>"
+    question: "Which declaration is valid CSS for setting a red text color and a font size of 20 pixels?",
+    options: [
+      "color = red; font-size = 20px;",
+      "color: red; font-size: 20px;",
+      "color(red); font-size(20px);",
+      "color: red, font-size: 20px;"
+    ],
+    correct: "color: red; font-size: 20px;"
   },
   {
     id: 23,
-    question: "Which semantic element represents the main content of a webpage?",
-    options: ["<main>", "<content>", "<body-content>", "<section-main>"],
-    correct: "<main>"
+    question: `Consider the following CSS:
+.menu li {
+  color: blue;
+}
+
+.menu > li {
+  color: red;
+}
+
+Which color applies to the nested list item in this structure?
+<ul class="menu">
+  <li>Parent
+    <ul>
+      <li>Child</li>
+    </ul>
+  </li>
+</ul>`,
+    options: [
+      "The child is red because the child selector always wins.",
+      "The child is blue because it matches the descendant selector but not the direct-child selector.",
+      "The child is black because neither selector matches it.",
+      "Both declarations combine to create purple."
+    ],
+    correct: "The child is blue because it matches the descendant selector but not the direct-child selector."
   },
   {
     id: 24,
-    question: "Which element is commonly used for the bottom section of a webpage?",
-    options: ["<bottom>", "<footer>", "<end>", "<down>"],
-    correct: "<footer>"
+    question: "What is the main difference between inline, internal, and external CSS?",
+    options: [
+      "They are different CSS languages with different syntax.",
+      "They differ primarily in where the CSS rules are written and how they can be organized and reused.",
+      "External CSS can style text, but internal CSS cannot.",
+      "Inline CSS automatically applies to every page on the website."
+    ],
+    correct: "They differ primarily in where the CSS rules are written and how they can be organized and reused."
   },
   {
     id: 25,
-    question: "Which element is commonly used for introductory content or a website's top section?",
-    options: ["<header>", "<top>", "<intro>", "<heading>"],
-    correct: "<header>"
+    question: `A stylesheet contains:
+p {
+  color: blue;
+}
+
+p {
+  color: orange;
+}
+
+Assuming equal cascade priority, what color will a normal paragraph have?`,
+    options: [
+      "Blue",
+      "Orange",
+      "Purple",
+      "The browser ignores both declarations."
+    ],
+    correct: "Orange"
   },
+
+  // ==========================================
+  // Part 2: Colors, units, and text styling (Questions 26–32)
+  // ==========================================
   {
     id: 26,
-    question: "Which element is used to represent a standalone piece of content?",
-    options: ["<article>", "<content>", "<post-content>", "<standalone>"],
-    correct: "<article>"
+    question: "Which color value represents fully opaque pure red?",
+    options: [
+      "rgb(0, 255, 0)",
+      "#0000FF",
+      "rgb(255, 0, 0)",
+      "rgba(255, 0, 0, 0)"
+    ],
+    correct: "rgb(255, 0, 0)"
   },
   {
     id: 27,
-    question: "Which element is used to group related content into a section?",
-    options: ["<section>", "<group>", "<div-section>", "<part>"],
-    correct: "<section>"
+    question: "What does the alpha value represent in rgba(0, 0, 255, 0.4)?",
+    options: [
+      "The amount of blue in the color",
+      "The transparency level of the color",
+      "The font weight of the element",
+      "The brightness of the page"
+    ],
+    correct: "The transparency level of the color"
   },
   {
     id: 28,
-    question: "Which HTML element is a generic block-level container?",
-    options: ["<span>", "<div>", "<container>", "<block>"],
-    correct: "<div>"
+    question: "Which statement about HSL colors is correct?",
+    options: [
+      "Hue represents the color angle, saturation represents color intensity, and lightness represents how light or dark the color is.",
+      "Hue specifies transparency, while saturation specifies font size.",
+      "HSL can represent only grayscale colors.",
+      "Lightness must always be expressed in pixels."
+    ],
+    correct: "Hue represents the color angle, saturation represents color intensity, and lightness represents how light or dark the color is."
   },
-
-  // ==========================================
-  // HTML Tables (29–33)
-  // ==========================================
   {
     id: 29,
-    question: "Which tag creates an HTML table?",
-    options: ["<table>", "<tab>", "<data>", "<grid>"],
-    correct: "<table>"
+    question: "If the root element has font-size: 16px, what is the computed font size of an element styled with font-size: 2rem?",
+    options: [
+      "8px",
+      "16px",
+      "24px",
+      "32px"
+    ],
+    correct: "32px"
   },
   {
     id: 30,
-    question: "Which tag represents a table row?",
-    options: ["<td>", "<tr>", "<row>", "<th>"],
-    correct: "<tr>"
+    question: "A parent element has a width of 800px. A child has width: 50%. Assuming no other constraints, what is the child's content width?",
+    options: [
+      "200px",
+      "400px",
+      "600px",
+      "800px"
+    ],
+    correct: "400px"
   },
   {
     id: 31,
-    question: "Which tag represents a normal table cell?",
-    options: ["<cell>", "<td>", "<tr>", "<data>"],
-    correct: "<td>"
+    question: "Which statement about em and rem is most accurate?",
+    options: [
+      "Both always refer to the browser's default font size.",
+      "em commonly depends on the relevant element's inherited or parent font size for font-size calculations, while rem is relative to the root element's font size.",
+      "rem is relative to viewport width, while em is relative to viewport height.",
+      "Neither unit can be used for margins or padding."
+    ],
+    correct: "em commonly depends on the relevant element's inherited or parent font size for font-size calculations, while rem is relative to the root element's font size."
   },
   {
     id: 32,
-    question: "Which tag represents a table header cell?",
-    options: ["<header>", "<th>", "<thead-cell>", "<td-header>"],
-    correct: "<th>"
-  },
-  {
-    id: 33,
-    question: "Which element groups the main body rows of a table?",
-    options: ["<tbody>", "<body>", "<table-body>", "<rows>"],
-    correct: "<tbody>"
+    question: `Consider this CSS:
+p {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+What is the computed line-height in pixels, assuming the unitless value is used directly with the computed font size?`,
+    options: [
+      "10px",
+      "20px",
+      "30px",
+      "40px"
+    ],
+    correct: "30px"
   },
 
   // ==========================================
-  // HTML Forms (34–40)
+  // Part 3: The CSS box model (Questions 33–39)
   // ==========================================
   {
+    id: 33,
+    question: `An element has the following styles:
+.box {
+  width: 200px;
+  padding: 20px;
+  border: 5px solid black;
+  margin: 10px;
+}
+
+Assuming the default box-sizing: content-box, what is its total horizontal space including both margins?`,
+    options: [
+      "200px",
+      "250px",
+      "270px",
+      "290px"
+    ],
+    correct: "270px"
+  },
+  {
     id: 34,
-    question: "Which element is used to create an HTML form?",
-    options: ["<input>", "<form>", "<forms>", "<fieldset-form>"],
-    correct: "<form>"
+    question: "What changes when you apply box-sizing: border-box to an element with width: 200px, padding: 20px, and border: 5px solid?",
+    options: [
+      "The content width becomes 200px, making the outer border width 250px.",
+      "The specified 200px width includes the content, padding, and borders.",
+      "Margins become part of the specified width.",
+      "Padding and borders are removed."
+    ],
+    correct: "The specified 200px width includes the content, padding, and borders."
   },
   {
     id: 35,
-    question: "Which element is commonly used to accept user input?",
-    options: ["<input>", "<text>", "<data>", "<user>"],
-    correct: "<input>"
+    question: "Which statement about margin and padding is correct?",
+    options: [
+      "Padding is outside the border, while margin is inside the border.",
+      "Margin and padding are interchangeable in all situations.",
+      "Padding lies between the content and border, while margin is outside the border.",
+      "Margin changes the text color, while padding changes the font size."
+    ],
+    correct: "Padding lies between the content and border, while margin is outside the border."
   },
   {
     id: 36,
-    question: "Which input type is used for passwords?",
+    question: `Consider:
+.box {
+  width: 300px;
+  padding: 15px;
+  border: 2px solid;
+}
+
+If box-sizing: border-box is applied, what is the content width, assuming no other constraints?`,
     options: [
-      'type="secret"',
-      'type="password"',
-      'type="hidden-password"',
-      'type="protected"'
+      "300px",
+      "266px",
+      "270px",
+      "334px"
     ],
-    correct: 'type="password"'
+    correct: "266px"
   },
   {
     id: 37,
-    question: "Which input type is used for an email address?",
+    question: "Two vertically adjacent block elements have bottom and top margins of 30px and 20px respectively. In the ordinary margin-collapsing case, what is the resulting gap?",
     options: [
-      'type="mail"',
-      'type="email"',
-      'type="text-email"',
-      'type="address"'
+      "10px",
+      "20px",
+      "30px",
+      "50px"
     ],
-    correct: 'type="email"'
+    correct: "30px"
   },
   {
     id: 38,
-    question: "Which attribute makes a form field mandatory?",
-    options: ["needed", "required", "must", "validate"],
-    correct: "required"
+    question: "Which CSS property prevents an element's specified width from including padding and borders in its width calculation?",
+    options: [
+      "box-sizing: content-box",
+      "box-sizing: border-box",
+      "display: block",
+      "overflow: hidden"
+    ],
+    correct: "box-sizing: content-box"
   },
   {
     id: 39,
-    question: "Which element is used to create a multi-line text input?",
+    question: "A developer sets width: 100% on an element and adds horizontal padding and borders. The element overflows its container. Which explanation is most likely when box-sizing is content-box?",
     options: [
-      '<input type="textarea">',
-      "<textarea>",
-      "<text-box>",
-      "<multitext>"
+      "Percentage widths automatically include all margins and padding.",
+      "Padding and borders are added outside the declared content width.",
+      "The element ignores its parent width completely.",
+      "The browser converts the width to auto."
     ],
-    correct: "<textarea>"
-  },
-  {
-    id: 40,
-    question: "Which element is used to create a dropdown list?",
-    options: ["<dropdown>", "<select>", "<option-list>", "<list-select>"],
-    correct: "<select>"
+    correct: "Padding and borders are added outside the declared content width."
   },
 
   // ==========================================
-  // SECTION B — CSS
-  // CSS Basics (41–50)
+  // Part 4: CSS positioning and Flexbox (Questions 40–47)
   // ==========================================
   {
-    id: 41,
-    question: "What does CSS stand for?",
+    id: 40,
+    question: "An element has position: absolute. Which statement best describes how its position is determined?",
     options: [
-      "Computer Style Sheets",
-      "Cascading Style Sheets",
-      "Creative Style Syntax",
-      "Colorful Style Sheets"
+      "It is always positioned relative to the viewport.",
+      "It is positioned relative to its nearest qualifying positioned ancestor, or the initial containing block if none exists.",
+      "It always stays in the normal document flow.",
+      "It is always positioned relative to the previous sibling."
     ],
-    correct: "Cascading Style Sheets"
+    correct: "It is positioned relative to its nearest qualifying positioned ancestor, or the initial containing block if none exists."
+  },
+  {
+    id: 41,
+    question: "What is the main difference between position: relative and position: absolute?",
+    options: [
+      "Both always remove the element from the normal document flow.",
+      "Relative positioning preserves the element's original space in the flow, while absolute positioning generally removes it from the flow.",
+      "Absolute positioning works only on images.",
+      "Relative positioning cannot use top, left, right, or bottom."
+    ],
+    correct: "Relative positioning preserves the element's original space in the flow, while absolute positioning generally removes it from the flow."
   },
   {
     id: 42,
-    question: "What is CSS mainly used for?",
+    question: `Consider:
+.parent {
+  position: relative;
+}
+
+.child {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+
+Assuming the parent establishes the child's containing block, where is the child positioned?`,
     options: [
-      "Structuring webpages",
-      "Styling and designing webpages",
-      "Creating databases",
-      "Writing server-side code"
+      "10px below and 20px left of the parent's containing block edges.",
+      "10px above and 20px right of the parent.",
+      "10px below the viewport and 20px left of the viewport in every case.",
+      "At its normal position because absolute positioning ignores offsets."
     ],
-    correct: "Styling and designing webpages"
+    correct: "10px below and 20px left of the parent's containing block edges."
   },
   {
     id: 43,
-    question: "Which HTML attribute can be used for inline CSS?",
-    options: ["css", "style", "design", "styles"],
-    correct: "style"
+    question: "Which statement about position: fixed is most accurate?",
+    options: [
+      "It always scrolls with the document as an ordinary element.",
+      "It is generally positioned relative to the viewport, although certain ancestors can establish its containing block.",
+      "It always takes up space in the normal document flow.",
+      "It can only be used on elements with display: block."
+    ],
+    correct: "It is generally positioned relative to the viewport, although certain ancestors can establish its containing block."
   },
   {
     id: 44,
-    question: "Which HTML element is used for internal CSS?",
-    options: ["<css>", "<style>", "<stylesheet>", "<design>"],
-    correct: "<style>"
-  },
-  {
-    id: 45,
-    question: "Which HTML element is used to connect an external CSS file?",
-    options: ["<style>", "<css>", "<link>", "<stylesheet>"],
-    correct: "<link>"
-  },
-  {
-    id: 46,
-    question: "What is the usual file extension for a CSS file?",
-    options: [".style", ".css", ".design", ".cs"],
-    correct: ".css"
-  },
-  {
-    id: 47,
-    question: "Which CSS property changes text color?",
-    options: ["text-color", "font-color", "color", "foreground"],
-    correct: "color"
-  },
-  {
-    id: 48,
-    question: "Which CSS property changes the background color?",
-    options: ["background-color", "bg-color", "color-background", "background"],
-    correct: "background-color"
-  },
-  {
-    id: 49,
-    question: "Which property changes the size of text?",
-    options: ["text-size", "font-size", "size", "font-height"],
-    correct: "font-size"
-  },
-  {
-    id: 50,
-    question: "Which property makes text bold?",
-    options: ["font-weight", "text-bold", "font-style", "bold"],
-    correct: "font-weight"
-  },
-
-  // ==========================================
-  // CSS Selectors (51–56)
-  // ==========================================
-  {
-    id: 51,
-    question: "Which selector targets all <p> elements?",
-    options: [".p", "#p", "p", "*p"],
-    correct: "p"
-  },
-  {
-    id: 52,
-    question: "Which selector targets an element with the class box?",
-    options: ["#box", ".box", "box", "*box"],
-    correct: ".box"
-  },
-  {
-    id: 53,
-    question: "Which selector targets an element with the ID header?",
-    options: [".header", "header", "#header", "*header"],
-    correct: "#header"
-  },
-  {
-    id: 54,
-    question: "Which selector targets every element?",
-    options: ["all", "*", "every", "#all"],
-    correct: "*"
-  },
-  {
-    id: 55,
-    question: "Which selector has higher specificity between these two?\n\n.box { color: red; }\n\nand\n\n#box { color: blue; }",
-    options: [".box", "#box", "They are equal", "Neither"],
-    correct: "#box"
-  },
-  {
-    id: 56,
-    question: "Which CSS syntax is correct?",
-    options: [
-      "p { color: red; }",
-      "p: color = red;",
-      "p(color: red)",
-      "p = {color red}"
-    ],
-    correct: "p { color: red; }"
-  },
-
-  // ==========================================
-  // CSS Box Model (57–63)
-  // ==========================================
-  {
-    id: 57,
-    question: "Which of the following is NOT part of the CSS box model?",
-    options: ["Content", "Padding", "Border", "Font"],
-    correct: "Font"
-  },
-  {
-    id: 58,
-    question: "What does padding control?",
-    options: [
-      "Space outside the element",
-      "Space between content and border",
-      "Text size",
-      "Border thickness"
-    ],
-    correct: "Space between content and border"
-  },
-  {
-    id: 59,
-    question: "What does margin control?",
-    options: [
-      "Space outside an element",
-      "Space inside an element",
-      "Text color",
-      "Element height only"
-    ],
-    correct: "Space outside an element"
-  },
-  {
-    id: 60,
-    question: "What does border control?",
-    options: [
-      "Space between elements",
-      "The line surrounding an element",
-      "Text alignment",
-      "Font size"
-    ],
-    correct: "The line surrounding an element"
-  },
-  {
-    id: 61,
-    question: "Which property controls the width of an element?",
-    options: ["element-width", "width", "size-width", "box-width"],
-    correct: "width"
-  },
-  {
-    id: 62,
-    question: "Which property controls the height of an element?",
-    options: ["height", "element-height", "box-height", "size"],
-    correct: "height"
-  },
-  {
-    id: 63,
-    question: "What does box-sizing: border-box generally do?",
-    options: [
-      "Includes padding and border within the declared width/height",
-      "Removes the border",
-      "Removes padding",
-      "Makes the element circular"
-    ],
-    correct: "Includes padding and border within the declared width/height"
-  },
-
-  // ==========================================
-  // CSS Display and Positioning (64–70)
-  // ==========================================
-  {
-    id: 64,
-    question: "Which display value makes an element behave as a block-level element?",
-    options: ["inline", "block", "flex", "none"],
-    correct: "block"
-  },
-  {
-    id: 65,
-    question: "Which display value makes an element behave as an inline element?",
-    options: ["inline", "block", "grid", "absolute"],
-    correct: "inline"
-  },
-  {
-    id: 66,
-    question: "What does display: none do?",
-    options: [
-      "Makes the element transparent",
-      "Removes the element from the layout/display",
-      "Makes the element smaller",
-      "Changes its color"
-    ],
-    correct: "Removes the element from the layout/display"
-  },
-  {
-    id: 67,
-    question: "Which CSS property is used for positioning elements?",
-    options: ["position", "place", "location", "layout"],
-    correct: "position"
-  },
-  {
-    id: 68,
-    question: "Which position value positions an element relative to its normal position?",
-    options: ["absolute", "relative", "fixed", "static-only"],
-    correct: "relative"
-  },
-  {
-    id: 69,
-    question: "Which position value can position an element relative to its nearest positioned ancestor?",
-    options: ["relative", "absolute", "static", "inline"],
-    correct: "absolute"
-  },
-  {
-    id: 70,
-    question: "Which position value keeps an element fixed relative to the viewport?",
-    options: ["absolute", "relative", "fixed", "static"],
-    correct: "fixed"
-  },
-
-  // ==========================================
-  // Flexbox (71–76)
-  // ==========================================
-  {
-    id: 71,
-    question: "Which CSS property enables Flexbox?",
-    options: [
-      "display: flex",
-      "flex: display",
-      "position: flex",
-      "layout: flex"
-    ],
-    correct: "display: flex"
-  },
-  {
-    id: 72,
-    question: "What is the main purpose of Flexbox?",
-    options: [
-      "Creating and arranging flexible layouts",
-      "Creating databases",
-      "Adding JavaScript",
-      "Compressing images"
-    ],
-    correct: "Creating and arranging flexible layouts"
-  },
-  {
-    id: 73,
-    question: "Which property controls alignment along the main axis in Flexbox?",
+    question: "In Flexbox, which property aligns flex items along the main axis?",
     options: [
       "align-items",
       "justify-content",
-      "flex-align",
-      "main-align"
+      "align-content",
+      "text-align"
     ],
     correct: "justify-content"
   },
   {
-    id: 74,
-    question: "Which property controls alignment along the cross axis?",
+    id: 45,
+    question: `Consider:
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+}
+
+Assuming the default flex-direction: row, how are the items aligned?`,
     options: [
-      "justify-content",
-      "align-items",
-      "cross-align",
-      "item-position"
+      "Horizontally centered and vertically centered within the container's content box.",
+      "Horizontally left-aligned and vertically centered.",
+      "Horizontally centered and vertically aligned to the top.",
+      "Stacked vertically and centered horizontally."
     ],
-    correct: "align-items"
+    correct: "Horizontally centered and vertically centered within the container's content box."
   },
   {
-    id: 75,
-    question: "Which value centers flex items along the main axis?",
+    id: 46,
+    question: "A flex container has flex-direction: column. Which statement is correct?",
     options: [
-      "align-center",
-      "center-items",
-      "justify-content: center",
-      "flex-center"
+      "The main axis becomes vertical, so justify-content controls alignment along that axis.",
+      "The main axis remains horizontal, so justify-content always controls horizontal alignment.",
+      "align-items stops working.",
+      "Flex items are automatically removed from the normal document flow."
     ],
-    correct: "justify-content: center"
+    correct: "The main axis becomes vertical, so justify-content controls alignment along that axis."
   },
   {
-    id: 76,
-    question: "Which property changes the direction of flex items?",
+    id: 47,
+    question: "A flex container has three items with flex-grow: 1, flex-grow: 2, and flex-grow: 1. Assuming equal flex bases, no minimum-size constraints, and positive free space, how is the free space distributed?",
     options: [
-      "flex-direction",
-      "direction-flex",
-      "flex-position",
-      "item-direction"
+      "Equally, with each item receiving one-third.",
+      "The second item receives half, and each other item receives one-quarter.",
+      "The second item receives all the free space.",
+      "The first item receives half, and the other two split the remainder."
     ],
-    correct: "flex-direction"
+    correct: "The second item receives half, and each other item receives one-quarter."
   },
 
   // ==========================================
-  // CSS Grid (77–80)
+  // Part 5: CSS Grid (Questions 48–52)
   // ==========================================
   {
-    id: 77,
-    question: "Which CSS layout system is designed for two-dimensional layouts?",
-    options: ["Flexbox", "Grid", "Inline", "Float"],
-    correct: "Grid"
+    id: 48,
+    question: "Which declaration creates a grid with three equal-width columns?",
+    options: [
+      "display: grid; grid-template-columns: 1fr 1fr 1fr;",
+      "display: flex; grid-columns: 3;",
+      "display: grid; grid-template-rows: 1fr 1fr 1fr;",
+      "display: block; columns: 3;"
+    ],
+    correct: "display: grid; grid-template-columns: 1fr 1fr 1fr;"
   },
   {
-    id: 78,
-    question: "How do you enable CSS Grid?",
+    id: 49,
+    question: "What does the fr unit represent in CSS Grid?",
     options: [
-      "display: grid",
-      "grid: display",
-      "position: grid",
-      "layout: grid"
+      "A fixed number of pixels",
+      "A fraction of the available space distributed among grid tracks",
+      "A percentage of the browser's font size",
+      "A unit that can only be used for rows"
     ],
-    correct: "display: grid"
+    correct: "A fraction of the available space distributed among grid tracks"
   },
   {
-    id: 79,
-    question: "Which property defines grid columns?",
+    id: 50,
+    question: "Which declaration creates as many columns as will fit, each at least 200px wide and otherwise expanding to share available space?",
     options: [
-      "grid-columns",
-      "grid-template-columns",
-      "columns-grid",
-      "template-columns-grid"
+      "grid-template-columns: repeat(3, 200px);",
+      "grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));",
+      "grid-template-columns: auto-fit(200px);",
+      "grid-template-columns: 200px auto-fit 1fr;"
     ],
-    correct: "grid-template-columns"
+    correct: "grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));"
   },
   {
-    id: 80,
-    question: "Which property defines grid rows?",
+    id: 51,
+    question: "Which statement correctly compares Flexbox and CSS Grid?",
     options: [
-      "grid-template-rows",
-      "grid-rows",
-      "rows-template",
-      "grid-row-template-only"
+      "Flexbox is primarily one-dimensional, while Grid supports two-dimensional row-and-column layouts.",
+      "Grid works only horizontally, while Flexbox works only vertically.",
+      "Flexbox cannot center elements.",
+      "Grid cannot create responsive layouts."
     ],
-    correct: "grid-template-rows"
+    correct: "Flexbox is primarily one-dimensional, while Grid supports two-dimensional row-and-column layouts."
+  },
+  {
+    id: 52,
+    question: `What is the effect of this declaration?
+.container {
+  display: grid;
+  gap: 20px;
+}`,
+    options: [
+      "It adds a 20px border around the container.",
+      "It creates 20px spacing between grid rows and columns.",
+      "It adds 20px padding to every grid item.",
+      "It forces every grid item to be 20px wide."
+    ],
+    correct: "It creates 20px spacing between grid rows and columns."
   },
 
   // ==========================================
-  // Responsive Design (81–84)
+  // Part 6: Responsive design and media queries (Questions 53–56)
   // ==========================================
   {
-    id: 81,
-    question: "What does responsive web design mean?",
+    id: 53,
+    question: "Which media query applies its rules when the viewport width is 600px or less?",
     options: [
-      "A website that adapts to different screen sizes",
-      "A website that only works on computers",
-      "A website without CSS",
-      "A website that loads only once"
+      "@media (min-width: 600px)",
+      "@media screen-width <= 600px",
+      "@media (max-width: 600px)",
+      "@media (width > 600px)"
     ],
-    correct: "A website that adapts to different screen sizes"
+    correct: "@media (max-width: 600px)"
   },
   {
-    id: 82,
-    question: "Which CSS feature is commonly used to create responsive layouts based on screen size?",
-    options: ["Media queries", "CSS comments", "Variables only", "Animations"],
-    correct: "Media queries"
-  },
-  {
-    id: 83,
-    question: "Which syntax creates a media query?",
-    options: ["@media", "@screen", "@responsive", "@device"],
-    correct: "@media"
-  },
-  {
-    id: 84,
-    question: "Which viewport setting is commonly placed in the HTML <head> for responsive webpages?",
+    id: 54,
+    question: `Consider:
+p {
+  color: blue;
+}
+
+@media (max-width: 600px) {
+  p {
+    color: red;
+  }
+}
+
+What color is a paragraph when the viewport width is 500px, assuming no competing declarations?`,
     options: [
-      '<meta name="viewport" content="width=device-width, initial-scale=1.0">',
-      '<meta responsive="true">',
-      '<viewport width="device">',
-      '<responsive screen="mobile">'
+      "Blue",
+      "Red",
+      "Black",
+      "The browser alternates between blue and red."
     ],
-    correct: '<meta name="viewport" content="width=device-width, initial-scale=1.0">'
+    correct: "Red"
+  },
+  {
+    id: 55,
+    question: "A developer wants a navigation bar to display its links in a row on large screens and stack them vertically on small screens. Which approach is most appropriate?",
+    options: [
+      "Use JavaScript to rewrite every link's HTML whenever the screen changes, regardless of alternatives.",
+      "Use a media query to change the navigation container's layout, such as its flex-direction.",
+      "Use position: absolute on every link at every screen size.",
+      "Set every link to display: none on small screens without providing an alternative."
+    ],
+    correct: "Use a media query to change the navigation container's layout, such as its flex-direction."
+  },
+  {
+    id: 56,
+    question: "Why is mobile-first CSS often useful?",
+    options: [
+      "It means desktop layouts never need testing.",
+      "It starts with styles for smaller screens and progressively adds or adjusts styles for larger screens.",
+      "It automatically makes every image responsive without additional rules.",
+      "It removes the need for media queries."
+    ],
+    correct: "It starts with styles for smaller screens and progressively adds or adjusts styles for larger screens."
   },
 
   // ==========================================
-  // SECTION C — BOOTSTRAP
-  // Bootstrap Basics (85–90)
+  // Part 7: Pseudo-classes, pseudo-elements, and integrated reasoning (Questions 57–60)
   // ==========================================
   {
-    id: 85,
-    question: "What is Bootstrap?",
+    id: 57,
+    question: "Which statement correctly distinguishes a pseudo-class from a pseudo-element?",
     options: [
-      "A JavaScript programming language",
-      "A CSS framework",
-      "A database",
-      "An operating system"
+      "A pseudo-class selects an element based on a state or condition, while a pseudo-element targets a particular part of an element or generates a stylable piece of content.",
+      "A pseudo-class creates HTML tags, while a pseudo-element creates CSS files.",
+      "A pseudo-class can only target links, while a pseudo-element can only target images.",
+      "There is no difference between them."
     ],
-    correct: "A CSS framework"
+    correct: "A pseudo-class selects an element based on a state or condition, while a pseudo-element targets a particular part of an element or generates a stylable piece of content."
   },
   {
-    id: 86,
-    question: "What is one major benefit of Bootstrap?",
+    id: 58,
+    question: `What does this CSS do?
+button:hover {
+  background-color: black;
+}`,
     options: [
-      "It provides ready-made styles and components",
-      "It replaces HTML",
-      "It replaces JavaScript completely",
-      "It creates databases automatically"
+      "It makes every button permanently black after the page loads.",
+      "It changes the button's background when the pointer hovers over it, subject to the device and browser's hover behavior.",
+      "It creates a new button after each mouse movement.",
+      "It changes the text color of every paragraph."
     ],
-    correct: "It provides ready-made styles and components"
+    correct: "It changes the button's background when the pointer hovers over it, subject to the device and browser's hover behavior."
   },
   {
-    id: 87,
-    question: "Which class is commonly used to create a Bootstrap container?",
-    options: [".box", ".container", ".wrapper", ".bootstrap-container"],
-    correct: ".container"
-  },
-  {
-    id: 88,
-    question: "Which Bootstrap class creates a full-width container?",
-    options: [
-      ".container-full",
-      ".container-fluid",
-      ".fluid-container",
-      ".full-container"
-    ],
-    correct: ".container-fluid"
-  },
-  {
-    id: 89,
-    question: "Bootstrap's grid system is based primarily on how many columns?",
-    options: ["6", "10", "12", "24"],
-    correct: "12"
-  },
-  {
-    id: 90,
-    question: "Which class creates a Bootstrap row?",
-    options: [".line", ".row", ".grid-row", ".bootstrap-row"],
-    correct: ".row"
-  },
+    id: 59,
+    question: `Consider:
+p::first-letter {
+  font-size: 200%;
+  color: red;
+}
 
-  // ==========================================
-  // Bootstrap Grid (91–94)
-  // ==========================================
-  {
-    id: 91,
-    question: "Which class creates a column that occupies 6 of Bootstrap's 12 columns?",
-    options: [".col-6", ".column-6", ".grid-6", ".col-md"],
-    correct: ".col-6"
-  },
-  {
-    id: 92,
-    question: "If a row contains .col-4, .col-4, and .col-4, how many columns are occupied?",
-    options: ["4", "8", "12", "16"],
-    correct: "12"
-  },
-  {
-    id: 93,
-    question: "What does .col-12 represent in Bootstrap's grid?",
+What is the intended effect?`,
     options: [
-      "Half the row",
-      "One-quarter of the row",
-      "The full 12-column width",
-      "Twelve separate rows"
+      "The first paragraph on the page becomes twice as large.",
+      "The first letter of each applicable paragraph is styled with a larger font and red color.",
+      "Every letter in every paragraph becomes red.",
+      "A literal ::first-letter string appears before every paragraph."
     ],
-    correct: "The full 12-column width"
+    correct: "The first letter of each applicable paragraph is styled with a larger font and red color."
   },
   {
-    id: 94,
-    question: "What is the purpose of responsive Bootstrap classes such as .col-md-6?",
-    options: [
-      "They control column layout at specific responsive breakpoints",
-      "They change the database",
-      "They create six rows",
-      "They only change text color"
-    ],
-    correct: "They control column layout at specific responsive breakpoints"
-  },
+    id: 60,
+    question: `Consider the following HTML and CSS:
+<div class="card">
+  <h2>Product</h2>
+  <p>Description</p>
+  <button>Buy</button>
+</div>
 
-  // ==========================================
-  // Bootstrap Utilities and Components (95–100)
-  // ==========================================
-  {
-    id: 95,
-    question: "Which Bootstrap class creates a primary-colored button?",
+.card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.card h2 {
+  grid-column: 1 / -1;
+}
+
+.card button:hover {
+  background: blue;
+}
+
+@media (max-width: 500px) {
+  .card {
+    grid-template-columns: 1fr;
+  }
+}
+
+Which statement is correct when the viewport is 450px wide?`,
     options: [
-      ".button-primary",
-      ".btn-primary",
-      ".primary-button",
-      ".button-blue"
+      "The card uses two columns because its original grid declaration overrides the media query.",
+      "The card uses one column, and the heading spans the full width of the grid.",
+      "The button is always blue, even when the pointer is not hovering over it.",
+      "The media query hides the heading and paragraph."
     ],
-    correct: ".btn-primary"
-  },
-  {
-    id: 96,
-    question: "Which class is required as the base class for a Bootstrap button?",
-    options: [".button", ".btn", ".bootstrap-btn", ".click"],
-    correct: ".btn"
-  },
-  {
-    id: 97,
-    question: "Which Bootstrap class adds a margin to an element?",
-    options: [".margin", ".m-3", ".space-3", ".margin-3"],
-    correct: ".m-3"
-  },
-  {
-    id: 98,
-    question: "Which Bootstrap utility class centers text?",
-    options: [".center-text", ".text-center", ".align-text", ".text-middle"],
-    correct: ".text-center"
-  },
-  {
-    id: 99,
-    question: "Which Bootstrap component is commonly used to create a navigation bar?",
-    options: ["Navbar", "Navigation-box", "Nav-container-only", "Menu-bar"],
-    correct: "Navbar"
-  },
-  {
-    id: 100,
-    question: "Which statement best describes the relationship between HTML, CSS, and Bootstrap?",
-    options: [
-      "HTML structures content, CSS styles it, and Bootstrap provides pre-built CSS components/utilities for faster development.",
-      "HTML and CSS are both JavaScript frameworks.",
-      "Bootstrap replaces HTML completely.",
-      "CSS replaces HTML while Bootstrap replaces JavaScript."
-    ],
-    correct: "HTML structures content, CSS styles it, and Bootstrap provides pre-built CSS components/utilities for faster development."
+    correct: "The card uses one column, and the heading spans the full width of the grid."
   }
 ];
+
+if (typeof module !== "undefined" && module.exports) {
+  module.exports = quizQuestions;
+}

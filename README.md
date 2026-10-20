@@ -1,29 +1,21 @@
-# Astro_TEC SIWES CBT - HTML, CSS & Bootstrap
+# Astro-TEC Frontend Development CBT
 
-Interactive CBT quiz covering HTML, CSS & Bootstrap — 100 Questions.
+Interactive CBT quiz covering HTML & CSS — 60 Questions.
 
 **Instructions:** Choose the correct answer from A–D.
 
 ## Sections Covered
 
-- **Section A: HTML** (Questions 1–40)
-  - HTML Basics (1–10)
-  - HTML Elements and Attributes (11–20)
-  - Semantic HTML (21–28)
-  - HTML Tables (29–33)
-  - HTML Forms (34–40)
-- **Section B: CSS** (Questions 41–84)
-  - CSS Basics (41–50)
-  - CSS Selectors (51–56)
-  - CSS Box Model (57–63)
-  - CSS Display and Positioning (64–70)
-  - Flexbox (71–76)
-  - CSS Grid (77–80)
-  - Responsive Design (81–84)
-- **Section C: Bootstrap** (Questions 85–100)
-  - Bootstrap Basics (85–90)
-  - Bootstrap Grid (91–94)
-  - Bootstrap Utilities and Components (95–100)
+- **Section A: HTML** (Questions 1–15)
+  - HTML Assessment (1–15)
+- **Section B: CSS** (Questions 16–60)
+  - Part 1: CSS fundamentals and selectors (16–25)
+  - Part 2: Colors, units, and text styling (26–32)
+  - Part 3: The CSS box model (33–39)
+  - Part 4: CSS positioning and Flexbox (40–47)
+  - Part 5: CSS Grid (48–52)
+  - Part 6: Responsive design and media queries (53–56)
+  - Part 7: Pseudo-classes, pseudo-elements, and integrated reasoning (57–60)
 
 ## How to Run
 
@@ -37,9 +29,9 @@ Then visit `http://localhost:3000`
 
 ## Features
 
-- **100 multiple-choice questions** covering HTML, CSS & Bootstrap
+- **60 multiple-choice questions** covering HTML & CSS
 - **Instructions:** Choose the correct answer from A–D
-- **37-minute CBT timer**
+- **CBT timer**
 - **Anti-cheat protection** (blocks right-click, F12, developer tools shortcuts)
 - **Auto-advance 3 seconds** after answering
 - **Scores & percentages saved** to `localStorage`
